@@ -3,7 +3,7 @@ body{
     padding:0;
     margin:0;
     background-color:dimgray;
-     background-image: url("images/background(3).gif");
+     background-image: url("background(3).gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ body{
     font-family: monospace;
     padding-top: 17px;
     padding-bottom: 17px;
-    background-image: url("images/background(7).gif");
+    background-image: url("background(7).gif");
     background-size: cover;
     box-sizing:border-box;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ img {
 .my-intro{
     padding-top: 20%;
     background-image:
-        url("images/cool(7).gif");
+        url("cool(7).gif");
     background-size: cover;
     background-position:  left;
     background-repeat: no-repeat;
@@ -78,12 +78,12 @@ img {
     transition:  width 2s, height 2s;
     transition-delay: 2.7s ease-in-out 2.7s;
 }
-.my-intro:hover #intro{
+/*.my-intro:hover #intro{
     background-color: none;
     width:550px;
     height:200px;
     transition-delay: 3s;
-    transition:  width 2s, height 2s;
+    transition:  width 2s, height 2s;*/
 }
 #intro h2{
     text-align:justify;
@@ -106,7 +106,7 @@ img {
     border-radius: 80%;
 }
 .cool{
-    background-image: url("images/cool(5).gif");
+    background-image: url("cool(5).gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ img {
     color:white;
 }
 .cv_1{
-    background-image: url("images/background(12).jpg");
+    background-image: url("background(12).jpg");
     background-size: cover;
     position:relative;
     background-repeat: no-repeat;
@@ -151,7 +151,7 @@ img {
     font-size: 29px;
 } 
 .image-oscar{
-    background-image: url("images/Oscar(1).jpg");
+    background-image: url("Oscar(1).jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ img {
     box-sizing: border-box;
 }
 .works{
-    background-image: url("images/sketch(2).jpg");
+    background-image: url("sketch(2).jpg");
     background-repeat: no-repeat;
     color:white;
     background-size: cover;
@@ -245,7 +245,7 @@ img {
     float:right;
     margin-bottom: 15%;
     border-radius: 100px;
-    background-image: url("images/arrow.gif");
+    background-image: url("arrow.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
