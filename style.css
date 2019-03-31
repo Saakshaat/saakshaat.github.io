@@ -1,0 +1,311 @@
+body{
+    font-family: 'pacifo',sans-serif,monospace,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:dimgray;
+     background-image: url("images/background(3).gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    overflow:auto;
+}
+#my-name h2{
+    margin-top:0;
+    padding-top:10px;
+    margin-bottom:0;
+    margin-left: 7.3%;
+}
+#main-header{
+    text-align: center;
+    font-size: 47px;
+    margin:0;
+    height:100%;
+    font-family: monospace;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    background-image: url("images/background(7).gif");
+    background-size: cover;
+    box-sizing:border-box;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+.container{
+    width="80%";
+    padding-left:15%;
+    padding-right:15%;
+    
+}
+ul{
+    list-style: none;
+    color:darksalmon;
+}
+a{
+    color:cyan;
+    text-decoration: none;
+}
+a:hover{
+    color:lawngreen;
+    text-decoration: underline;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+.image-block{
+    padding-top: 270px;
+    padding-bottom: 270px;
+    margin:0;
+}
+.my-intro{
+    padding-top: 20%;
+    background-image:
+        url("images/cool(7).gif");
+    background-size: cover;
+    background-position:  left;
+    background-repeat: no-repeat;
+}
+#intro{
+    width:40%;
+    color:white;
+    float:right;
+    padding-top: 04%;
+    box-sizing: border-box;
+    font-size: 35px;
+    padding-left: 70px;
+    margin-right:8%;
+    transition:  width 2s, height 2s;
+    transition-delay: 2.7s ease-in-out 2.7s;
+}
+.my-intro:hover #intro{
+    background-color: none;
+    width:550px;
+    height:200px;
+    transition-delay: 3s;
+    transition:  width 2s, height 2s;
+}
+#intro h2{
+    text-align:justify;
+}
+#intro h2:hover{
+    text-decoration: underline;
+}
+.clr{
+    clear:both;
+}
+#my-pic {
+    width: 35%;
+    position: relative;
+    display: inline-block;
+    margin-left:8%;
+    padding-left:0;
+    padding-right: 0;
+    box-shadow: 20px black solid;
+    border: 0.01 green solid;
+    border-radius: 80%;
+}
+.cool{
+    background-image: url("images/cool(5).gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cool p{
+    font-size: 40px;
+    float:right;
+    color:aliceblue;
+}
+.cool h2{
+    width: 60%;
+    float:right;
+    text-align: right;
+    font-size: 57px;
+    color:white;
+}
+.cv_1{
+    background-image: url("images/background(12).jpg");
+    background-size: cover;
+    position:relative;
+    background-repeat: no-repeat;
+    padding-top: 270px;
+    padding-bottom: 270px;
+}
+.cv_1 h2{
+    float:right;
+    font-size: 50px;
+}
+.cv_1 #cv{
+    font-size: 31px;
+    box-sizing: border-box;
+    width: 60%;
+    margin-left: 5%;
+    transform-origin: left;
+    transition:  width 2s, height 2s;
+    transition-delay: 2.7s ease-in-out 2.7s;
+}
+.cv_1:hover #cv{
+    background-color: none;
+    width:50%;
+    height:50%;
+    text-transform: full-width;
+    transition-delay: 1s;
+    transition: width 2s, height 2s ease-in-out 2s;
+}
+#skills li{
+    display: inline;
+    padding: 15px;
+    padding-bottom: 15px;
+    font-size: 29px;
+} 
+.image-oscar{
+    background-image: url("images/Oscar(1).jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.oscar{
+    text-align:right;
+    display: inline-block;
+    margin-right: 10%;
+    float:right;
+    display:inline-block;
+}
+.oscar h2{
+    text-align: right;
+    font-size: 50px;
+    color:aqua;
+}
+.oscar p{
+    width:50%;
+    float:right;
+    font-size: 30px;
+    text-align: right;
+    box-sizing: border-box;
+}
+.works{
+    background-image: url("images/sketch(2).jpg");
+    background-repeat: no-repeat;
+    color:white;
+    background-size: cover;
+    background-position: top;
+    display:grid;
+}
+.works h2{
+    font-size: 50px;
+    margin-left: 10%;
+    float: left;
+    text-align:left;
+}
+.works p{
+    width:45%;
+    font-size: 30px;
+    margin-left: 10%;
+    float: left;
+    text-align: justify;
+    box-sizing: border-box;
+}
+/*.works:hover p{
+    width:47%; 
+    animation: rightThenLeft 4s linear;
+    position: absolute;
+    white-space: nowrap;
+    margin-left:10%;
+    display: inline;
+    width:400px;
+    height:200px;
+   /* transition-delay: 2s;
+    transform-origin: left;
+    transition:  width 1.5s, height 1s;
+}
+@keyframes rightThenLeft {
+    0%   {margin-right: -100%;}
+    50%  {margin-left: 100%;}
+    100% {margin-left: 0%;}
+}*/
+.icons{
+    display:inline-block;
+    padding-left:15px;
+    position:relative;
+    margin:0;
+    
+}
+.contact {
+    margin-top: 0;
+    font-size: 27px;
+    color:antiquewhite;
+    line-height: 1.6em;
+    color: black;
+    margin-bottom: 0;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.contact h2{
+    font-size: 47px;
+}
+.contact #contact-info{
+    margin-right: 50%;
+    float:left;
+}
+#home-button{
+    width: 80px;
+    height: 80px;
+    float:right;
+    margin-bottom: 15%;
+    border-radius: 100px;
+    background-image: url("images/arrow.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    text-align:center;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top:0;
+    padding-top: 10px;
+    background-attachment: fixed;
+    background-color:darkgray;
+    border: 0.1 solid;
+    border-radius: 9px;
+}
+@media(max-width:800px){
+    #intro.{
+        width:100%;
+        float:none;
+    }
+    #my-pic{
+        width:100%;
+        float:none;
+    }
+    .my-info{ 
+        width:100%;
+        float:none;
+    }
+    #home-button{
+        float: none;
+    }
+    .oscar{
+        width:100%;
+        float: none;
+    }
+    .cv{
+        width:100%;
+        float: none;
+    }
+    .spotify{
+        width: 100%;
+        float:none;
+    }
+    .contact{
+        width: 100%;
+        float:none;
+    }
+    .image-block{
+        min-width: 100%;
+        float:none;
+        width:100%;
+    }
+}
+
+
