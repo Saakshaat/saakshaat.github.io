@@ -144,14 +144,6 @@ img {
     transition:  width 2s, height 2s;
     transition-delay: 2.7s ease-in-out 2.7s;
 }
-.cv_1:hover #cv{
-    background-color: none;
-    width:50%;
-    height:50%;
-    text-transform: full-width;
-    transition-delay: 1s;
-    transition: width 2s, height 2s ease-in-out 2s;
-}
 #skills li{
     display: inline;
     padding: 15px;
