@@ -70,6 +70,10 @@ a, a:hover {
   }
 }
 
+.span_color {
+  color : #40c37d
+}
+
 .unslate_co--footer {
   position: fixed !important;
   width: 100%;
