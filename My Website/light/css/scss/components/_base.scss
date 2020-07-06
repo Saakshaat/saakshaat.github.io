@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap');
+
+$font-family-sans-serif: 'Raleway', sans-serif;
+$font-family-sans-serif-secondary: 'Arimo', sans-serif;
+
+body {
+	font-family: $font-family-sans-serif;
+	color: $black;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 300;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		background: rgba($black, .5);
+		visibility: hidden;
+		opacity: 0;
+		transition: .3s all ease;
+		z-index: 8;
+	}
+	&.offcanvas {
+		overflow: hidden;
+		&:before {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+body, .unslate_co--site-inner {
+	background: $white;
+}
+
+::-moz-selection { 
+	background: $black;
+	color: $white;
+}
+::selection { 
+	background: $black;
+	color: $white;
+}
+a {
+	transition: .3s all ease;
+	&, &:hover {
+		text-decoration: none!important;
+	}
+}
+
+.text-black {
+	color: $black;
+}
+
+.unslate_co--site-inner {
+	margin-bottom: 400px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  @include media-breakpoint-down(md) {
+  	margin-bottom: auto!important;
+  }
+}
+.unslate_co--footer {
+	position: fixed!important;
+
+	width: 100%;
+  
+  background-color: rgba($black, .1);
+  color: #fff;
+  
+	left: 0;
+	right: 0;
+  bottom: 0px;
+  z-index: 0;
+  height: 400px;
+  @include media-breakpoint-down(md) {
+  	height: auto!important;
+  	position: relative!important;
+  }
+
+}
+
+.btn {
+	font-size: 11px;
+	border-radius: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	&:active, &:focus {
+		outline: none;
+		box-shadow: none;
+	}
+	&.btn-outline-pill {
+		&.btn-custom-light {
+			color: $black;
+			border: 2px solid rgba($black, .5);
+			transition: .3s all ease;
+
+			&:hover, &:active, &:focus {
+				border-color: $black;
+			}
+		}
+
+		&.btn-white {
+			color: $white;
+			border: 2px solid rgba($white, .5);
+			transition: .3s all ease;
+
+			&:hover, &:active, &:focus {
+				border-color: $white;
+			}	
+		}
+	}
+	&.btn-bg-black--hover {
+		&:hover {
+			background-color: $black;
+			color: $black;
+		}
+	}
+}
+
+// Preloading
+#unslate_co--overlayer {
+  width:100%;
+  height:100%;  
+  position:fixed;
+  z-index:7100;
+  background: $white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.site-loader-wrap {
+	z-index:7700;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
