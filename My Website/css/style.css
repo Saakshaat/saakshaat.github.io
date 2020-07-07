@@ -71,7 +71,8 @@ a, a:hover {
 }
 
 .span_color {
-  color : #40c37d
+  color : #40c37d;
+  font-weight: bolder;
 }
 
 .unslate_co--footer {
