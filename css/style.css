@@ -78,8 +78,8 @@ a, a:hover {
 .unslate_co--footer {
   position: fixed !important;
   width: 100%;
-  background-color: #191919;
-  color: #fff;
+  background-color: rgb(59, 59, 59);
+  color: white;
   left: 0;
   right: 0;
   bottom: 0px;
@@ -91,6 +91,7 @@ a, a:hover {
   .unslate_co--footer {
     height: auto !important;
     position: relative !important;
+    z-index: 1;
   }
 }
 
