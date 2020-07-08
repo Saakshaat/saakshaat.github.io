@@ -106,6 +106,10 @@ a, a:hover {
   font-weight: 900;
 }
 
+.btn:hover{
+  background-color: black;
+}
+
 .btn:active, .btn:focus {
   outline: none;
   -webkit-box-shadow: none;
@@ -127,6 +131,223 @@ a, a:hover {
 .btn.btn-bg-white--hover:hover {
   background-color: #fff;
   color: #000;
+}
+
+.skill{
+  font-size: large;
+  margin: 0.3em;
+}
+
+.btn-outline-pill#cpp{
+  background-color: rgb(206, 204, 204);
+  border: 2px solid #274773;
+  color: #274773
+}
+
+.btn-outline-pill#cpp:hover{
+  background-color: #274773;
+  border: 2px solid rgb(206, 204, 204);
+  color: rgb(206, 204, 204)
+}
+
+.btn-outline-pill#python{
+  background-color: #e2bc30;
+  border: 2px solid #204868;
+  color: #204868;
+}
+
+.btn-outline-pill#python:hover{
+  background-color: #204868;
+  border: 2px solid #e2bc30;
+  color: #e2bc30;
+}
+
+.btn-outline-pill#ruby{
+  background-color: #820C02;
+  border: 2px solid #EDA895;
+  color: #EDA895;
+}
+
+.btn-outline-pill#ruby:hover{
+    background-color: #EDA895;
+    border: 2px solid #820C02;
+    color: #820C02;
+}
+
+.btn-outline-pill#java{
+  background-color: #be740c;
+  border: 2px solid #005772;
+  color: #005772;
+}
+
+.btn-outline-pill#java:hover{
+  background-color: #007396;
+  border: 2px solid #be740c;
+  color: #be740c;
+}
+
+.btn-outline-pill#node{
+  background-color: #303030;
+  border: 2px solid #3C873A;
+  color: #3C873A;
+}
+
+.btn-outline-pill#node:hover{
+  background-color: #3C873A;
+  border: 2px solid #303030;
+  color: #303030;
+}
+
+.btn-outline-pill#react{
+  background-color: #303030;
+  border: 2px solid #378092;
+  color: #378092;
+}
+
+.btn-outline-pill#react:hover{
+  background-color: #378092;
+  border: 2px solid #303030;
+  color: #303030;
+}
+
+.btn-outline-pill#github{
+  background-color: #211F1F;
+  border: 2px solid #d4b09a;
+  color: #d4b09a;
+}
+
+.btn-outline-pill#github:hover{
+  background-color: #d4b09a;
+  border: 2px solid #211F1F;
+  color: #211F1F;
+}
+
+.btn-outline-pill#firebase{
+  background-color: #d67355;
+  border: 2px solid #2C384A;
+  color: #2C384A;
+}
+
+.btn-outline-pill#firebase:hover{
+  background-color: #2C384A;
+  border: 2px solid #d67355;
+  color: #d67355;
+}
+
+.btn-outline-pill#flutter{
+  background-color: #303030;
+  border: 2px solid #0f609e;
+  color: #0f609e;
+}
+
+.btn-outline-pill#flutter:hover{
+  background-color: #0f609e;
+  border: 2px solid #303030;
+  color: #303030;
+}
+
+.btn-outline-pill#javascript{
+  background-color: #323330;
+  border: 2px solid #F0DB4F;
+  color: #F0DB4F;
+}
+
+.btn-outline-pill#javascript:hover{
+  background-color: #F0DB4F;
+  border: 2px solid #323330;
+  color: #323330;
+}
+
+
+.btn-outline-pill#agile{
+  background-color: #473232;
+  border: 2px solid #dbdbdb;
+  color: #dbdbdb;
+}
+
+.btn-outline-pill#agile:hover{
+  background-color: #dbdbdb;
+  border: 2px solid #473232;
+  color: #473232;
+}
+
+.btn-outline-pill#html{
+  background-color: #bd3e1e;
+  border: 2px solid #EBEBEB;
+  color: #000000;
+}
+
+.btn-outline-pill#html:hover{
+  background-color: #000000;
+  border: 2px solid #EBEBEB;
+  color: #bd3e1e;
+}
+
+.btn-outline-pill#css{
+  background-color: #f07f23;
+  border: 2px solid #a01140;
+  color: #a01140;
+}
+
+.btn-outline-pill#css:hover{
+  background-color: #a01140;
+  border: 2px solid #f07f23;
+  color: #f07f23;
+}
+
+.btn-outline-pill#bash{
+  background-color: #540D6E;
+  border: 2px solid #29977e;
+  color: #29977e;
+}
+
+.btn-outline-pill#bash:hover{
+  background-color: #29977e;
+  border: 2px solid #540D6E;
+  color: #540D6E;
+}
+
+.btn-outline-pill#rest{
+  background-color: #342E37;
+  border: 2px solid #D2D68D;
+  color: #016c7c;
+}
+
+.btn-outline-pill#rest:hover{
+  background-color: #016c7c;
+  border: 2px solid #342E37;
+  color: #D2D68D;
+}
+
+
+.btn-outline-pill#nosql:hover{
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.btn-outline-pill#sql{
+  background-color: #387db6;
+  border: 2px solid #3a3939;
+  color: #3a3939;
+}
+
+.btn-outline-pill#sql:hover{
+  background-color: #3a3939;
+  border: 2px solid #387db6;
+  color: #387db6;
+}
+
+.btn-outline-pill#docker{
+  background-color: #9395ec;
+  border: 2px solid #555353;
+  color: #555353;
+}
+
+.btn-outline-pill#docker:hover{
+  background-color: #555353;
+  border: 2px solid #9395ec;
+  color: #9395ec;
 }
 
 #unslate_co--overlayer {
