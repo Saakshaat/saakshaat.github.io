@@ -51,6 +51,11 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
+  color: #33ac66;
+}
+
+.bold_link{
+  font-weight: 600;
 }
 
 a, a:hover {
