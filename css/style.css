@@ -62,6 +62,20 @@ a, a:hover {
   font-weight: 900;
 }
 
+
+.current-positions li {
+  list-style-type: square;
+  color: rgba(255, 255, 255, 0.836);
+  margin-top: 0.4em;
+  margin-bottom: 0.3em;
+  font-size: inherit;
+}
+
+.monospace-emphasis {
+  font-weight: 500;
+  background-color: rgba(32, 114, 110, 0.733);
+}
+
 .unslate_co--site-inner {
   margin-bottom: 400px;
   position: relative;
