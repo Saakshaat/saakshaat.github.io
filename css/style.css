@@ -57,6 +57,11 @@ a, a:hover {
   text-decoration: none !important;
 }
 
+.bold_link {
+  color: rgb(41, 136, 131);
+  font-weight: 900;
+}
+
 .unslate_co--site-inner {
   margin-bottom: 400px;
   position: relative;
