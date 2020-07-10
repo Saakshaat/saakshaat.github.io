@@ -176,7 +176,8 @@ a, a:hover {
 
 .skill{
   font-size: large;
-  margin: 0.3em;
+  margin: 0.7em;
+  margin-bottom: 1.7em;
 }
 
 .btn-outline-pill#cpp{
