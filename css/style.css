@@ -94,6 +94,27 @@ a, a:hover {
   font-weight: bolder;
 }
 
+.txt-rotate {
+  color: rgba(211, 32, 70, 0.87);
+}
+
+#cursor {
+  color: #40c37d;
+  animation: blink-animation 01.2s steps(4, start) infinite;
+  -webkit-animation: blink-animation 1.2s steps(4, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 .unslate_co--footer {
   position: fixed !important;
   width: 100%;
