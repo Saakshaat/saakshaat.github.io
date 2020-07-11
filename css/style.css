@@ -104,6 +104,12 @@ a, a:hover {
   -webkit-animation: blink-animation 1s steps(4, start) infinite;
 }
 
+.footer-typewriter {
+  color: rgba(255, 253, 253, 0.829);
+  font-size: large;
+  font-family: monospace;
+}
+
 @keyframes blink-animation {
   to {
     visibility: hidden;
