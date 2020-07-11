@@ -95,13 +95,19 @@ a, a:hover {
 }
 
 .txt-rotate {
-  color: rgba(211, 32, 70, 0.87);
+  color: rgba(248, 34, 80, 0.932);
 }
 
 #cursor {
   color: #40c37d;
-  animation: blink-animation 01.2s steps(4, start) infinite;
-  -webkit-animation: blink-animation 1.2s steps(4, start) infinite;
+  animation: blink-animation 1s steps(4, start) infinite;
+  -webkit-animation: blink-animation 1s steps(4, start) infinite;
+}
+
+.footer-typewriter {
+  color: rgba(255, 253, 253, 0.829);
+  font-size: large;
+  font-family: monospace;
 }
 
 @keyframes blink-animation {
