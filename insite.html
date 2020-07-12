@@ -125,8 +125,8 @@
                   </div>
                   <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="detail-v1">
-                      <span class="detail-label">Visit</span>
-                      <span class="detail-val"><a href="https://github.com/Saakshaat/sahayak">Github</a></span>
+                      <span class="detail-label">When</span>
+                      Summer 2020 Internship
                     </div>
                   </div>
                 </div>
@@ -136,15 +136,26 @@
                   <span class='monospace-emphasis'>Integrating STEM into Transition Education</span> for Incarcerated Learners (INSITE) is an <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920550' class='bold_link'>NSF grant</a> to the <a href='https://www.umass.edu/education/center/youth-engagement' class='bold_link'>Center for Youth Engagement</a> that involves an online, Appbook based curriculum for incarcerated members of a juvenile facility in Arizona.
                   <br><br>
                   Our aim is to 
+                  <ul class='current-positions'>
+                    <li>
+                      advance the capacity of juvenile justice systems and teachers within that system to provide STEM learning
+                    </li>
+                    <li>
+                      build STEM career knowledge, competencies, and readiness for incarcerated youth
+                    </li>
+                    <li>increase involvement of employers in STEM learning in juvenile corrections settings</li>
+                    <li>promote STEM employment of previously incarcerated youth.</li>
+                  </ul>
                 </p>
               </div>
               <div class="col-md-6 pl-md-5">
                 <p>
-                  work
+                  Our server is hosted through an AWS RDS instance. Given our request structure and data needs, we went with <a href='https://fastapi.tiangolo.com/' class='bold_link'>FastAPI</a> with a <a href='https://www.sqlalchemy.org/' class='bold_link'>SQLAlchemy</a> ORM and <a href='https://pydantic-docs.helpmanual.io/' class='bold_link'>Pydantic</a> schemas for data validation.
                   <br><br>
-                  more work
+                  As the primary backend developer, I developed the database models, attached them to mulitple inbound and outbound schemas and routed everything through FastAPI routes. I also facilitated auth solutions by hashing and salting user credentials using <a href="https://passlib.readthedocs.io/en/stable/" class='bold_link'>Passlib</a>, JWTs, protecting all routes and mandating role-based permissions.
                   <br><br>
-                  weekend
+                  Our data models were very complex, requiring varying levels of <span class='monospace-emphasis'>relationships and polymorphism</span>. This project was also a good layer into method abstractions for factoring code.
+                  The whole application was developed in a Test Driven Development environment and currently runs in different docker containers.
                 </p>
               </div>
             </div>
