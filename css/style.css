@@ -187,23 +187,7 @@ a, a:hover {
 }
 
 #limmy p{
-  color: rgb(59, 59, 59);
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  z-index: -1;
-}
-
-#limmy p a{
-  color: rgb(59, 59, 59);
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  z-index: -1;
+  font-size: 0.4em;
 }
 
 .btn-outline-pill#cpp{
