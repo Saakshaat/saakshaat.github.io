@@ -57,6 +57,28 @@ a, a:hover {
   text-decoration: none !important;
 }
 
+#theme-button {
+  /* background-color: white; */
+  color: #40c37d;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-select: none;
+  -ms-user-select: none;
+  margin-left: 5em;
+  align-content: center;
+}
+
+@media (max-width: 767.98px) {
+  #theme-button {
+    margin-left: 50%;
+    background-color: black;
+  }
+}
+
+.change-theme {
+  filter: invert(1) hue-DeviceRotationRate(180deg);
+}
+
 .bold_link {
   color: rgb(41, 136, 131);
   font-weight: 900;

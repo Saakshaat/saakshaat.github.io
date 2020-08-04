@@ -9,6 +9,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="html, css, javascript, jquery">
   <meta name="author" content="">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
   <link rel="stylesheet" href="css/vendor/icomoon/style.css">
   <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
@@ -79,6 +80,10 @@
                     <li><a href="index.html#expertise-section" class="nav-link">Expertise</a></li>
                     <li><a href="index.html#skills-section" class="nav-link">Skills</a></li>
                     <li><a href="index.html#contact-section" class="nav-link">Contact</a></li>
+                  </ul>
+
+                  <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                    <li><a onclick="change_theme()" id="theme-button"><i class='far fa-sun' style='font-size:1.5em'></i></a></li>
                   </ul>
     
                   <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
@@ -219,7 +224,20 @@
   <script src="js/scripts-dist.js"></script>
   <script src="js/main.js"></script>
   <script src="js/typewriter.js"></script>
+  <script>
+    function change_theme() {
 
+      if(document.theme == undefined || document.theme == 'dark') {
+        document.theme = 'light'
+        document.documentElement.style.filter = 'invert(1)';
+        // document.getElementsByClassName("theme-button").innerHTML = "Dark";
+      } else if (document.theme == 'light') {
+        document.theme = 'dark'
+        document.documentElement.style.filter = 'invert(0)';
+        // document.getElementById("theme-button").innerHTML = "Light";
+      }
+    }
+  </script>
   
 </body>
 
