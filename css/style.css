@@ -225,6 +225,18 @@ a, a:hover {
   color: rgb(206, 204, 204)
 }
 
+.btn-outline-pill#terraform{
+  background-color: rgb(98,60,228);
+  border: 2px solid rgb(206,206,206);
+  color: rgb(206,206,206)
+}
+
+.btn-outline-pill#terraform:hover{
+  background-color: rgb(206,206,206);
+  border: 2px solid rgb(98,60,228);
+  color: rgb(98,60,228);
+}
+
 .btn-outline-pill#python{
   background-color: #e2bc30;
   border: 2px solid #204868;
