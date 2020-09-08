@@ -333,6 +333,18 @@ a, a:hover {
   color: #303030;
 }
 
+.btn-outline-pill#typescript{
+  background-color: #007acc;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline-pill#typescript:hover{
+  background-color: #ffffff;
+  border: 2px solid#007acc;
+  color: #007acc;
+}
+
 .btn-outline-pill#javascript{
   background-color: #323330;
   border: 2px solid #F0DB4F;
