@@ -225,6 +225,18 @@ a, a:hover {
   color: rgb(206, 204, 204)
 }
 
+.btn-outline-pill#terraform{
+  background-color: rgb(98,60,228);
+  border: 2px solid rgb(206,206,206);
+  color: rgb(206,206,206)
+}
+
+.btn-outline-pill#terraform:hover{
+  background-color: rgb(206,206,206);
+  border: 2px solid rgb(98,60,228);
+  color: rgb(98,60,228);
+}
+
 .btn-outline-pill#python{
   background-color: #e2bc30;
   border: 2px solid #204868;
@@ -321,6 +333,18 @@ a, a:hover {
   color: #303030;
 }
 
+.btn-outline-pill#typescript{
+  background-color: #007acc;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline-pill#typescript:hover{
+  background-color: #ffffff;
+  border: 2px solid#007acc;
+  color: #007acc;
+}
+
 .btn-outline-pill#javascript{
   background-color: #323330;
   border: 2px solid #F0DB4F;
@@ -358,16 +382,16 @@ a, a:hover {
   color: #bd3e1e;
 }
 
-.btn-outline-pill#css{
-  background-color: #f07f23;
-  border: 2px solid #a01140;
-  color: #a01140;
+.btn-outline-pill#yaml{
+  background-color: #bd3e1e;
+  border: 2px solid #EBEBEB;
+  color: #000000;
 }
 
-.btn-outline-pill#css:hover{
-  background-color: #a01140;
-  border: 2px solid #f07f23;
-  color: #f07f23;
+.btn-outline-pill#yaml:hover{
+  background-color: #000000;
+  border: 2px solid #EBEBEB;
+  color: #bd3e1e;
 }
 
 .btn-outline-pill#bash{
