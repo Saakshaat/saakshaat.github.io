@@ -1341,6 +1341,13 @@ a, a:hover {
   font-family: "Arimo", sans-serif;
 }
 
+@media (max-width: 991.98px) {
+  .portfolio-item .overlay, .blog-item .overlay {
+    visibility: visible !important;
+    opacity: 1;
+  }
+}
+
 .portfolio-item:hover .overlay, .blog-item:hover .overlay {
   opacity: 1;
   visibility: visible;
