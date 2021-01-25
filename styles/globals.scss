@@ -1,5 +1,9 @@
+@import './_variables/light-theme.scss';
+
 html,
 body {
+  background-color: $background-color-primary;
+  color: $text-color-primary;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
