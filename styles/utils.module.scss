@@ -1,5 +1,8 @@
 .mainHeader {
-  font-size: 7rem;
+  font-size: 18vh;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .centered {
@@ -22,6 +25,13 @@
 @media (max-width: 600px) {
   .mainHeader {
     width: 100%;
-    font-size: 4rem;
+    font-size: 11vh;
   }
 }
+
+@media (max-width: 300px) {
+    .mainHeader {
+      width: 100%;
+      font-size: 8vh;
+    }
+  }
