@@ -1,7 +1,32 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const name = "Saakshaat Singh";
 export const siteTitle = "**Saakshaat** Singh";
+
+export function GeneralPageLayout({ home, children, title }) {
+  return (
+    <>
+      <Head>
+        <title>{title ? title : name}</title>
+        <meta name="og:title" content={title ? title : name} />
+      </Head>
+
+      {home ? (
+        <>
+          <div>{children}</div>
+        </>
+      ) : (
+        <>
+          <div>
+            {children}
+            <Link href="/"> Back to Home </Link>
+          </div>
+        </>
+      )}
+    </>
+  )
+}
 
 export function GlobalLayout({ children }) {
   return (
@@ -20,11 +45,9 @@ export function GlobalLayout({ children }) {
         />
         <meta name="og:title" content={name} />
         <meta name="twitter:card" content="summary_large_image" />
-        <title>
-            {name}
-        </title>
+        <title>{name}</title>
       </Head>
       {children}
     </div>
-  );
+  )
 }
