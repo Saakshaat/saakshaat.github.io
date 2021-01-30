@@ -20,6 +20,9 @@ export function GlobalLayout({ children }) {
         />
         <meta name="og:title" content={name} />
         <meta name="twitter:card" content="summary_large_image" />
+        <title>
+            {name}
+        </title>
       </Head>
       {children}
     </div>
