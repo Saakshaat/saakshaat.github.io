@@ -3,10 +3,20 @@
 }
 
 .centered {
+    padding-top: 25vh;
 }
 
 .fullPage {
   height: 100vh;
+}
+
+
+.padTopMd {
+    padding-top: 3rem;
+}
+
+.highlightWhite {
+    background-color: rgb(218, 218, 218);
 }
 
 @media (max-width: 600px) {

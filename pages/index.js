@@ -1,19 +1,22 @@
 import styles from "../styles/Home.module.css";
 import utilStyles from "../styles/utils.module.scss";
 
+import Typerwriter from "../components/typewriter";
+
 import { GeneralPageLayout } from "../components/layouts";
 
 export default function Home() {
   return (
     <div>
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
-        <h1 className={`${utilStyles.mainHeader} ${utilStyles.centered} ${styles.title}`}>
-          Saakshaat Singh
-        </h1>
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <div className={utilStyles.centered}>
+          <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
+            <text className={utilStyles.highlightWhite}>Saakshaat</text> Singh
+          </h1>
+          <div className={`${styles.typewriter} ${utilStyles.padTopMd}`}>
+            <Typerwriter elements={["SWE", "Leader", "Visionary"]} />
+          </div>
+        </div>
       </div>
       <GeneralPageLayout home={true} title={"Saakshaat"}>
         <main className={styles.container}>
