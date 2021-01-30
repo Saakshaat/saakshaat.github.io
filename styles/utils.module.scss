@@ -1,0 +1,17 @@
+.mainHeader {
+  font-size: 7rem;
+}
+
+.centered {
+}
+
+.fullPage {
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .mainHeader {
+    width: 100%;
+    font-size: 4rem;
+  }
+}
