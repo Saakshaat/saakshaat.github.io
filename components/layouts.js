@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 
+import styles from "./layout.module.scss";
+
 const name = "Saakshaat Singh";
 export const siteTitle = "**Saakshaat** Singh";
 
@@ -11,21 +13,24 @@ export function GeneralPageLayout({ home, children, title }) {
         <title>{title ? title : name}</title>
         <meta name="og:title" content={title ? title : name} />
       </Head>
-
-      {home ? (
-        <>
-          <div>{children}</div>
-        </>
-      ) : (
-        <>
-          <div>
-            {children}
-            <Link href="/"> Back to Home </Link>
-          </div>
-        </>
-      )}
+      <div className={styles.container}>
+        {home ? (
+          <>
+            <div>{children}</div>
+          </>
+        ) : (
+          <>
+            <div>
+              {children}
+              <Link href="/">
+                <a className={styles.backToHome}>Back to Home</a>
+              </Link>
+            </div>
+          </>
+        )}
+      </div>
     </>
-  )
+  );
 }
 
 export function GlobalLayout({ children }) {
@@ -49,5 +54,5 @@ export function GlobalLayout({ children }) {
       </Head>
       {children}
     </div>
-  )
+  );
 }
