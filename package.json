@@ -11,6 +11,7 @@
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-rotating-text": "^1.4.1",
     "sass": "^1.32.5"
   }
 }
