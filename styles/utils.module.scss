@@ -1,3 +1,5 @@
+@import "./_variables/colors.scss";
+
 .mainHeader {
   font-size: 18vh;
   flex: 1;
@@ -10,7 +12,7 @@
 }
 
 .fullPage {
-  height: 100vh;
+  height: 100vh !important;
 }
 
 
@@ -19,7 +21,7 @@
 }
 
 .highlightWhite {
-    background-color: rgb(218, 218, 218);
+    background-color: white;
 }
 
 @media (max-width: 600px) {

@@ -8,18 +8,7 @@
 }
 
 .titleSection {
-  background-color:#0070f3;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  background-color:#005ec8;
 }
 
 .title {
@@ -36,7 +25,7 @@
 
 .typewriter {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.904);
 }
 

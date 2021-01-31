@@ -11,7 +11,7 @@ export default function Home() {
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
         <div className={utilStyles.centered}>
           <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
-            <text className={utilStyles.highlightWhite}>Saakshaat</text> Singh
+            <text className={utilStyles.highlightWhite}>Saakshaat</text> <text className={utilStyles.white}>Singh</text>
           </h1>
           <div className={`${styles.typewriter} ${utilStyles.padTopMd}`}>
             <Typerwriter elements={["SWE", "Leader", "Visionary"]} />
@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </div>
       <GeneralPageLayout home={true} title={"Saakshaat"}>
-        <main className={styles.container}>
+        <main className={`${styles.container} ${utilStyles.fullPage}`}>
           <div className={styles.grid}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h3>Documentation &rarr;</h3>
