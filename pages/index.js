@@ -21,10 +21,7 @@ export default function Home() {
               y: 0,
               opacity: 1,
             }}
-            whileHover={{
-              filter: "invert(100%)"
-            }}
-            transition={{ duration: 0.5, type: "intertia"}}
+            transition={{ duration: 0.4, type: "intertia" }}
           >
             <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
               <text className={utilStyles.highlightWhite}>Saakshaat</text>{" "}
@@ -33,11 +30,14 @@ export default function Home() {
           </motion.h1>
 
           <div className={`${styles.typewriter} ${utilStyles.padTopMd}`}>
-            <Typerwriter elements={["SWE", "Leader", "Visionary"]} />
+            <Typerwriter
+              elements={["SWE", "Leader", "Visionary"]}
+              cursorColor={"white"}
+            />
           </div>
         </div>
       </div>
-      <GeneralPageLayout home={true} title={"Saakshaat"}>
+      <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
         <main className={`${styles.container} ${utilStyles.fullPage}`}>
           <div className={styles.grid}>
             <a href="https://nextjs.org/docs" className={styles.card}>
@@ -69,6 +69,7 @@ export default function Home() {
             </a>
           </div>
         </main>
+        <div/>
       </GeneralPageLayout>
     </div>
   );

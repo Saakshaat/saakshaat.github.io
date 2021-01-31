@@ -1,9 +1,13 @@
 import styles from "./footer.module.scss";
+import utilStyles from "../styles/utils.module.scss";
+
+import Typerwriter from "./typewriter";
+
 import { AnimatedSocialIcon } from "react-animated-social-icons";
 
 export default function Footer() {
   return (
-    <footer className={styles.socialsFooter}>
+    <footer className={`${styles.socialsFooter} ${utilStyles.padTopMd}`}>
       <AnimatedSocialIcon
         brandName="github"
         url="https://github.com/saakshaat"
@@ -43,6 +47,22 @@ export default function Footer() {
         width="3em"
         animationDuration={0.2}
         style={{ padding: "3em" }}
+      />
+      <br />
+      <br />
+      <br />
+      <Typerwriter
+        className={styles.typewriter}
+        elements={[
+          "Waffles over pancakes",
+          "I'm trilingual",
+          "Benny Harvey R.I.P.",
+          "Monkey never cramp",
+          "My name means 'In the flesh'",
+          "fav color: #800080",
+          "I suck at frontend :p",
+        ]}
+        cursorColor={"black"}
       />
     </footer>
   );

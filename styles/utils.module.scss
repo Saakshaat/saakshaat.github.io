@@ -12,7 +12,11 @@
 }
 
 .fullPage {
-  height: 100vh !important;
+  min-height: 100vh !important;
+}
+
+.quarterPage {
+    height: 25vh;
 }
 
 

@@ -1,6 +1,5 @@
 .socialsFooter {
   position: relative;
-  margin-top: 3rem;
   padding-bottom: 2rem;
   flex-wrap: wrap-reverse;
   text-align: center;
@@ -8,4 +7,8 @@
 
 .socialsFooter:before {
   border-top: 1px solid black;
+}
+
+.typewriter {
+    text-align: right;
 }
