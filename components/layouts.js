@@ -2,11 +2,12 @@ import Head from "next/head";
 import Link from "next/link";
 
 import styles from "./layout.module.scss";
+import Footer from "./footer";
 
 const name = "Saakshaat Singh";
 export const siteTitle = "**Saakshaat** Singh";
 
-export function GeneralPageLayout({ home, children, title }) {
+export function GeneralPageLayout({ home, children, title, socials }) {
   return (
     <>
       <Head>
@@ -28,6 +29,9 @@ export function GeneralPageLayout({ home, children, title }) {
             </div>
           </>
         )}
+        {socials ? (
+          <Footer />
+        ) : undefined}
       </div>
     </>
   );
