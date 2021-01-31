@@ -1,6 +1,8 @@
 import styles from "../styles/Home.module.css";
 import utilStyles from "../styles/utils.module.scss";
 
+import { motion } from "framer-motion";
+
 import Typerwriter from "../components/typewriter";
 
 import { GeneralPageLayout } from "../components/layouts";
@@ -10,9 +12,26 @@ export default function Home() {
     <div>
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
         <div className={utilStyles.centered}>
-          <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
-            <text className={utilStyles.highlightWhite}>Saakshaat</text> <text className={utilStyles.white}>Singh</text>
-          </h1>
+          <motion.h1
+            initial={{
+              y: "8rem",
+              opacity: 0,
+            }}
+            animate={{
+              y: 0,
+              opacity: 1,
+            }}
+            whileHover={{
+              filter: "invert(100%)"
+            }}
+            transition={{ duration: 0.5, type: "intertia"}}
+          >
+            <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
+              <text className={utilStyles.highlightWhite}>Saakshaat</text>{" "}
+              <text className={utilStyles.white}>Singh</text>
+            </h1>
+          </motion.h1>
+
           <div className={`${styles.typewriter} ${utilStyles.padTopMd}`}>
             <Typerwriter elements={["SWE", "Leader", "Visionary"]} />
           </div>
