@@ -3,25 +3,35 @@ import utilStyles from "../styles/utils.module.scss";
 
 import { motion } from "framer-motion";
 
-import Typerwriter from "../components/typewriter";
+import getIntrodutionData from "../lib/introduction";
 
 import { GeneralPageLayout } from "../components/layouts";
+import Gigs from "../components/cards/gigs";
+import Typerwriter from "../components/typewriter";
 
-export default function Home() {
+export async function getStaticProps() {
+  const introData = await getIntrodutionData();
+
+  return {
+    props: {
+      introData,
+    },
+  };
+}
+
+export default function Home({ introData }) {
   return (
     <div>
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
         <div className={utilStyles.centered}>
           <motion.h1
             initial={{
-              y: "8rem",
               opacity: 0,
             }}
             animate={{
-              y: 0,
               opacity: 1,
             }}
-            transition={{ duration: 0.4, type: "intertia" }}
+            transition={{ duration: 1, type: "intertia" }}
           >
             <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
               <text className={utilStyles.highlightWhite}>Saakshaat</text>{" "}
@@ -38,38 +48,13 @@ export default function Home() {
         </div>
       </div>
       <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
-        <main className={`${styles.container} ${utilStyles.fullPage}`}>
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
-
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h3>Learn &rarr;</h3>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-
-            <a
-              href="https://github.com/vercel/next.js/tree/master/examples"
-              className={styles.card}
-            >
-              <h3>Examples &rarr;</h3>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
-
-            <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-            >
-              <h3>Deploy &rarr;</h3>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
-          </div>
-        </main>
-        <div/>
+        <div className={`${styles.container} ${utilStyles.fullPage}`}>
+          <h2 className={utilStyles.sectionHeader}>Who Am I?</h2>
+          {/* profile picturerep */}
+          <h3 className={utilStyles.subTitle}>What am I doing?</h3>
+          <Gigs gigs={introData} />
+        </div>
+        <div />
       </GeneralPageLayout>
     </div>
   );
