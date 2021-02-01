@@ -1,0 +1,14 @@
+.container {
+  flex: 2;
+  padding: 1rem;
+  display: inline-flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-content: center;
+}
+
+
+//**CARDS**//
+.compactCard {
+  padding: 2rem;
+}

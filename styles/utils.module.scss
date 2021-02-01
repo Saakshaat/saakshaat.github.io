@@ -3,8 +3,17 @@
 .mainHeader {
   font-size: 18vh;
   flex: 1;
+  flex-wrap: wrap-reverse;
+}
+
+.sectionHeader{
+  font-size: 12vh; 
+  flex: 1;
   flex-direction: column;
-  overflow: hidden;
+}
+
+.subTitle {
+  font-size: 7vh; 
 }
 
 .centered {
@@ -29,11 +38,23 @@
     width: 100%;
     font-size: 11vh;
   }
+  .sectionHeader {
+    font-size: 9vh; 
+  }
+  .subTitle {
+    font-size: 5vh; 
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .mainHeader {
       width: 100%;
       font-size: 8vh;
+    }
+    .sectionHeader {
+      font-size: 7vh; 
+    }
+    .subTitle {
+      font-size: 4vh; 
     }
   }

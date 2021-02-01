@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import getIntrodutionData from "../lib/introduction";
 
 import { GeneralPageLayout } from "../components/layouts";
-import Gigs from "../components/cards/gigs";
+import Gigs from "../components/groups/gigs";
 import Typerwriter from "../components/typewriter";
 
 export async function getStaticProps() {
