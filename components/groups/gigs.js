@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Image from "next/image";
 
 import ModalCard from "../cards/modal";
@@ -14,7 +13,6 @@ export default function GigsBlock({ gigs }) {
             {[
               <div className={styles.compactCard}>
                 <Image
-                  // onClick={() => setOpened(true)}
                   src={logo}
                   width={150}
                   height={150}
