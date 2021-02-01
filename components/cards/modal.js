@@ -30,17 +30,7 @@ export default function ModalCard({ layoutId, children }) {
   return (
     <AnimatePresence layoutId={layoutId}>
       {isOpened ? (
-        <motion.div
-          ref={node}
-          onClick={() => setOpened(false)}
-          variants={backdrop}
-          initial="hidden"
-          animate="visible"
-          transition={{
-            duration: 0.2,
-            ease: "easeInOut",
-          }}
-        >
+        <motion.div ref={node} onClick={() => setOpened(false)}>
           {open}
         </motion.div>
       ) : (

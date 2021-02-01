@@ -7,8 +7,36 @@
   align-content: center;
 }
 
-
 //**CARDS**//
 .compactCard {
   padding: 2rem;
+}
+
+.expandedCard {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  max-width: 80%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  width: 50rem;
+  height: 30rem;
+  transform: translate(-50%, -50%);
+  & {
+    background-blend-mode: blur(80%);
+  }
+}
+
+@media (max-width: 600px) {
+  .expandedCard {
+    width: 40rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .expandedCard {
+    width: 40rem;
+    height: 30rem;
+  }
 }

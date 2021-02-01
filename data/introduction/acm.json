@@ -2,6 +2,7 @@
     "position": "Chair",
     "organization": "UMass Association for Computing Machinery",
     "logo": "/images/logos/umass-acm.png",
-    "backgroundColor": "red",
+    "color": "white",
+    "backgroundColor": "rgba(192, 0, 0, 0.897)",
     "description": "I'm currently leading the largest student tech group in Western Massachusetts, overlooking 6 clubs, 2 teams and 40 officers."
 }

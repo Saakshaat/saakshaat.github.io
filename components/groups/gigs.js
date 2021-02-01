@@ -9,25 +9,57 @@ export default function GigsBlock({ gigs }) {
   return (
     <div className={styles.container}>
       {gigs.map(
-        ({ position, organization, logo, description, backgroundColor }) => (
+        ({
+          position,
+          organization,
+          logo,
+          description,
+          color,
+          backgroundColor,
+        }) => (
           <ModalCard layoutId={"gigs"}>
             {[
-              <div className={styles.compactCard}>
+              <motion.div
+                className={styles.compactCard}
+                initial={{
+                  scale: 1,
+                }}
+                whileTap={{
+                  scale: ["1.3", "1.5", "1.8", "2"],
+                  // rotate: ["90%", "180%", "270%", "260%"]
+                }}
+                transition={{
+                  duration: 3,
+                }}
+              >
                 <Image
                   src={logo}
                   width={150}
                   height={150}
                   alt={`Picture of ${organization}`}
                 />
-              </div>,
-              <div
+              </motion.div>,
+              <motion.div
                 className={styles.expandedCard}
-                style={{ backgroundColor: backgroundColor }}
+                intial={{
+                  display: "none",
+                  backgroundColor: "inherit",
+                }}
+                animate={{
+                  backgroundColor: backgroundColor,
+                  display: "block",
+                  color: color,
+                }}
+                transition={{
+                  delay: 2,
+                  type: "spring",
+                  ease: "easeInOut",
+                }}
               >
                 {organization} @ {position}
                 <br />
                 {description}
-              </div>,
+              </motion.div>,
             ]}
           </ModalCard>
         )

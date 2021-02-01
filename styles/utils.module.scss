@@ -33,6 +33,10 @@
     padding-top: 3rem;
 }
 
+@function blurBackground(){
+  @return map-get(map-get($theme-colors, $theme), $name);
+}
+
 @media (max-width: 600px) {
   .mainHeader {
     width: 100%;
