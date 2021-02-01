@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import styles from "./modal.module.scss";
@@ -11,7 +12,8 @@ const backdrop = {
   },
 };
 
-export default function ModalCard({ isOpened, setOpened, key, children }) {
+export default function ModalCard({ key, children }) {
+  const [isOpened, setOpened] = useState(false);
   const closed = children.length > 1 ? children[0] : null;
   const open = children.length > 1 ? children[1] : children[0];
   console.log(`
@@ -28,14 +30,14 @@ export default function ModalCard({ isOpened, setOpened, key, children }) {
           initial="hidden"
           animate="visible"
           transition={{
-              duration: 0.2,
-              ease: "easeInOut"
+            duration: 0.2,
+            ease: "easeInOut",
           }}
         >
           {open}
         </motion.div>
       ) : (
-        { ...closed }
+        <motion.div onClick={() => setOpened(true)}>{closed}</motion.div>
       )}
       {/* {isOpened ? (
         <motion.div onClick={() => setOpened(false)}>{open}</motion.div>
