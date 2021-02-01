@@ -12,17 +12,13 @@ const backdrop = {
   },
 };
 
-export default function ModalCard({ key, children }) {
+export default function ModalCard({ layoutId, children }) {
   const [isOpened, setOpened] = useState(false);
   const closed = children.length > 1 ? children[0] : null;
   const open = children.length > 1 ? children[1] : children[0];
-  console.log(`
-    open: ${open},
-    closed: ${closed},
-    isOpened: ${isOpened}
-  `);
+
   return (
-    <AnimatePresence key={key}>
+    <AnimatePresence layoutId={layoutId}>
       {isOpened ? (
         <motion.div
           onClick={() => setOpened(false)}

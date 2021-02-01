@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import ModalCard from "../cards/modal";
 
@@ -9,7 +10,7 @@ export default function GigsBlock({ gigs }) {
     <div className={styles.container}>
       {gigs.map(
         ({ position, organization, logo, description, backgroundColor }) => (
-          <ModalCard key={logo}>
+          <ModalCard layoutId={"gigs"}>
             {[
               <div className={styles.compactCard}>
                 <Image
@@ -19,7 +20,10 @@ export default function GigsBlock({ gigs }) {
                   alt={`Picture of ${organization}`}
                 />
               </div>,
-              <div className={styles.expandedCard}>
+              <div
+                className={styles.expandedCard}
+                style={{ backgroundColor: backgroundColor }}
+              >
                 {organization} @ {position}
                 <br />
                 {description}
