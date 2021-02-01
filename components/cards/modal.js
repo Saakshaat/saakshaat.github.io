@@ -39,11 +39,6 @@ export default function ModalCard({ key, children }) {
       ) : (
         <motion.div onClick={() => setOpened(true)}>{closed}</motion.div>
       )}
-      {/* {isOpened ? (
-        <motion.div onClick={() => setOpened(false)}>{open}</motion.div>
-      ) : (
-        { closed }
-      )} */}
     </AnimatePresence>
   );
 }
