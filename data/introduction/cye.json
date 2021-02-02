@@ -3,6 +3,6 @@
     "organization": "Center for Youth Engagement",
     "logo": "/images/logos/cye.png",
     "color": "gray",
-    "backgroundColor": "rgba(255, 192, 203, 0.897)",
+    "backgroundColor": "#ffc0cb",
     "description": "CYE is an NSF research organization helping undeserved and at-risk youth through technology. As a backend engineer, I develop servers, provision cloud resources and rick roll everyone."
 }

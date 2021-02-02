@@ -22,14 +22,16 @@ export default function GigsBlock({ gigs }) {
               <motion.div
                 className={styles.compactCard}
                 initial={{
+                  x: 0,
                   scale: 1,
+                  rotation: 0,
                 }}
                 whileTap={{
-                  scale: ["1.3", "1.5", "1.8", "2"],
-                  // rotate: ["90%", "180%", "270%", "260%"]
+                  scale: 1.5,
                 }}
                 transition={{
-                  duration: 3,
+                  duration: "0.7",
+                  type: "intertia",
                 }}
               >
                 <Image
@@ -42,23 +44,38 @@ export default function GigsBlock({ gigs }) {
               <motion.div
                 className={styles.expandedCard}
                 intial={{
-                  display: "none",
                   backgroundColor: "inherit",
                 }}
                 animate={{
                   backgroundColor: backgroundColor,
-                  display: "block",
                   color: color,
                 }}
+                style={{
+                  // boxShadow: `100vh 100vh ${backgroundColor}`,
+                  backdropFilter: "blur(100%)",
+                }}
                 transition={{
-                  delay: 2,
+                  duration: "0.7",
                   type: "spring",
-                  ease: "easeInOut",
                 }}
               >
-                {organization} @ {position}
-                <br />
-                {description}
+                <div className={styles.headerGrid}>
+                  <div
+                    className={`${styles.cardLogo} ${styles.thirdGrid} ${styles.col}`}
+                  >
+                    <Image
+                      src={logo}
+                      width={80}
+                      height={80}
+                      alt={organization}
+                    />
+                  </div>
+                  <div className={`${styles.titles} ${styles.col}`}>
+                    <div className={styles.organization}>{organization}</div>
+                    <div className={styles.position}>{position}</div>
+                  </div>
+                </div>
+                <div className={styles.description}>{description}</div>
               </motion.div>,
             ]}
           </ModalCard>

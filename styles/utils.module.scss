@@ -4,20 +4,21 @@
   font-size: 18vh;
   flex: 1;
   flex-wrap: wrap-reverse;
+  overflow: hidden;
 }
 
-.sectionHeader{
-  font-size: 12vh; 
+.sectionHeader {
+  font-size: 12vh;
   flex: 1;
   flex-direction: column;
 }
 
 .subTitle {
-  font-size: 7vh; 
+  font-size: 7vh;
 }
 
 .centered {
-    padding-top: 25vh;
+  padding-top: 25vh;
 }
 
 .fullPage {
@@ -25,16 +26,15 @@
 }
 
 .quarterPage {
-    height: 25vh;
+  height: 25vh;
 }
-
 
 .padTopMd {
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
 
-@function blurBackground(){
-  @return map-get(map-get($theme-colors, $theme), $name);
+@mixin absolute-center {
+
 }
 
 @media (max-width: 600px) {
@@ -43,22 +43,22 @@
     font-size: 11vh;
   }
   .sectionHeader {
-    font-size: 9vh; 
+    font-size: 9vh;
   }
   .subTitle {
-    font-size: 5vh; 
+    font-size: 5vh;
   }
 }
 
 @media (max-width: 450px) {
-    .mainHeader {
-      width: 100%;
-      font-size: 8vh;
-    }
-    .sectionHeader {
-      font-size: 7vh; 
-    }
-    .subTitle {
-      font-size: 4vh; 
-    }
+  .mainHeader {
+    width: 100%;
+    font-size: 8vh;
   }
+  .sectionHeader {
+    font-size: 7vh;
+  }
+  .subTitle {
+    font-size: 4vh;
+  }
+}

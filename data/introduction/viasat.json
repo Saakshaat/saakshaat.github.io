@@ -3,6 +3,6 @@
     "organization": "ViaSat",
     "logo": "/images/logos/viasat.png",
     "color": "black",
-    "backgroundColor": "rgba(220, 233, 43, 0.897)",
-    "description": "I'll be joining ViaSat as a full stack intern, working in the Global Media Development team. As a full stack engineer, I'll own the end-to-end development of products from client expectations to delivery."
+    "backgroundColor": "#dce92b",
+    "description": "I'll be joining ViaSat as a full stack intern, working in the Global Media Development team.\n\nAs a full stack engineer, I'll own the end-to-end development of products from client expectations to delivery."
 }

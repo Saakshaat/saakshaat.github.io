@@ -1,3 +1,5 @@
+@import "../../styles/utils.module.scss";
+
 .container {
   flex: 2;
   padding: 1rem;
@@ -12,31 +14,85 @@
   padding: 2rem;
 }
 
-.expandedCard {
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  max-width: 80%;
-  height: auto;
-  top: 50%;
-  left: 50%;
-  width: 50rem;
-  height: 30rem;
-  transform: translate(-50%, -50%);
-  & {
-    background-blend-mode: blur(80%);
-  }
+.headerGrid {
+  display: flex;
 }
 
-@media (max-width: 600px) {
+.col {
+  flex: 1;
+}
+
+.thirdGrid {
+  max-width: 20%;
+}
+
+.expandedCard {
+  padding: 2rem;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 100;
+  position: absolute;
+  left: 0; /*added*/
+  right: 0; /*added*/
+  width: 50rem;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+.cardLogo {
+  text-align: center;
+  // top: 50%;
+  // left:50%;
+}
+
+.titles {
+  padding-bottom: 0.5rem;
+}
+
+.organization {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.position {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.1rem;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 700px) {
   .expandedCard {
     width: 40rem;
-    height: 30rem;
+  }
+  .cardLogo {
+    align-self: center;
+    justify-self: center;
+    padding: 2rem;
   }
 }
 
 @media (max-width: 450px) {
   .expandedCard {
     width: 40rem;
-    height: 30rem;
+  }
+
+  .headerGrid {
+    display: block;
+    .col,
+    .thirdGrid {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
   }
 }

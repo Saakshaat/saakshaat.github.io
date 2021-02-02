@@ -22,19 +22,35 @@ export default function ModalCard({ layoutId, children }) {
   };
   useEffect(() => {
     document.addEventListener("mousedown", handleClick);
+    // if (isOpened) {
+    //   document.body.style.overflow = "hidden";
+    // } else {
+    //   document.body.style.overflow = "unset";
+    // }
     return () => {
       document.removeEventListener("mousedown", handleClick);
     };
-  }, []);
+  }, [isOpened]);
 
   return (
     <AnimatePresence layoutId={layoutId}>
       {isOpened ? (
-        <motion.div ref={node} onClick={() => setOpened(false)}>
+        <motion.div
+          ref={node}
+          onClick={() => {
+            setOpened(false);
+          }}
+        >
           {open}
         </motion.div>
       ) : (
-        <motion.div onClick={() => setOpened(true)}>{closed}</motion.div>
+        <motion.div
+          onClick={() => {
+            setOpened(true);
+          }}
+        >
+          {closed}
+        </motion.div>
       )}
     </AnimatePresence>
   );
