@@ -27,11 +27,14 @@
 }
 
 .expandedCard {
+  background-color: rgba(0, 0, 0, 0.377);
+  background-blend-mode: exclusion;
+  backdrop-filter: blur(20px);
   padding: 2rem;
   max-width: 80%;
   margin-right: auto;
   margin-left: auto;
-  z-index: 100;
+  z-index: 1;
   position: absolute;
   left: 0; /*added*/
   right: 0; /*added*/
@@ -66,6 +69,7 @@
   padding-top: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 1.5rem;
   white-space: pre-wrap;
 }
 

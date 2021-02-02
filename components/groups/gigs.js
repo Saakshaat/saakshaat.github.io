@@ -41,42 +41,44 @@ export default function GigsBlock({ gigs }) {
                   alt={`Picture of ${organization}`}
                 />
               </motion.div>,
-              <motion.div
-                className={styles.expandedCard}
-                intial={{
-                  backgroundColor: "inherit",
-                }}
-                animate={{
-                  backgroundColor: backgroundColor,
-                  color: color,
-                }}
-                style={{
-                  // boxShadow: `100vh 100vh ${backgroundColor}`,
-                  backdropFilter: "blur(100%)",
-                }}
-                transition={{
-                  duration: "0.7",
-                  type: "spring",
-                }}
-              >
-                <div className={styles.headerGrid}>
-                  <div
-                    className={`${styles.cardLogo} ${styles.thirdGrid} ${styles.col}`}
-                  >
-                    <Image
-                      src={logo}
-                      width={80}
-                      height={80}
-                      alt={organization}
-                    />
+              <div>
+                <style jsx global>{`
+                  #__next {
+                    background-color: ${backgroundColor}
+                  }
+                `}</style>
+                <motion.div
+                  className={styles.expandedCard}
+                  intial={{
+                    backgroundColor: "inherit",
+                  }}
+                  animate={{
+                    color: `${color}`,
+                  }}
+                  transition={{
+                    duration: "0.7",
+                    type: "spring",
+                  }}
+                >
+                  <div className={styles.headerGrid}>
+                    <div
+                      className={`${styles.cardLogo} ${styles.thirdGrid} ${styles.col}`}
+                    >
+                      <Image
+                        src={logo}
+                        width={80}
+                        height={80}
+                        alt={organization}
+                      />
+                    </div>
+                    <div className={`${styles.titles} ${styles.col}`}>
+                      <div className={styles.organization}>{organization}</div>
+                      <div className={styles.position}>{position}</div>
+                    </div>
                   </div>
-                  <div className={`${styles.titles} ${styles.col}`}>
-                    <div className={styles.organization}>{organization}</div>
-                    <div className={styles.position}>{position}</div>
-                  </div>
-                </div>
-                <div className={styles.description}>{description}</div>
-              </motion.div>,
+                  <div className={styles.description}>{description}</div>
+                </motion.div>
+              </div>,
             ]}
           </ModalCard>
         )
