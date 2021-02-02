@@ -27,9 +27,6 @@
 }
 
 .expandedCard {
-  background-color: rgba(0, 0, 0, 0.377);
-  background-blend-mode: exclusion;
-  backdrop-filter: blur(20px);
   padding: 2rem;
   max-width: 80%;
   margin-right: auto;
@@ -51,6 +48,7 @@
 
 .titles {
   padding-bottom: 0.5rem;
+  text-align: left;
 }
 
 .organization {
@@ -71,6 +69,7 @@
   padding-right: 2rem;
   padding-bottom: 1.5rem;
   white-space: pre-wrap;
+  text-align: left;
 }
 
 @media (max-width: 700px) {
@@ -97,6 +96,14 @@
       width: 100%;
       margin: 0 0 10px 0;
       text-align: center;
+      color: #f695a5e7;
     }
+  }
+  .titles {
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
   }
 }

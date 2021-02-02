@@ -1,4 +1,6 @@
-import styles from "../styles/Home.module.css";
+import Image from "next/image";
+
+import styles from "../styles/Home.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 
 import { motion } from "framer-motion";
@@ -50,9 +52,34 @@ export default function Home({ introData }) {
       <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
         <div className={`${styles.container} ${utilStyles.fullPage}`}>
           <h2 className={utilStyles.sectionHeader}>Who Am I?</h2>
-          {/* profile picturerep */}
-          <h3 className={utilStyles.subTitle}>What am I doing?</h3>
-          <Gigs gigs={introData} />
+          <div className={styles.headerGrid}>
+            <div className={`${styles.col} ${styles.introLeft}`}>
+              <h3 className={utilStyles.subTitle}>Hi, Saakshaat</h3>
+              <Image
+                className={styles.profilePicture}
+                src="/images/me.jpg"
+                width={350}
+                height={350}
+                quality={100}
+                priority={true}
+                alt={"Saakshaat Picture"}
+              />
+              <div class={styles.introDescription}>
+                People in tech usually go from being engineer to tech lead to
+                project manager. My journey started the other way around.
+                <br />
+                <br />
+                From directing a small startup project at my school to leading a
+                global team of developers in over 4 countries to engineering
+                software for research projects across the US, my experiences
+                have been nothing short of interesting.
+              </div>
+            </div>
+            <div className={styles.col}>
+              <h3 className={utilStyles.subTitle}>What am I doing?</h3>
+              <Gigs gigs={introData} />
+            </div>
+          </div>
         </div>
         <div />
       </GeneralPageLayout>

@@ -42,11 +42,6 @@ export default function GigsBlock({ gigs }) {
                 />
               </motion.div>,
               <div>
-                <style jsx global>{`
-                  #__next {
-                    background-color: ${backgroundColor}
-                  }
-                `}</style>
                 <motion.div
                   className={styles.expandedCard}
                   intial={{
@@ -54,6 +49,7 @@ export default function GigsBlock({ gigs }) {
                   }}
                   animate={{
                     color: `${color}`,
+                    backgroundColor: `${backgroundColor}`,
                   }}
                   transition={{
                     duration: "0.7",
