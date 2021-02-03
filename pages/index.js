@@ -49,7 +49,7 @@ export default function Home({ introData }) {
           </div>
         </div>
       </div>
-      
+
       <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
         <div className={`${styles.container} ${utilStyles.fullPage}`}>
           <h2 className={utilStyles.sectionHeader}>Who Am I?</h2>
@@ -69,9 +69,10 @@ export default function Home({ introData }) {
                 साक्षात \ sa-ahk-SHA-at
               </div>
               <div className={styles.introDescription}>
-                lorem ipsum of dolor sit atmet lorem ipsum of dolor sit atmetm
-                lorem ipsum of dolor sit atmet lorem ipsum of dolor sit atmet
-                lorem ipsum of dolor sit atmet
+                I like solving problems. Small problems, like this website. Big
+                problems like cloud provisioning. Not too big problems like
+                packaging software. Occasionally, I like beewatching, reading to
+                my dogs and eating mac n cheese.
               </div>
             </div>
             <div className={`${styles.introRight} ${styles.col}`}>
