@@ -49,33 +49,32 @@ export default function Home({ introData }) {
           </div>
         </div>
       </div>
+      
       <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
         <div className={`${styles.container} ${utilStyles.fullPage}`}>
           <h2 className={utilStyles.sectionHeader}>Who Am I?</h2>
           <div className={styles.headerGrid}>
             <div className={`${styles.col} ${styles.introLeft}`}>
-              <h3 className={utilStyles.subTitle}>Hi, Saakshaat</h3>
+              <h3 className={utilStyles.subTitle}>Hi, I'm Saak</h3>
               <Image
                 className={styles.profilePicture}
                 src="/images/me.jpg"
-                width={350}
-                height={350}
+                width={300}
+                height={300}
                 quality={100}
                 priority={true}
                 alt={"Saakshaat Picture"}
               />
-              <div class={styles.introDescription}>
-                People in tech usually go from being engineer to tech lead to
-                project manager. My journey started the other way around.
-                <br />
-                <br />
-                From directing a small startup project at my school to leading a
-                global team of developers in over 4 countries to engineering
-                software for research projects across the US, my experiences
-                have been nothing short of interesting.
+              <div className={styles.pronounciation}>
+                साक्षात \ sa-ahk-SHA-at
+              </div>
+              <div className={styles.introDescription}>
+                lorem ipsum of dolor sit atmet lorem ipsum of dolor sit atmetm
+                lorem ipsum of dolor sit atmet lorem ipsum of dolor sit atmet
+                lorem ipsum of dolor sit atmet
               </div>
             </div>
-            <div className={styles.col}>
+            <div className={`${styles.introRight} ${styles.col}`}>
               <h3 className={utilStyles.subTitle}>What am I doing?</h3>
               <Gigs gigs={introData} />
             </div>

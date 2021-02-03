@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import styles from "./modal.module.scss";
-
 const backdrop = {
   visible: {
     opacity: 1,
@@ -22,18 +20,18 @@ export default function ModalCard({ layoutId, children }) {
   };
   useEffect(() => {
     document.addEventListener("mousedown", handleClick);
-    // if (isOpened) {
-    //   document.body.style.overflow = "hidden";
-    // } else {
-    //   document.body.style.overflow = "unset";
-    // }
+    if (isOpened) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
     return () => {
       document.removeEventListener("mousedown", handleClick);
     };
   }, [isOpened]);
 
   return (
-    <AnimatePresence layoutId={layoutId}>
+    <AnimatePresence>
       {isOpened ? (
         <motion.div
           ref={node}

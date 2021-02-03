@@ -1,5 +1,4 @@
 .container {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -9,12 +8,6 @@
 
 .titleSection {
   background-color: #005ec8;
-}
-
-.title {
-  padding: 0;
-  margin: 0;
-  line-height: 1.15;
 }
 
 .title,
@@ -33,16 +26,25 @@
   padding-right: 1.5rem;
 }
 
+.introRight {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .profilePicture {
   border-radius: 100%;
+}
+
+.pronounciation {
+  padding-top: 0.5rem;
+  font-size: 1.4rem;
+  color: darkslategray;
 }
 
 .introDescription {
   padding-top: 2rem;
   font-size: 1.3rem;
-  text-justify: distribute-all-lines;
-  text-align: left;
-  max-width: 90%;
+  text-align: justify;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -54,6 +56,7 @@
 .col {
   flex: 1;
   text-align: center;
+  position: static;
 }
 
 @media (max-width: 800px) {
