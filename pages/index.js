@@ -28,12 +28,16 @@ export default function Home({ introData }) {
         <div className={utilStyles.centered}>
           <motion.h1
             initial={{
+              filter: "blur(100px)",
+              scale: 5,
               opacity: 0,
             }}
             animate={{
+              filter: ["blur(60px)", "blur(40px)", "blur(20px)", "blur(0px)"],
+              scale: [4, 3, 2, 1],
               opacity: 1,
             }}
-            transition={{ duration: 1, type: "intertia" }}
+            transition={{ duration: 0.5, type: "keyframes" }}
           >
             <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
               <text className={utilStyles.highlightWhite}>Saakshaat</text>{" "}
