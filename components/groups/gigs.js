@@ -29,6 +29,9 @@ export default function GigsBlock({ gigs }) {
                 whileTap={{
                   scale: 1.5,
                 }}
+                whileHover={{
+                  scale: 1.3,
+                }}
                 transition={{
                   duration: "0.7",
                   type: "intertia",
