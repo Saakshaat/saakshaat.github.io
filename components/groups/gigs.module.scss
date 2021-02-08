@@ -1,4 +1,4 @@
-@import "../../styles/utils.module.scss";
+@import "../../styles/_variables/colors.scss";
 
 .container {
   flex: 2;
@@ -12,6 +12,7 @@
 //**CARDS**//
 .compactCard {
   padding: 2rem;
+  border-radius: 100%;
 }
 
 .headerGrid {
@@ -38,12 +39,13 @@
   width: 50rem;
   height: auto;
   border-radius: 1.5rem;
+  color: $dark-shade;
+  background-color: rgba($brand, 0.97);
+  box-shadow: -1px -2px 7px 0.5px $dark-shade;
 }
 
 .cardLogo {
   text-align: center;
-  // top: 50%;
-  // left:50%;
 }
 
 .titles {
@@ -54,16 +56,20 @@
 .organization {
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: Roboto Slab, Helvetica, sans-serif;;
 }
 
 .position {
   padding-top: 1rem;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: bolder;
+  color: $accent-light;
+  font-family: Raleway, Helvetica, sans-serif;
 }
 
 .description {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  font-weight: bold;
   padding-top: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -102,4 +108,17 @@
   .titles {
     text-align: center;
   }
+}
+
+
+@media (max-height: 600px) {
+    .organization {
+      font-size: 1rem;
+    }
+    .position {
+      font-size: 0.9rem;
+    }
+    .description {
+      font-size: 0.8rem;
+    }
 }

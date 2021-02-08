@@ -12,8 +12,8 @@ export default function Footer() {
         brandName="github"
         url="https://github.com/saakshaat"
         animation="grow"
-        defaultColor="#bd2c00"
-        hoverColor="black"
+        defaultColor="#f8f8f8"
+        hoverColor="#c39ea0"
         width="3em"
         animationDuration={0.2}
         style={{ padding: "3em" }}
@@ -23,7 +23,7 @@ export default function Footer() {
         url="https://linkedin.com/in/saakshaat"
         animation="grow"
         defaultColor="#0e76a8"
-        hoverColor="black"
+        hoverColor="#c39ea0"
         width="3em"
         animationDuration={0.2}
         style={{ padding: "3em" }}
@@ -33,7 +33,7 @@ export default function Footer() {
         url="https://www.instagram.com/icog_pizza/"
         animation="grow"
         defaultColor="#bc2a8d"
-        hoverColor="black"
+        hoverColor="#c39ea0"
         width="3em"
         animationDuration={0.2}
         style={{ padding: "3em" }}
@@ -43,7 +43,7 @@ export default function Footer() {
         url="https://www.facebook.com/saakshaat.sama"
         animation="grow"
         defaultColor="#3b5998"
-        hoverColor="black"
+        hoverColor="#c39ea0"
         width="3em"
         animationDuration={0.2}
         style={{ padding: "3em" }}
@@ -51,19 +51,23 @@ export default function Footer() {
       <br />
       <br />
       <br />
-      <Typerwriter
-        className={styles.typewriter}
-        elements={[
-          "Waffles over pancakes",
-          "I'm trilingual",
-          "Benny Harvey R.I.P.",
-          "Monkey never cramp",
-          "My name means 'In the flesh'",
-          "fav color: #800080",
-          "I suck at frontend :p",
-        ]}
-        cursorColor={"black"}
-      />
+      <div className={styles.typewriter}>
+        <Typerwriter
+          elements={[
+            "Waffles over pancakes",
+            "I'm trilingual",
+            "Benny Harvey R.I.P.",
+            "the theme is BlackPink :p",
+            "Monkey never cramp",
+            "My name means 'In the flesh'",
+            "fav color: #800080",
+            "I suck at frontend :p",
+            "I have a hydroflask",
+            ``,
+          ]}
+          cursorColor={"white"}
+        />
+      </div>
     </footer>
   );
 }

@@ -1,4 +1,8 @@
+@import "../styles/_variables/colors.scss";
+
 .socialsFooter {
+  margin-top: 2rem;
+  background-color: $background-dark;
   position: relative;
   padding-bottom: 2rem;
   flex-wrap: wrap-reverse;
@@ -10,5 +14,5 @@
 }
 
 .typewriter {
-    text-align: right;
+  color: $light-shade;
 }
