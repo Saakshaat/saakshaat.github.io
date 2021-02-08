@@ -33,12 +33,10 @@ export default function Home({ introData }) {
           <motion.h1
             initial={{
               filter: "blur(100px)",
-              scale: 5,
               opacity: 0,
             }}
             animate={{
               filter: ["blur(60px)", "blur(40px)", "blur(20px)", "blur(0px)"],
-              scale: [4, 3, 2, 1],
               opacity: 1,
             }}
             transition={{ duration: 0.5, type: "keyframes" }}
