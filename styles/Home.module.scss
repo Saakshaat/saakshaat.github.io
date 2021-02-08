@@ -8,6 +8,10 @@
   justify-content: center;
   align-items: center;
 }
+ 
+.particlesCanvas {
+  position:absolute !important;
+}
 
 .titleSection {
   // background-image: url("../public/images/background-header.gif");
@@ -86,5 +90,11 @@
 
   .typewriter {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 370px) { 
+  .introDescription {
+    font-size: 1rem;
   }
 }

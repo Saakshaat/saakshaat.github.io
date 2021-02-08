@@ -5,6 +5,9 @@ import utilStyles from "../styles/utils.module.scss";
 
 import { motion } from "framer-motion";
 
+import Particles from "react-particles-js";
+import particlesConfig from "../lib/particlesConfig";
+
 import getIntrodutionData from "../lib/introduction";
 
 import { GeneralPageLayout } from "../components/layouts";
@@ -25,16 +28,15 @@ export default function Home({ introData }) {
   return (
     <div>
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
+        <Particles params={particlesConfig} canvasClassName={styles.particlesCanvas}/>
         <div className={utilStyles.centered}>
           <motion.h1
             initial={{
               filter: "blur(100px)",
-              scale: 5,
               opacity: 0,
             }}
             animate={{
               filter: ["blur(60px)", "blur(40px)", "blur(20px)", "blur(0px)"],
-              scale: [4, 3, 2, 1],
               opacity: 1,
             }}
             transition={{ duration: 0.5, type: "keyframes" }}
