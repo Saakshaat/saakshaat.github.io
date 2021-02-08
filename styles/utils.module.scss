@@ -5,16 +5,22 @@
   flex: 1;
   flex-wrap: wrap-reverse;
   overflow: hidden;
+  font-family: Work Sans, Helvetica;
+  color: $accent-light;
 }
 
 .sectionHeader {
   font-size: 12vh;
   flex: 1;
   flex-direction: column;
+  color: $brand;
+  font-family: Heebo;
 }
 
 .subTitle {
+  color: $dark-shade;
   font-size: 7vh;
+  font-family: Work Sans, Helvetica;
 }
 
 .centered {
@@ -33,11 +39,15 @@
   padding-top: 3rem;
 }
 
+.highlightWhite {
+  color: $background-dark;
+  background-color: $accent-light;
+}
 
-@media (max-width: 600px) {
+@media (max-width: 770px) {
   .mainHeader {
     width: 100%;
-    font-size: 11vh;
+    font-size: 13vh;
   }
   .sectionHeader {
     font-size: 9vh;
@@ -50,7 +60,7 @@
 @media (max-width: 450px) {
   .mainHeader {
     width: 100%;
-    font-size: 8vh;
+    font-size: 9vh;
   }
   .sectionHeader {
     font-size: 7vh;

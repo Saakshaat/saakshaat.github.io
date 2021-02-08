@@ -1,4 +1,7 @@
+@import "./_variables/colors.scss";
+
 .container {
+  color: $background-dark;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -7,7 +10,10 @@
 }
 
 .titleSection {
-  background-color: #005ec8;
+  // background-image: url("../public/images/background-header.gif");
+  background-size: cover;
+  background-position: center;
+  background-color: $background-dark;
 }
 
 .title,
@@ -16,9 +22,9 @@
 }
 
 .typewriter {
+  color: $white;
   line-height: 1.5;
   font-size: 2rem;
-  color: rgba(255, 255, 255, 0.904);
 }
 
 .introLeft {
@@ -32,21 +38,27 @@
 }
 
 .profilePicture {
-  border-radius: 100%;
+  border-radius: 2rem;
+  background-color: #f0dada;
 }
 
 .pronounciation {
-  padding-top: 0.5rem;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
   font-size: 1.4rem;
-  color: darkslategray;
+  color: $brand;
 }
 
 .introDescription {
-  padding-top: 2rem;
+
+  color: $dark-shade;
+  background-color: $accent-light;
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   font-size: 1.3rem;
   text-align: justify;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .headerGrid {
@@ -68,6 +80,11 @@
       width: 100%;
       margin: 0 0 10px 0;
       text-align: center;
+      padding-bottom: 2rem;
     }
+  }
+
+  .typewriter {
+    font-size: 1.5rem;
   }
 }

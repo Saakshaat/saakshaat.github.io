@@ -51,8 +51,8 @@ export default function GigsBlock({ gigs }) {
                     backgroundColor: "inherit",
                   }}
                   animate={{
-                    color: `${color}`,
-                    backgroundColor: `${backgroundColor}`,
+                    // color: `${color}`,
+                    // backgroundColor: `${backgroundColor}`,
                   }}
                   transition={{
                     duration: "0.7",

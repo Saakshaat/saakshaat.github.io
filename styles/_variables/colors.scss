@@ -1,16 +1,16 @@
-.default {
-    color: pink;
-}
+$background-dark: #000000;
+$accent-dark: #fa255e;
+$brand: #c39ea0;
+$accent-light: #f8e5e5;
+$light-shade: #c5c6c7;
+$dark-shade: #806567;
+$white: #c5c6c7;
+$black: #1b1e25;
 
 .white {
-    color: white;
+  color: $light-shade;
 }
 
 .black {
-    color: black;
-}
-
-
-.highlightWhite {
-    background-color: white;
+  color: $dark-shade;
 }

@@ -41,11 +41,11 @@ export default function Home({ introData }) {
           >
             <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
               <text className={utilStyles.highlightWhite}>Saakshaat</text>{" "}
-              <text className={utilStyles.white}>Singh</text>
+              <text>Singh</text>
             </h1>
           </motion.h1>
 
-          <div className={`${styles.typewriter} ${utilStyles.padTopMd}`}>
+          <div className={`${styles.typewriter}`}>
             <Typerwriter
               elements={["SWE", "Leader", "Visionary"]}
               cursorColor={"white"}
@@ -62,7 +62,7 @@ export default function Home({ introData }) {
               <h3 className={utilStyles.subTitle}>Hi, I'm Saak</h3>
               <Image
                 className={styles.profilePicture}
-                src="/images/me.jpg"
+                src="/images/me.png"
                 width={300}
                 height={300}
                 quality={100}
@@ -72,12 +72,23 @@ export default function Home({ introData }) {
               <div className={styles.pronounciation}>
                 साक्षात \ sa-ahk-SHA-at
               </div>
-              <div className={styles.introDescription}>
+              <motion.div
+                className={styles.introDescription}
+                initial={{
+                  boxShadow: "1px 1px 5px 0.5px rgba(0, 0, 0, 0.5)",
+                }}
+                whileHover={{
+                  boxShadow: "-1px -1px 5px 0.5px rgba(0, 0, 0, 0.5)",
+                }}
+                whileTap={{
+                  boxShadow: "-1px -1px 5px 0.5px rgba(0, 0, 0, 0.5)",
+                }}
+              >
                 I like solving problems. Small problems, like this website. Big
                 problems like cloud provisioning. Not too big problems like
                 packaging software. Occasionally, I like beewatching, reading to
                 my dogs and eating mac n cheese.
-              </div>
+              </motion.div>
             </div>
             <div className={`${styles.introRight} ${styles.col}`}>
               <h3 className={utilStyles.subTitle}>What am I doing?</h3>
