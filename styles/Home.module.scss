@@ -92,3 +92,9 @@
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 370px) { 
+  .introDescription {
+    font-size: 1rem;
+  }
+}
