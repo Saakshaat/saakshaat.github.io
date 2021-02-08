@@ -53,6 +53,26 @@ export function GlobalLayout({ children }) {
         />
         <meta name="og:title" content={name} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap"
+          rel="stylesheet"
+          key="google-font-assistant"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+          rel="stylesheet"
+          key="google-font-robot-slab"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap"
+          rel="stylesheet"
+          key="google-font-robot-slab"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap"
+          rel="stylesheet"
+          key="google-font-robot-slab"
+        />
         <title>{name}</title>
       </Head>
       {children}
