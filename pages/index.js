@@ -54,6 +54,7 @@ export default function Home({ introData }) {
             <Typerwriter
               elements={["SWE", "Leader", "Visionary"]}
               cursorColor={"white"}
+              speed={20}
             />
           </div>
         </div>
