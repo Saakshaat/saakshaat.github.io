@@ -9,7 +9,7 @@ export default function Typerwriter({ elements, cursorColor, speed }) {
       <ReactRotatingText
         items={elements}
         typingInterval={speed ? speed : 30}
-        deletingInterval={speed ? speed : 30}
+        deletingInterval={speed ? Number(speed/30) : 10}
         pause={1000}
         cursor={false}
       />
