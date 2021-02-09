@@ -56,7 +56,7 @@ export default function GigsBlock({ gigs }) {
                     scale: ["0.4", "0.6", "0.8", "1.0"],
                   }}
                   transition={{
-                    duration: "0.1",
+                    duration: "0.2",
                     type: "keyframes",
                   }}
                 >
