@@ -57,17 +57,18 @@ export default function Footer() {
             "Waffles over pancakes",
             "I'm trilingual",
             "Benny Harvey R.I.P.",
-            "the theme is BlackPink :p",
+            "Every integer > 1 can be represented by 2s and 3s",
             "Monkey never cramp",
             "My name means 'In the flesh'",
             "fav color: #800080",
             "I suck at frontend :p",
             "I have a hydroflask",
-            ``,
           ]}
           cursorColor={"white"}
         />
       </div>
+      <br />
+      Made with &#9829; by Saak
     </footer>
   );
 }
