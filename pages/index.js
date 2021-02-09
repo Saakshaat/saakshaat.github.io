@@ -28,7 +28,10 @@ export default function Home({ introData }) {
   return (
     <div>
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
-        <Particles params={particlesConfig} canvasClassName={styles.particlesCanvas}/>
+        <Particles
+          params={particlesConfig}
+          canvasClassName={styles.particlesCanvas}
+        />
         <div className={utilStyles.centered}>
           <motion.h1
             initial={{
@@ -62,15 +65,27 @@ export default function Home({ introData }) {
           <div className={styles.headerGrid}>
             <div className={`${styles.col} ${styles.introLeft}`}>
               <h3 className={utilStyles.subTitle}>Hi, I'm Saak</h3>
-              <Image
-                className={styles.profilePicture}
-                src="/images/me.png"
-                width={300}
-                height={300}
-                quality={100}
-                priority={true}
-                alt={"Saakshaat Picture"}
-              />
+              <motion.div
+                drag
+                dragConstraints={{
+                  top: -5,
+                  left: -5,
+                  right: 5,
+                  bottom: 5,
+                }}
+                dragMomentum={true}
+                dragElastic={0.1}
+              >
+                <Image
+                  className={styles.profilePicture}
+                  src="/images/me.png"
+                  width={300}
+                  height={300}
+                  quality={100}
+                  priority={true}
+                  alt={"Saakshaat Picture"}
+                />
+              </motion.div>
               <div className={styles.pronounciation}>
                 साक्षात \ sa-ahk-SHA-at
               </div>

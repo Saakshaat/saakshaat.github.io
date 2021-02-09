@@ -8,9 +8,9 @@
   justify-content: center;
   align-items: center;
 }
- 
+
 .particlesCanvas {
-  position:absolute !important;
+  position: absolute !important;
 }
 
 .titleSection {
@@ -42,6 +42,9 @@
 }
 
 .profilePicture {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   border-radius: 2rem;
   background-color: #f0dada;
 }
@@ -54,7 +57,6 @@
 }
 
 .introDescription {
-
   color: $dark-shade;
   background-color: $accent-light;
   border-radius: 0.4rem;
@@ -93,7 +95,7 @@
   }
 }
 
-@media (max-width: 370px) { 
+@media (max-width: 370px) {
   .introDescription {
     font-size: 1rem;
   }
