@@ -48,15 +48,16 @@ export default function GigsBlock({ gigs }) {
                 <motion.div
                   className={styles.expandedCard}
                   intial={{
-                    backgroundColor: "inherit",
+                    scale: "0.2",
                   }}
                   animate={{
                     // color: `${color}`,
                     // backgroundColor: `${backgroundColor}`,
+                    scale: ["0.4", "0.6", "0.8", "1.0"],
                   }}
                   transition={{
-                    duration: "0.7",
-                    type: "spring",
+                    duration: "0.1",
+                    type: "keyframes",
                   }}
                 >
                   <div className={styles.headerGrid}>
