@@ -7,7 +7,7 @@ import { AnimatedSocialIcon } from "react-animated-social-icons";
 
 export default function Footer() {
   return (
-    <footer className={`${styles.socialsFooter} ${utilStyles.padTopMd}`}>
+    <footer className={`${styles.socialsFooter} ${utilStyles.padTopMd} ${utilStyles.quarterPage}`}>
       <AnimatedSocialIcon
         brandName="github"
         url="https://github.com/saakshaat"
@@ -68,7 +68,9 @@ export default function Footer() {
         />
       </div>
       <br />
+      <div className={styles.signature}>
       Made with &#9829; by Saak
+      </div>
     </footer>
   );
 }

@@ -3,7 +3,7 @@
 .socialsFooter {
   margin-top: 2rem;
   background-color: $background-dark;
-  position: relative;
+  position: static;
   padding-bottom: 2rem;
   flex-wrap: wrap-reverse;
   text-align: center;
@@ -15,4 +15,8 @@
 
 .typewriter {
   color: $light-shade;
+}
+
+.signature {
+  font-size: 0.8rem;
 }
