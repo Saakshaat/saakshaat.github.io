@@ -1,15 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const backdrop = {
-  visible: {
-    opacity: 1,
-  },
-  hidden: {
-    opacity: 0,
-  },
-};
-
 export default function ModalCard({ children }) {
   const [isOpened, setOpened] = useState(false);
   const closed = children.length > 1 ? children[0] : null;
