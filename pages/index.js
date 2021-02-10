@@ -9,22 +9,26 @@ import Particles from "react-particles-js";
 import particlesConfig from "../lib/particlesConfig";
 
 import getIntrodutionData from "../lib/introduction";
+import getProjectData from "../lib/projects";
 
 import { GeneralPageLayout } from "../components/layouts";
 import Gigs from "../components/groups/gigs";
+import Projects from "../components/groups/projects"
 import Typerwriter from "../components/typewriter";
 
 export async function getStaticProps() {
   const introData = await getIntrodutionData();
+  const projectsData = await getProjectData();
 
   return {
     props: {
       introData,
+      projectsData
     },
   };
 }
 
-export default function Home({ introData }) {
+export default function Home({ introData, projectsData }) {
   return (
     <div>
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
@@ -117,6 +121,7 @@ export default function Home({ introData }) {
         <div />
         <div className={`${styles.container} ${styles.projectsSection} ${utilStyles.fullPage}`}>
         <h2 className={utilStyles.sectionHeader}>Projects</h2>
+        <Projects projects={projectsData}/>
         </div>
       </GeneralPageLayout>
     </div>
