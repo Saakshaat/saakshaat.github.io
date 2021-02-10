@@ -1,0 +1,28 @@
+@import "../../styles/_variables/colors.scss";
+
+.container {
+  flex: 2;
+  padding: 1rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: $accent-light;
+}
+
+.collapsedCard {
+  margin: 2rem;
+  border-radius: 5%;
+  max-width: 17rem;
+  min-height: 14rem;
+//   background-position: ;
+//   background-repeat: no-repeat;
+  backdrop-filter: blur(40rem);
+}
+
+@media (max-width: 600px) {
+  .collapsedCard {
+    max-width: 16rem;
+    min-height: 20rem;
+  }
+}

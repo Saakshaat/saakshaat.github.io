@@ -17,7 +17,7 @@ export default function GigsBlock({ gigs }) {
           color,
           backgroundColor,
         }) => (
-          <ModalCard>
+          <ModalCard key={organization}>
             {[
               <motion.div
                 className={styles.compactCard}
