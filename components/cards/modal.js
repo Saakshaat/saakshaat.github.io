@@ -10,7 +10,7 @@ const backdrop = {
   },
 };
 
-export default function ModalCard({ layoutId, children }) {
+export default function ModalCard({ children }) {
   const [isOpened, setOpened] = useState(false);
   const closed = children.length > 1 ? children[0] : null;
   const open = children.length > 1 ? children[1] : children[0];
