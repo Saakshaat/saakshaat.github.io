@@ -11,7 +11,7 @@
 }
 
 .collapsedCard {
-  margin: 2rem;
+  margin: 1.5rem;
   border-radius: 5%;
   max-width: 14rem;
   min-height: 16rem;
@@ -38,7 +38,8 @@
 
 @media (max-width: 600px) {
   .collapsedCard {
-    max-width: 16rem;
+    max-width: 18rem;
+    width: 17rem;
     min-height: 20rem;
   }
 }

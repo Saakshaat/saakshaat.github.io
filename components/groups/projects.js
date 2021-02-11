@@ -15,7 +15,6 @@ export default function Projects({ projects }) {
                 className={styles.collapsedCard}
                 style={{
                   backgroundImage: `url(${image})`,
-                  backdropFilter: "blur(20px)",
                 }}
                 initial={{
                   backgroundSize: "100%",
