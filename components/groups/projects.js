@@ -39,26 +39,39 @@ export default function Projects({ projects }) {
                   <div className={styles.collapsedBrief}>{brief}</div>
                   <div className={styles.tags}>
                     {tags.map((tag) => (
-                      <SkillChip skill={tag} size={5} />
+                      <SkillChip skill={tag} size={4} />
                     ))}
                   </div>
                 </div>
               </motion.div>,
-              <div className={styles.expandedCard}>
+              <motion.div
+                className={styles.expandedCard}
+                initial={{
+                  boxShadow: "none",
+                }}
+                animate={{
+                  boxShadow: "0px 0px 100rem 100rem rgba(0, 0, 0, 0.8)",
+                }}
+                transition={{
+                  duration: "0",
+                }}
+              >
                 <div className={styles.expandedName}>{name}</div>
                 <div className={styles.expandedBrief}>{brief}</div>
                 <div className={styles.exapandedTags}>
                   <div className={styles.tags}>
                     {tags.map((tag) => (
-                      <SkillChip skill={tag} size={6} />
+                      <SkillChip skill={tag} size={5} />
                     ))}
                   </div>
                 </div>
                 <div className={styles.expandedDescription}>{description}</div>
                 <div className={styles.expandedLink}>
-                  <a href={link}>&#128279;</a>
+                  <a href={link} target={"blank"}>
+                    Visit
+                  </a>
                 </div>
-              </div>,
+              </motion.div>,
             ]}
           </ModalCard>
         );

@@ -27,13 +27,13 @@ export default function GigsBlock({ gigs }) {
                   rotation: 0,
                 }}
                 whileTap={{
-                  scale: 1.5,
+                  scale: 1.1,
                 }}
                 whileHover={{
-                  scale: 1.3,
+                  scale: 1.2,
                 }}
                 transition={{
-                  duration: "0.7",
+                  duration: "0.2",
                   type: "intertia",
                 }}
               >
@@ -49,14 +49,19 @@ export default function GigsBlock({ gigs }) {
                   className={styles.expandedCard}
                   intial={{
                     scale: "0.2",
+                    boxShadow: "none",
                   }}
                   animate={{
-                    // color: `${color}`,
-                    // backgroundColor: `${backgroundColor}`,
+                    boxShadow: [
+                      "0px 0px 100rem 100rem rgba(0, 0, 0, 0.2)",
+                      "0px 0px 100rem 100rem rgba(0, 0, 0, 0.4)",
+                      "0px 0px 100rem 100rem rgba(0, 0, 0, 0.6)",
+                      "0px 0px 100rem 100rem rgba(0, 0, 0, 0.8)",
+                    ],
                     scale: ["0.4", "0.6", "0.8", "1.0"],
                   }}
                   transition={{
-                    duration: "0.2",
+                    duration: "0.1",
                     type: "keyframes",
                   }}
                 >

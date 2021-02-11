@@ -46,11 +46,10 @@
 }
 
 .expandedCard {
-  max-width: 40rem;
-  max-height: 30rem;
-  min-width: 40rem;
-  min-height: 20rem;
-  padding: 5rem;
+  max-width: 100%;
+  width: 50rem;
+  height: auto;
+  padding: 4rem;
   background-color: $brand;
   color: $black;
   border-radius: 2rem;
@@ -75,13 +74,18 @@
 }
 
 .expandedDescription {
-    padding-top: 1.5rem;
-    font-size: 1.1rem;
-    text-align: justify;
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  white-space: pre-wrap;
 }
 
 .expandedLink {
-    padding-top: 1rem;
+  padding-top: 1rem;
+}
+
+.expandedLink:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 600px) {
@@ -92,6 +96,25 @@
   }
 
   .expandedCard {
-    max-width: 8%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .expandedName {
+      line-height: 100%;
+      padding-bottom: 0.3rem;
+  }
+
+  .expandedBrief {
+    padding-bottom: 1rem;
+  }
+
+  .expandedDescription {
+    padding-bottom: 0;
+    font-size: 1.2rem;
+  }
+
+  .expandedLink {
+      text-align: left;
   }
 }

@@ -48,6 +48,16 @@ const skills = {
     backgroundColor: "#EDA895",
     image: "/images/logos/skills/ruby.png",
   },
+  Next: {
+    color: "#FFFFFF",
+    backgroundColor: "#080808",
+    image: "/images/logos/skills/next.png",
+  },
+  React: {
+    color: "#080808",
+    backgroundColor: "#61DBFB",
+    image: "/images/logos/skills/react.png",
+  },
 };
 
 export default function SkillChip({ skill, size }) {
@@ -59,14 +69,14 @@ export default function SkillChip({ skill, size }) {
         backgroundColor: `${skills[skill].backgroundColor}`,
       }}
     >
-      <div style={{ fontSize: `${Number(size/5)}rem` }}>
+      <div style={{ fontSize: `${Number(size/4)}rem` }}>
         {skill}{" "}
         {
           <Image
             className={styles.logo}
             src={skills[skill].image}
-            width={size * 2.5}
-            height={size * 2.5}
+            width={size * 3}
+            height={size * 3}
           />
         }
       </div>
