@@ -59,15 +59,17 @@ export default function SkillChip({ skill, size }) {
         backgroundColor: `${skills[skill].backgroundColor}`,
       }}
     >
-      {skill}{" "}
-      {
-        <Image
-          className={styles.logo}
-          src={skills[skill].image}
-          width={size * 2.5}
-          height={size * 2.5}
-        />
-      }
+      <div style={{ fontSize: `${Number(size/5)}rem` }}>
+        {skill}{" "}
+        {
+          <Image
+            className={styles.logo}
+            src={skills[skill].image}
+            width={size * 2.5}
+            height={size * 2.5}
+          />
+        }
+      </div>
     </div>
   );
 }

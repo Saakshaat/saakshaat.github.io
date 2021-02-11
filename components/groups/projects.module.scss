@@ -45,10 +45,53 @@
   padding-top: 1rem;
 }
 
+.expandedCard {
+  max-width: 40rem;
+  max-height: 30rem;
+  min-width: 40rem;
+  min-height: 20rem;
+  padding: 5rem;
+  background-color: $brand;
+  color: $black;
+  border-radius: 2rem;
+}
+
+.expandedName {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: Heebo;
+  color: $black;
+}
+
+.expandedBrief {
+  font-family: Work Sans, Helvetica;
+  font-size: 1.2rem;
+  color: $white;
+  padding-bottom: 1rem;
+}
+
+.exapandedTags {
+  text-align: center;
+}
+
+.expandedDescription {
+    padding-top: 1.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.expandedLink {
+    padding-top: 1rem;
+}
+
 @media (max-width: 600px) {
   .collapsedCard {
     max-width: 18rem;
     width: 17rem;
     min-height: 20rem;
+  }
+
+  .expandedCard {
+    max-width: 8%;
   }
 }

@@ -44,17 +44,20 @@ export default function Projects({ projects }) {
                   </div>
                 </div>
               </motion.div>,
-              <div>
-                {name} @ {brief}
-                <br />
-                <div className={styles.tags}>
-                  {tags.map((tag) => (
-                    <SkillChip skill={tag} size={5} />
-                  ))}
+              <div className={styles.expandedCard}>
+                <div className={styles.expandedName}>{name}</div>
+                <div className={styles.expandedBrief}>{brief}</div>
+                <div className={styles.exapandedTags}>
+                  <div className={styles.tags}>
+                    {tags.map((tag) => (
+                      <SkillChip skill={tag} size={6} />
+                    ))}
+                  </div>
                 </div>
-                <br />
-                <br />
-                {description}
+                <div className={styles.expandedDescription}>{description}</div>
+                <div className={styles.expandedLink}>
+                  <a href={link}>&#128279;</a>
+                </div>
               </div>,
             ]}
           </ModalCard>
