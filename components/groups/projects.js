@@ -13,7 +13,10 @@ export default function Projects({ projects }) {
             {[
               <motion.div
                 className={styles.collapsedCard}
-                style={{ backgroundImage: `url(${image})` }}
+                style={{
+                  backgroundImage: `url(${image})`,
+                  backdropFilter: "blur(20px)",
+                }}
                 initial={{
                   backgroundSize: "100%",
                 }}
@@ -27,9 +30,11 @@ export default function Projects({ projects }) {
                   duration: "0.2",
                 }}
               >
-                {name} @ {brief}
-                <br />
-                {tags.map((tag) => tag + " ")}
+                <div className={styles.collapsedText}>
+                  <div className={styles.collapsedName}>{name}</div>
+                  <div className={styles.collapsedBrief}>{brief}</div>
+                  {tags.map((tag) => tag + " ")}
+                </div>
               </motion.div>,
               <div>
                 {name} @ {brief}

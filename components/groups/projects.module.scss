@@ -13,11 +13,27 @@
 .collapsedCard {
   margin: 2rem;
   border-radius: 5%;
-  max-width: 17rem;
-  min-height: 14rem;
-//   background-position: ;
-//   background-repeat: no-repeat;
-  backdrop-filter: blur(40rem);
+  max-width: 14rem;
+  min-height: 16rem;
+  background-repeat: initial;
+  display: flex;
+}
+
+.collapsedText {
+  align-self: flex-end;
+  padding: 1rem;
+}
+
+.collapsedName {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  font-family: Heebo;
+  color: $white;
+}
+
+.collapsedBrief {
+    font-family:  Raleway, Helvetica;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 600px) {
