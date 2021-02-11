@@ -1,0 +1,120 @@
+@import "../../styles/_variables/colors.module.scss";
+
+.container {
+  flex: 2;
+  padding: 1rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: $accent-light;
+}
+
+.collapsedCard {
+  margin: 1.5rem;
+  border-radius: 5%;
+  max-width: 14rem;
+  width: 14rem;
+  height: 16rem;
+  min-height: 16rem;
+  background-repeat: initial;
+  display: flex;
+}
+
+.collapsedText {
+  align-self: flex-end;
+  padding: 1rem;
+}
+
+.collapsedName {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  font-family: Heebo;
+  color: $white;
+}
+
+.collapsedBrief {
+  font-family: Raleway, Helvetica;
+  font-size: 0.8rem;
+}
+
+.tags {
+  flex: 2;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
+.expandedCard {
+  max-width: 100%;
+  width: 50rem;
+  height: auto;
+  padding: 4rem;
+  background-color: $brand;
+  color: $black;
+  border-radius: 2rem;
+}
+
+.expandedName {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: Heebo;
+  color: $black;
+}
+
+.expandedBrief {
+  font-family: Work Sans, Helvetica;
+  font-size: 1.2rem;
+  color: $white;
+  padding-bottom: 1rem;
+}
+
+.exapandedTags {
+  text-align: center;
+}
+
+.expandedDescription {
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  white-space: pre-wrap;
+}
+
+.expandedLink {
+  padding-top: 1rem;
+}
+
+.expandedLink:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .collapsedCard {
+    max-width: 18rem;
+    width: 17rem;
+    min-height: 20rem;
+  }
+
+  .expandedCard {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .expandedName {
+      line-height: 100%;
+      padding-bottom: 0.3rem;
+  }
+
+  .expandedBrief {
+    padding-bottom: 1rem;
+  }
+
+  .expandedDescription {
+    padding-bottom: 0;
+    font-size: 1.2rem;
+  }
+
+  .expandedLink {
+      text-align: left;
+  }
+}

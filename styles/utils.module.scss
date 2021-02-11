@@ -1,4 +1,4 @@
-@import "./_variables/colors.scss";
+@import "./_variables/colors.module.scss";
 
 .mainHeader {
   font-size: 18vh;
@@ -20,7 +20,7 @@
 .subTitle {
   color: $dark-shade;
   font-size: 7vh;
-  font-family: Work Sans, Helvetica;
+  font-family: Helvetica;
 }
 
 .centered {

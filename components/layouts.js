@@ -66,12 +66,12 @@ export function GlobalLayout({ children }) {
         <link
           href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap"
           rel="stylesheet"
-          key="google-font-robot-slab"
+          key="google-font-work-sans"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap"
           rel="stylesheet"
-          key="google-font-robot-slab"
+          key="google-font-heebo"
         />
         <title>{name}</title>
       </Head>
