@@ -7,6 +7,6 @@
         "Rust",
         "Ruby"
     ],
-    "brief": "My own 3 shells.",
+    "brief": "My own 3 shells",
     "description": "PyNotes is a Python based CLI which can take notes directly from your terminal.\n\nThe application saves all data on a local cache with a limit of 25 notes. The user is able to add, search and delete notes with a wide array of command line options.\n\nPyNotes was built using Click and currently registered on PyPI and you can install it with `pip install py-notes` and get started with `notes`."
 }

@@ -24,11 +24,11 @@ export default function Projects({ projects }) {
                 }}
                 whileHover={{
                   backgroundSize: "120%",
-                  boxShadow: "-0.5px 0.5px 5px 0.5px rgba(255, 255, 255, 0.5)",
+                  boxShadow: `-0.5px 0.5px 5px 0.5px rgba(248, 229, 229, 0.4)`,
                 }}
                 whileTap={{
                   backgroundSize: "120%",
-                  boxShadow: "-0.5px 0.5px 5px 0.5px rgba(255, 255, 255, 0.5)",
+                  // boxShadow: "-0.5px 0.5px 5px 0.5px rgba(200, 200, 200, 0.5)",
                 }}
                 transition={{
                   duration: "0.2",
@@ -47,7 +47,11 @@ export default function Projects({ projects }) {
               <div>
                 {name} @ {brief}
                 <br />
-                {tags.map((tag) => tag + " ")}
+                <div className={styles.tags}>
+                  {tags.map((tag) => (
+                    <SkillChip skill={tag} size={5} />
+                  ))}
+                </div>
                 <br />
                 <br />
                 {description}
