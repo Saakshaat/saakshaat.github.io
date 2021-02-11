@@ -52,16 +52,11 @@ export default function GigsBlock({ gigs }) {
                     boxShadow: "none",
                   }}
                   animate={{
-                    boxShadow: [
-                      "0px 0px 100rem 100rem rgba(0, 0, 0, 0.2)",
-                      "0px 0px 100rem 100rem rgba(0, 0, 0, 0.4)",
-                      "0px 0px 100rem 100rem rgba(0, 0, 0, 0.6)",
-                      "0px 0px 100rem 100rem rgba(0, 0, 0, 0.8)",
-                    ],
-                    scale: ["0.4", "0.6", "0.8", "1.0"],
+                    boxShadow: "0px 0px 100rem 100rem rgba(0, 0, 0, 0.8)",
+                    scale: 1,
                   }}
                   transition={{
-                    duration: "0.1",
+                    duration: 0,
                     type: "keyframes",
                   }}
                 >
