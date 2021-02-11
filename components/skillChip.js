@@ -33,6 +33,21 @@ const skills = {
     backgroundColor: "#2965f1",
     image: "/images/logos/skills/css.png",
   },
+  C: {
+    color: "#ffffff",
+    backgroundColor: "#3949AB",
+    image: "/images/logos/skills/c.png",
+  },
+  Rust: {
+    color: "#281C1C",
+    backgroundColor: "#CE412B",
+    image: "/images/logos/skills/rust.png",
+  },
+  Ruby: {
+    color: "#FFFFFF",
+    backgroundColor: "#EDA895",
+    image: "/images/logos/skills/ruby.png",
+  },
 };
 
 export default function SkillChip({ skill, size }) {
@@ -49,8 +64,8 @@ export default function SkillChip({ skill, size }) {
         <Image
           className={styles.logo}
           src={skills[skill].image}
-          width={size * 2}
-          height={size * 2}
+          width={size * 2.5}
+          height={size * 2.5}
         />
       }
     </div>

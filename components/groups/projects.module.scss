@@ -1,4 +1,4 @@
-@import "../../styles/_variables/colors.scss";
+@import "../../styles/_variables/colors.module.scss";
 
 .container {
   flex: 2;
@@ -32,8 +32,15 @@
 }
 
 .collapsedBrief {
-    font-family:  Raleway, Helvetica;
-    font-size: 0.8rem;
+  font-family: Raleway, Helvetica;
+  font-size: 0.8rem;
+}
+
+.tags {
+  flex: 2;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
 }
 
 @media (max-width: 600px) {

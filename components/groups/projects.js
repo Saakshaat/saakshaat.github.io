@@ -1,7 +1,9 @@
 import styles from "./projects.module.scss";
+import themeColors from "../../styles/_variables/colors.module.scss";
 
 import { motion } from "framer-motion";
 
+import SkillChip from "../skillChip";
 import ModalCard from "../cards/modal";
 
 export default function Projects({ projects }) {
@@ -18,12 +20,15 @@ export default function Projects({ projects }) {
                 }}
                 initial={{
                   backgroundSize: "100%",
+                  boxShadow: "none",
                 }}
                 whileHover={{
                   backgroundSize: "120%",
+                  boxShadow: "-0.5px 0.5px 5px 0.5px rgba(255, 255, 255, 0.5)",
                 }}
                 whileTap={{
                   backgroundSize: "120%",
+                  boxShadow: "-0.5px 0.5px 5px 0.5px rgba(255, 255, 255, 0.5)",
                 }}
                 transition={{
                   duration: "0.2",
@@ -32,7 +37,11 @@ export default function Projects({ projects }) {
                 <div className={styles.collapsedText}>
                   <div className={styles.collapsedName}>{name}</div>
                   <div className={styles.collapsedBrief}>{brief}</div>
-                  {tags.map((tag) => tag + " ")}
+                  <div className={styles.tags}>
+                    {tags.map((tag) => (
+                      <SkillChip skill={tag} size={5} />
+                    ))}
+                  </div>
                 </div>
               </motion.div>,
               <div>
