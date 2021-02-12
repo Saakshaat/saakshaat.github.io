@@ -20,18 +20,18 @@ export default function Projects({ projects }) {
                 }}
                 initial={{
                   backgroundSize: "100%",
-                  boxShadow: "none",
+                  boxShadow: "-0.5px 0.5px 5px 0.5px rgb(0, 0, 0)",
                 }}
                 whileHover={{
                   backgroundSize: "120%",
-                  boxShadow: `-0.5px 0.5px 5px 0.5px rgba(248, 229, 229, 0.4)`,
+                  boxShadow: `0px 0px 8px 3px rgb(0, 0, 0)`,
                 }}
                 whileTap={{
                   backgroundSize: "120%",
-                  // boxShadow: "-0.5px 0.5px 5px 0.5px rgba(200, 200, 200, 0.5)",
+                  boxShadow: `0px 0px 8px 3px rgb(0, 0, 0)`,
                 }}
                 transition={{
-                  duration: "0.2",
+                  duration: "0.25",
                 }}
               >
                 <div className={styles.collapsedText}>
