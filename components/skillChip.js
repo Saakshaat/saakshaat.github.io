@@ -64,10 +64,15 @@ const skills = {
     image: "/images/logos/skills/firebase.png",
   },
   Node: {
-    color: "#303030",
-    backgroundColor: "#68A063",
+    color: "#68A063",
+    backgroundColor: "#303030",
     image: "/images/logos/skills/node.png",
-  }
+  },
+  Docker: {
+    color: "#0db7ed",
+    backgroundColor: "#384d54",
+    image: "/images/logos/skills/docker.png",
+  },
 };
 
 export default function SkillChip({ skill, size }) {
@@ -79,7 +84,7 @@ export default function SkillChip({ skill, size }) {
         backgroundColor: `${skills[skill].backgroundColor}`,
       }}
     >
-      <div style={{ fontSize: `${Number(size/4)}rem` }}>
+      <div style={{ fontSize: `${Number(size / 4)}rem` }}>
         {skill}{" "}
         {
           <Image
