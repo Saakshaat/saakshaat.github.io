@@ -37,10 +37,12 @@ export default function Projects({ projects }) {
                 <div className={styles.collapsedText}>
                   <div className={styles.collapsedName}>{name}</div>
                   <div className={styles.collapsedBrief}>{brief}</div>
-                  <div className={styles.tags}>
-                    {tags.map((tag) => (
-                      <SkillChip skill={tag} size={4} />
-                    ))}
+                  <div className={styles.collapsedTagsWrapper}>
+                    <div className={styles.tags}>
+                      {tags.map((tag) => (
+                        <SkillChip skill={tag} size={4} />
+                      ))}
+                    </div>
                   </div>
                 </div>
               </motion.div>,
@@ -61,14 +63,14 @@ export default function Projects({ projects }) {
                 <div className={styles.exapandedTags}>
                   <div className={styles.tags}>
                     {tags.map((tag) => (
-                      <SkillChip skill={tag} size={5} />
+                      <SkillChip skill={tag} size={4} />
                     ))}
                   </div>
                 </div>
                 <div className={styles.expandedDescription}>{description}</div>
                 <div className={styles.expandedLink}>
                   <a href={link} target={"blank"}>
-                    Visit
+                    Visit &#128279;
                   </a>
                 </div>
               </motion.div>,
