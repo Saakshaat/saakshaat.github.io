@@ -66,7 +66,7 @@ export default function Home({ introData, projectsData }) {
 
       <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
         <div className={`${styles.container} ${styles.introSection} ${utilStyles.fullPage}`}>
-          <h2 className={utilStyles.sectionHeader}>Who Am I?</h2>
+          <div className={utilStyles.sectionHeader}>Who Am I?</div>
           <div className={styles.headerGrid}>
             <div className={`${styles.col} ${styles.introLeft}`}>
               <h3 className={utilStyles.subTitle}>Hi, I'm Saak</h3>
@@ -120,7 +120,7 @@ export default function Home({ introData, projectsData }) {
         </div>
         <div />
         <div className={`${styles.container} ${styles.projectsSection} ${utilStyles.fullPage}`}>
-        <h2 className={utilStyles.sectionHeader}>Projects</h2>
+        <div className={utilStyles.sectionHeader}>Projects</div>
         <Projects projects={projectsData}/>
         </div>
       </GeneralPageLayout>

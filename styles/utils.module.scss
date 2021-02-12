@@ -10,6 +10,8 @@
 }
 
 .sectionHeader {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   font-size: 12vh;
   flex: 1;
   flex-direction: column;
@@ -42,6 +44,10 @@
 .highlightWhite {
   color: $background-dark;
   background-color: $accent-light;
+}
+
+.accentLight {
+  color: $accent-light;
 }
 
 @media (max-width: 1024px) {

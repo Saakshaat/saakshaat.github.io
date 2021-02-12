@@ -20,27 +20,29 @@ export default function Projects({ projects }) {
                 }}
                 initial={{
                   backgroundSize: "100%",
-                  boxShadow: "none",
+                  boxShadow: "-0.5px 0.5px 5px 0.5px rgb(0, 0, 0)",
                 }}
                 whileHover={{
                   backgroundSize: "120%",
-                  boxShadow: `-0.5px 0.5px 5px 0.5px rgba(248, 229, 229, 0.4)`,
+                  boxShadow: `0px 0px 8px 3px rgb(0, 0, 0)`,
                 }}
                 whileTap={{
                   backgroundSize: "120%",
-                  // boxShadow: "-0.5px 0.5px 5px 0.5px rgba(200, 200, 200, 0.5)",
+                  boxShadow: `0px 0px 8px 3px rgb(0, 0, 0)`,
                 }}
                 transition={{
-                  duration: "0.2",
+                  duration: "0.25",
                 }}
               >
                 <div className={styles.collapsedText}>
                   <div className={styles.collapsedName}>{name}</div>
                   <div className={styles.collapsedBrief}>{brief}</div>
-                  <div className={styles.tags}>
-                    {tags.map((tag) => (
-                      <SkillChip skill={tag} size={4} />
-                    ))}
+                  <div className={styles.collapsedTagsWrapper}>
+                    <div className={styles.tags}>
+                      {tags.map((tag) => (
+                        <SkillChip skill={tag} size={4} />
+                      ))}
+                    </div>
                   </div>
                 </div>
               </motion.div>,
@@ -61,16 +63,20 @@ export default function Projects({ projects }) {
                 <div className={styles.exapandedTags}>
                   <div className={styles.tags}>
                     {tags.map((tag) => (
-                      <SkillChip skill={tag} size={5} />
+                      <SkillChip skill={tag} size={4} />
                     ))}
                   </div>
                 </div>
                 <div className={styles.expandedDescription}>{description}</div>
-                <div className={styles.expandedLink}>
-                  <a href={link} target={"blank"}>
-                    Visit
-                  </a>
-                </div>
+                {link ? (
+                  <div className={styles.expandedLink}>
+                    <a href={link} target={"blank"}>
+                      Visit &#128279;
+                    </a>
+                  </div>
+                ) : (
+                  <></>
+                )}
               </motion.div>,
             ]}
           </ModalCard>
