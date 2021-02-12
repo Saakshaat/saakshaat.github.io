@@ -68,11 +68,15 @@ export default function Projects({ projects }) {
                   </div>
                 </div>
                 <div className={styles.expandedDescription}>{description}</div>
-                <div className={styles.expandedLink}>
-                  <a href={link} target={"blank"}>
-                    Visit &#128279;
-                  </a>
-                </div>
+                {link ? (
+                  <div className={styles.expandedLink}>
+                    <a href={link} target={"blank"}>
+                      Visit &#128279;
+                    </a>
+                  </div>
+                ) : (
+                  <></>
+                )}
               </motion.div>,
             ]}
           </ModalCard>
