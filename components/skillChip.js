@@ -58,6 +58,16 @@ const skills = {
     backgroundColor: "#61DBFB",
     image: "/images/logos/skills/react.png",
   },
+  Firebase: {
+    color: "#FFCA28",
+    backgroundColor: "#039BE5",
+    image: "/images/logos/skills/firebase.png",
+  },
+  Node: {
+    color: "#303030",
+    backgroundColor: "#68A063",
+    image: "/images/logos/skills/node.png",
+  }
 };
 
 export default function SkillChip({ skill, size }) {
