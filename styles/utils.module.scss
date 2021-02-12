@@ -44,6 +44,10 @@
   background-color: $accent-light;
 }
 
+.accentLight {
+  color: $accent-light;
+}
+
 @media (max-width: 1024px) {
   .mainHeader {
     width: 100%;

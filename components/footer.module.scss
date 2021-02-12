@@ -1,12 +1,18 @@
 @import "../styles/_variables/colors.module.scss";
 
-.socialsFooter {
-  margin-top: 2rem;
+.container {
   background-color: $background-dark;
   position: static;
   padding-bottom: 2rem;
   flex-wrap: wrap-reverse;
   text-align: center;
+}
+
+.title {
+  font-family: Heebo, Helvetica;
+}
+
+.socialsFooter {
 }
 
 .socialsFooter:before {
