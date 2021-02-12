@@ -1,0 +1,12 @@
+{
+    "name": "U-Match",
+    "image": "/images/projects/umatch.png",
+    "tags": [
+        "Python",
+        "React",
+        "AWS",
+        "Docker"
+    ],
+    "brief": "Match UMass folks to UMass folks",
+    "description": "Platform for matching UMass students with each other based on shared interests.\n\nBeing remote hits hard on social life and it's difficult to meet people. U-Match addresses this.\n\nIt uses stable-marraige to match users with the similar properties such as year in school, dorms and interests in music. The backend is built with FastAPI, a Python based REST framework and the application is hosted using AWS EC2, RDS and Cognito."
+}

@@ -73,6 +73,11 @@ const skills = {
     backgroundColor: "#384d54",
     image: "/images/logos/skills/docker.png",
   },
+  AWS: {
+    color: "#FF9900",
+    backgroundColor: "#232F3E",
+    image: "/images/logos/skills/aws.png",
+  }
 };
 
 export default function SkillChip({ skill, size }) {
