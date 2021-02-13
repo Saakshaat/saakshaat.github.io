@@ -64,8 +64,8 @@ const skills = {
     image: "/images/logos/skills/rails.png",
   },
   JAVA: {
-    color: "#be740c",
-    backgroundColor: "#007396",
+    color: "#007396",
+    backgroundColor: "#be740c",
     image: "/images/logos/skills/java.png",
   },
   SQL: {

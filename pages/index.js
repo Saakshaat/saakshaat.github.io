@@ -131,7 +131,7 @@ export default function Home({ introData, projectsData }) {
         <div
           className={`${styles.container} ${styles.skillsSection} ${utilStyles.fullPage}`}
         >
-          <div className={utilStyles.sectionHeader}>Skills</div>
+          <div className={`${utilStyles.sectionHeader} ${styles.skillsHeader}`}>Skills</div>
           <div className={styles.headerGrid}>
             <Skills />
           </div>

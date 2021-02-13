@@ -83,7 +83,13 @@
   padding-bottom: 5rem;
 }
 
+.skillsHeader {
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+}
+
 .skillsContainer {
+  padding-top: -3rem;
   align-self: flex-start;
 }
 
@@ -112,6 +118,10 @@
 
   .typewriter {
     font-size: 1.5rem;
+  }
+  .skillsHeader {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
   .skillsSection {
     padding-left: 1rem;
