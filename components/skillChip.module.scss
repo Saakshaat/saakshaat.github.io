@@ -1,9 +1,7 @@
 .chip {
   border-radius: 40rem;
-  min-width: 3rem;
   text-align: center;
   max-width: 80%;
-  border: 3px solid;
 }
 
 .chip:hover {
@@ -14,12 +12,9 @@
 }
 
 .content {
-  padding: 0.2rem;
-  padding-left: 0.5em;
-  padding-right: 0.4rem;
+
 }
 
 .logo {
   display: inline-flex;
-  padding-right: 0.2rem;
 }

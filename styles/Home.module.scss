@@ -77,7 +77,10 @@
 }
 
 .skillsSection {
+  padding-left: 4rem;
+  padding-right: 4rem;
   display: flex;
+  padding-bottom: 5rem;
 }
 
 .skillsContainer {
@@ -109,6 +112,11 @@
 
   .typewriter {
     font-size: 1.5rem;
+  }
+  .skillsSection {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    display: flex;
   }
 }
 

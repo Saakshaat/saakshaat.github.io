@@ -140,6 +140,29 @@ const skills = {
   },
 };
 
+const sizes = {
+  small: {
+    margin: "0.2rem",
+    border: "1.5px solid",
+    fontSize: "0.8rem",
+    contentLeftRightPadding: "0.5rem",
+    contentPadding: "0.2rem",
+    textPadding: "0.15rem",
+    imgSize: "12",
+    imgPadding: "0.1rem",
+  },
+  large: {
+    margin: "0.5rem",
+    border: "4px solid",
+    fontSize: "2rem",
+    contentLeftRightPadding: "0.65rem",
+    contentPadding: "0.45rem",
+    textPadding: "0.20rem",
+    imgSize: "28",
+    imgPadding: "0.5rem",
+  },
+};
+
 export default function SkillChip({ skill, size }) {
   return (
     <div
@@ -147,28 +170,41 @@ export default function SkillChip({ skill, size }) {
       style={{
         color: `${skills[skill].color}`,
         backgroundColor: `${skills[skill].backgroundColor}`,
-        margin: `${Number(size / 20)}rem`,
+        margin: sizes[size].margin,
+        border: sizes[size].border,
       }}
     >
-      <div className={styles.content}>
+      <div
+        className={styles.content}
+        style={{
+          padding: sizes[size].contentPadding,
+          paddingLeft: sizes[size].contentLeftRightPadding,
+          paddingRight: sizes[size].contentLeftRightPadding,
+        }}
+      >
         <text
           style={{
-            fontSize: `${Number(size / 4.5)}rem`,
-            // fontWeight: ``,
+            fontSize: sizes[size].fontSize,
             fontFamily: "Heebo, Helvetica, Arial",
-            paddingLeft: "0.15rem",
-            paddingRight: "0.15rem",
+            paddingLeft: sizes[size].textPadding,
           }}
         >
           {skill}{" "}
         </text>
         {
-          <div className={styles.logo}>
-          <Image
-            src={skills[skill].image}
-            width={size * 3}
-            height={size * 3}
-          />
+          <div
+            className={styles.logo}
+            style={{
+              paddingTop: sizes[size].imgPadding,
+              paddingBottom: sizes[size].imgPadding,
+              paddingRight: sizes[size].imgPadding,
+            }}
+          >
+            <Image
+              src={skills[skill].image}
+              width={sizes[size].imgSize}
+              height={sizes[size].imgSize}
+            />
           </div>
         }
       </div>

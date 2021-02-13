@@ -15,17 +15,17 @@ const skills = [
   "NEXT",
   "BASH",
   "RAILS",
-  "JS",
   "AWS",
-  "TYPESCRIPT",
   "REACT",
+  "JS",
+  "TYPESCRIPT",
   "YAML",
   "TERRAFORM",
-  "FIREBASE",
-  "LEX",
-  "KUBERNETES",
   "YACC",
+  "FIREBASE",
   "DOCKER",
+  "KUBERNETES",
+  "LEX",
 ];
 
 export default function Skills() {
@@ -33,7 +33,7 @@ export default function Skills() {
     <div className={styles.container}>
       {skills.map((skill) => (
         // <div className={styles.chip}>
-          <SkillChip skill={skill} size={9} />
+        <SkillChip skill={skill} size={"large"} />
         // </div>
       ))}
     </div>

@@ -40,7 +40,7 @@ export default function Projects({ projects }) {
                   <div className={styles.collapsedTagsWrapper}>
                     <div className={styles.tags}>
                       {tags.map((tag) => (
-                        <SkillChip skill={tag} size={4} />
+                        <SkillChip skill={tag} size={"small"} />
                       ))}
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export default function Projects({ projects }) {
                 <div className={styles.exapandedTags}>
                   <div className={styles.tags}>
                     {tags.map((tag) => (
-                      <SkillChip skill={tag} size={4} />
+                      <SkillChip skill={tag} size={"small"} />
                     ))}
                   </div>
                 </div>
