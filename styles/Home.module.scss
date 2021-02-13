@@ -76,6 +76,14 @@
   background-color: $background-dark;
 }
 
+.skillsSection {
+  display: flex;
+}
+
+.skillsContainer {
+  align-self: flex-start;
+}
+
 .headerGrid {
   display: flex;
 }

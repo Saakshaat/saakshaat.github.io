@@ -13,7 +13,8 @@ import getProjectData from "../lib/projects";
 
 import { GeneralPageLayout } from "../components/layouts";
 import Gigs from "../components/groups/gigs";
-import Projects from "../components/groups/projects"
+import Projects from "../components/groups/projects";
+import Skills from "../components/groups/skills";
 import Typerwriter from "../components/typewriter";
 
 export async function getStaticProps() {
@@ -23,7 +24,7 @@ export async function getStaticProps() {
   return {
     props: {
       introData,
-      projectsData
+      projectsData,
     },
   };
 }
@@ -65,7 +66,9 @@ export default function Home({ introData, projectsData }) {
       </div>
 
       <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
-        <div className={`${styles.container} ${styles.introSection} ${utilStyles.fullPage}`}>
+        <div
+          className={`${styles.container} ${styles.introSection} ${utilStyles.fullPage}`}
+        >
           <div className={utilStyles.sectionHeader}>Who Am I?</div>
           <div className={styles.headerGrid}>
             <div className={`${styles.col} ${styles.introLeft}`}>
@@ -119,9 +122,66 @@ export default function Home({ introData, projectsData }) {
           </div>
         </div>
         <div />
-        <div className={`${styles.container} ${styles.projectsSection} ${utilStyles.fullPage}`}>
-        <div className={utilStyles.sectionHeader}>Projects</div>
-        <Projects projects={projectsData}/>
+        <div
+          className={`${styles.container} ${styles.projectsSection} ${utilStyles.fullPage}`}
+        >
+          <div className={utilStyles.sectionHeader}>Projects</div>
+          <Projects projects={projectsData} />
+        </div>
+        <div
+          className={`${styles.container} ${styles.skillsSection} ${utilStyles.fullPage}`}
+        >
+          <div className={utilStyles.sectionHeader}>Skills</div>
+          <div className={styles.headerGrid}>
+            <div className={`${styles.col} ${styles.introLeft}`}>
+              <h3 className={utilStyles.subTitle}>Stuff</h3>
+              <motion.div
+                drag
+                dragConstraints={{
+                  top: -5,
+                  left: -5,
+                  right: 5,
+                  bottom: 5,
+                }}
+                dragMomentum={true}
+                dragElastic={0.1}
+              >
+                <Image
+                  className={styles.profilePicture}
+                  src="/images/me.png"
+                  width={300}
+                  height={300}
+                  quality={100}
+                  priority={true}
+                  alt={"Saakshaat Picture"}
+                />
+              </motion.div>
+              <div className={styles.pronounciation}>
+                साक्षात \ sa-ahk-SHA-at
+              </div>
+              <motion.div
+                className={styles.introDescription}
+                initial={{
+                  boxShadow: "1px 1px 5px 0.5px rgba(0, 0, 0, 0.5)",
+                }}
+                whileHover={{
+                  boxShadow: "-1px -1px 5px 0.5px rgba(0, 0, 0, 0.5)",
+                }}
+                whileTap={{
+                  boxShadow: "-1px -1px 5px 0.5px rgba(0, 0, 0, 0.5)",
+                }}
+              >
+                I like solving problems. Small problems, like this website. Big
+                problems like cloud provisioning. Not too big problems like
+                packaging software. Occasionally, I like beewatching, reading to
+                my dogs and eating mac n cheese.
+              </motion.div>
+            </div>
+            <div className={`${styles.introRight} ${styles.col}`}>
+              <h3 className={utilStyles.subTitle}>Tech Stacks</h3>
+              <Skills />
+            </div>
+          </div>
         </div>
       </GeneralPageLayout>
     </div>
