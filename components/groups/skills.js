@@ -18,14 +18,16 @@ const skills = [
   "AWS",
   "REACT",
   "JS",
-  "TYPESCRIPT",
+  "FASTAPI",
+  "HCL",
   "YAML",
-  "TERRAFORM",
+  "TYPESCRIPT",
   "YACC",
-  "FIREBASE",
   "DOCKER",
+  "TERRAFORM",
+  "FIREBASE",
+  
   "KUBERNETES",
-  "LEX",
 ];
 
 export default function Skills() {

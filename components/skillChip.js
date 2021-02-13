@@ -138,6 +138,16 @@ const skills = {
     backgroundColor: "#232F3E",
     image: "/images/logos/skills/aws.png",
   },
+  HCL: {
+    color: "black",
+    backgroundColor: "white",
+    image: "/images/logos/skills/hashicorp.png",
+  },
+  FASTAPI: {
+    color: "#21998A",
+    backgroundColor: "#F7F7F7",
+    image: "/images/logos/skills/fastapi.png",
+  },
 };
 
 const sizes = {
@@ -160,6 +170,7 @@ const sizes = {
     textPadding: "0.20rem",
     imgSize: "28",
     imgPadding: "0.5rem",
+    imgPaddingTop: "0.6rem",
   },
 };
 
@@ -195,7 +206,7 @@ export default function SkillChip({ skill, size }) {
           <div
             className={styles.logo}
             style={{
-              paddingTop: sizes[size].imgPadding,
+              paddingTop: sizes[size].imgPaddingTop,
               paddingBottom: sizes[size].imgPadding,
               paddingRight: sizes[size].imgPadding,
             }}
