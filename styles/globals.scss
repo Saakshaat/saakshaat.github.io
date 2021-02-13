@@ -1,4 +1,4 @@
-@import "./_variables/colors.scss";
+@import "./_variables/colors.module.scss";
 
 html,
 body {
@@ -21,4 +21,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  pointer-events: none;
 }

@@ -1,0 +1,12 @@
+{
+    "name": "Saakshaat Completes",
+    "link": "https://saakshaat.codes/saakshaat-completes",
+    "image": "/images/projects/saakshaat-completes.jpg",
+    "tags": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+    ],
+    "brief": "TODO app on the web",
+    "description": "This is my first web app, built with plain HTML, CSS and JS.\n\nI've used simple interactions with DOM to add/remove data from local storage so that the tasks persist in the browser."
+}

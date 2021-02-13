@@ -1,4 +1,4 @@
-@import "./_variables/colors.scss";
+@import "./_variables/colors.module.scss";
 
 .mainHeader {
   font-size: 18vh;
@@ -10,6 +10,8 @@
 }
 
 .sectionHeader {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   font-size: 12vh;
   flex: 1;
   flex-direction: column;
@@ -20,7 +22,7 @@
 .subTitle {
   color: $dark-shade;
   font-size: 7vh;
-  font-family: Work Sans, Helvetica;
+  font-family: Helvetica;
 }
 
 .centered {
@@ -32,7 +34,7 @@
 }
 
 .quarterPage {
-  height: 25vh;
+  min-height: 25vh !important;
 }
 
 .padTopMd {
@@ -42,6 +44,10 @@
 .highlightWhite {
   color: $background-dark;
   background-color: $accent-light;
+}
+
+.accentLight {
+  color: $accent-light;
 }
 
 @media (max-width: 1024px) {

@@ -1,4 +1,4 @@
-@import "../../styles/_variables/colors.scss";
+@import "../../styles/_variables/colors.module.scss";
 
 .container {
   flex: 2;
@@ -29,18 +29,12 @@
 
 .expandedCard {
   padding: 2rem;
-  max-width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  z-index: 1;
-  position: absolute;
-  left: 0; /*added*/
-  right: 0; /*added*/
+  max-width: 100%;
   width: 50rem;
   height: auto;
   border-radius: 1.5rem;
-  color: $dark-shade;
-  background-color: rgba($brand, 0.97);
+  color: $white;
+  background-color: rgba($dark-shade, 0.97);
   box-shadow: -1px -2px 7px 0.5px $dark-shade;
 }
 
@@ -54,9 +48,9 @@
 }
 
 .organization {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  font-family: Roboto Slab, Helvetica, sans-serif;;
+  font-family: Raleway, Helvetica, sans-serif;
 }
 
 .position {
@@ -64,7 +58,8 @@
   font-size: 1.3rem;
   font-weight: bolder;
   color: $accent-light;
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: Work Sans, Helvetica, sans-serif;;
+  
 }
 
 .description {

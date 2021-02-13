@@ -1,4 +1,4 @@
-@import "./_variables/colors.scss";
+@import "./_variables/colors.module.scss";
 
 .container {
   color: $background-dark;
@@ -8,9 +8,9 @@
   justify-content: center;
   align-items: center;
 }
- 
+
 .particlesCanvas {
-  position:absolute !important;
+  position: absolute !important;
 }
 
 .titleSection {
@@ -31,6 +31,10 @@
   font-size: 2rem;
 }
 
+.introSection {
+  background-color: $accent-light;
+}
+
 .introLeft {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -42,6 +46,9 @@
 }
 
 .profilePicture {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   border-radius: 2rem;
   background-color: #f0dada;
 }
@@ -54,7 +61,6 @@
 }
 
 .introDescription {
-
   color: $dark-shade;
   background-color: $accent-light;
   border-radius: 0.4rem;
@@ -63,6 +69,11 @@
   margin-right: 1rem;
   font-size: 1.3rem;
   text-align: justify;
+}
+
+.projectsSection {
+  margin-top: 2rem;
+  background-color: $background-dark;
 }
 
 .headerGrid {
@@ -93,7 +104,7 @@
   }
 }
 
-@media (max-width: 370px) { 
+@media (max-width: 370px) {
   .introDescription {
     font-size: 1rem;
   }

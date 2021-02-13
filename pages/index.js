@@ -9,26 +9,33 @@ import Particles from "react-particles-js";
 import particlesConfig from "../lib/particlesConfig";
 
 import getIntrodutionData from "../lib/introduction";
+import getProjectData from "../lib/projects";
 
 import { GeneralPageLayout } from "../components/layouts";
 import Gigs from "../components/groups/gigs";
+import Projects from "../components/groups/projects"
 import Typerwriter from "../components/typewriter";
 
 export async function getStaticProps() {
   const introData = await getIntrodutionData();
+  const projectsData = await getProjectData();
 
   return {
     props: {
       introData,
+      projectsData
     },
   };
 }
 
-export default function Home({ introData }) {
+export default function Home({ introData, projectsData }) {
   return (
     <div>
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
-        <Particles params={particlesConfig} canvasClassName={styles.particlesCanvas}/>
+        <Particles
+          params={particlesConfig}
+          canvasClassName={styles.particlesCanvas}
+        />
         <div className={utilStyles.centered}>
           <motion.h1
             initial={{
@@ -51,26 +58,39 @@ export default function Home({ introData }) {
             <Typerwriter
               elements={["SWE", "Leader", "Visionary"]}
               cursorColor={"white"}
+              speed={20}
             />
           </div>
         </div>
       </div>
 
       <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
-        <div className={`${styles.container} ${utilStyles.fullPage}`}>
-          <h2 className={utilStyles.sectionHeader}>Who Am I?</h2>
+        <div className={`${styles.container} ${styles.introSection} ${utilStyles.fullPage}`}>
+          <div className={utilStyles.sectionHeader}>Who Am I?</div>
           <div className={styles.headerGrid}>
             <div className={`${styles.col} ${styles.introLeft}`}>
               <h3 className={utilStyles.subTitle}>Hi, I'm Saak</h3>
-              <Image
-                className={styles.profilePicture}
-                src="/images/me.png"
-                width={300}
-                height={300}
-                quality={100}
-                priority={true}
-                alt={"Saakshaat Picture"}
-              />
+              <motion.div
+                drag
+                dragConstraints={{
+                  top: -5,
+                  left: -5,
+                  right: 5,
+                  bottom: 5,
+                }}
+                dragMomentum={true}
+                dragElastic={0.1}
+              >
+                <Image
+                  className={styles.profilePicture}
+                  src="/images/me.png"
+                  width={300}
+                  height={300}
+                  quality={100}
+                  priority={true}
+                  alt={"Saakshaat Picture"}
+                />
+              </motion.div>
               <div className={styles.pronounciation}>
                 साक्षात \ sa-ahk-SHA-at
               </div>
@@ -99,6 +119,10 @@ export default function Home({ introData }) {
           </div>
         </div>
         <div />
+        <div className={`${styles.container} ${styles.projectsSection} ${utilStyles.fullPage}`}>
+        <div className={utilStyles.sectionHeader}>Projects</div>
+        <Projects projects={projectsData}/>
+        </div>
       </GeneralPageLayout>
     </div>
   );

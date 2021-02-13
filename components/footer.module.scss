@@ -1,12 +1,18 @@
-@import "../styles/_variables/colors.scss";
+@import "../styles/_variables/colors.module.scss";
 
-.socialsFooter {
-  margin-top: 2rem;
+.container {
   background-color: $background-dark;
-  position: relative;
+  position: static;
   padding-bottom: 2rem;
   flex-wrap: wrap-reverse;
   text-align: center;
+}
+
+.title {
+  font-family: Heebo, Helvetica;
+}
+
+.socialsFooter {
 }
 
 .socialsFooter:before {
@@ -15,4 +21,8 @@
 
 .typewriter {
   color: $light-shade;
+}
+
+.signature {
+  font-size: 0.8rem;
 }

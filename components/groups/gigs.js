@@ -17,7 +17,7 @@ export default function GigsBlock({ gigs }) {
           color,
           backgroundColor,
         }) => (
-          <ModalCard layoutId={"gigs"}>
+          <ModalCard key={organization}>
             {[
               <motion.div
                 className={styles.compactCard}
@@ -27,13 +27,13 @@ export default function GigsBlock({ gigs }) {
                   rotation: 0,
                 }}
                 whileTap={{
-                  scale: 1.5,
+                  scale: 1.1,
                 }}
                 whileHover={{
-                  scale: 1.3,
+                  scale: 1.2,
                 }}
                 transition={{
-                  duration: "0.7",
+                  duration: "0.2",
                   type: "intertia",
                 }}
               >
@@ -48,15 +48,16 @@ export default function GigsBlock({ gigs }) {
                 <motion.div
                   className={styles.expandedCard}
                   intial={{
-                    backgroundColor: "inherit",
+                    scale: "0.2",
+                    boxShadow: "none",
                   }}
                   animate={{
-                    // color: `${color}`,
-                    // backgroundColor: `${backgroundColor}`,
+                    boxShadow: "0px 0px 100rem 100rem rgba(0, 0, 0, 0.8)",
+                    scale: 1,
                   }}
                   transition={{
-                    duration: "0.7",
-                    type: "spring",
+                    duration: 0,
+                    type: "keyframes",
                   }}
                 >
                   <div className={styles.headerGrid}>

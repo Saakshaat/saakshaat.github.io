@@ -1,16 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const backdrop = {
-  visible: {
-    opacity: 1,
-  },
-  hidden: {
-    opacity: 0,
-  },
-};
+import styles from "./modal.module.scss"
 
-export default function ModalCard({ layoutId, children }) {
+export default function ModalCard({ children }) {
   const [isOpened, setOpened] = useState(false);
   const closed = children.length > 1 ? children[0] : null;
   const open = children.length > 1 ? children[1] : children[0];
@@ -34,9 +27,23 @@ export default function ModalCard({ layoutId, children }) {
     <AnimatePresence>
       {isOpened ? (
         <motion.div
+          key={"modal"}
           ref={node}
+          className={styles.modal}
           onClick={() => {
             setOpened(false);
+          }}
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          exit={{
+            opacity: 0,
+          }}
+          transition={{
+            duration: "0.2",
           }}
         >
           {open}
