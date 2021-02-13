@@ -163,7 +163,7 @@ const sizes = {
   },
   large: {
     margin: "0.5rem",
-    border: "4px solid",
+    border: "3.5px solid",
     fontSize: "2rem",
     contentLeftRightPadding: "0.65rem",
     contentPadding: "0.45rem",
