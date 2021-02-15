@@ -27,10 +27,10 @@ export default function GigsBlock({ gigs }) {
                   rotation: 0,
                 }}
                 whileTap={{
-                  scale: 1.1,
+                  scale: 0.9,
                 }}
                 whileHover={{
-                  scale: 1.2,
+                  scale: 1.1,
                 }}
                 transition={{
                   duration: "0.2",
