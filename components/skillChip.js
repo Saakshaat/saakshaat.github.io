@@ -148,6 +148,11 @@ const skills = {
     backgroundColor: "#F7F7F7",
     image: "/images/logos/skills/fastapi.png",
   },
+  GIT: {
+    color: "#d4b09a",
+    backgroundColor: "#211F1F",
+    image: "/images/logos/skills/git.png",
+  },
 };
 
 const sizes = {
