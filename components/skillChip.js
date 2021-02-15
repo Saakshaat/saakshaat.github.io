@@ -191,7 +191,7 @@ export default function SkillChip({ skill, size }) {
       opacity: 1,
     },
     hidden: {
-      y: "-2",
+      y: "-3",
       opacity: 0,
     },
   };
