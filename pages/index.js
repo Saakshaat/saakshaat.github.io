@@ -82,7 +82,7 @@ export default function Home({ introData, projectsData }) {
                   bottom: 5,
                 }}
                 dragMomentum={true}
-                dragElastic={0.1}
+                dragElastic={0.07}
               >
                 <Image
                   className={styles.profilePicture}
