@@ -158,19 +158,20 @@ const sizes = {
     contentLeftRightPadding: "0.5rem",
     contentPadding: "0.2rem",
     textPadding: "0.15rem",
-    imgSize: "12",
+    imgSize: "11",
     imgPadding: "0.1rem",
+    imgMarginTop: "0.3rem",
   },
   large: {
     margin: "0.5rem",
-    border: "3.5px solid",
+    border: "4.5px solid",
     fontSize: "2rem",
     contentLeftRightPadding: "0.65rem",
     contentPadding: "0.45rem",
-    textPadding: "0.20rem",
-    imgSize: "28",
+    textPadding: "0.30rem",
+    imgSize: "25",
     imgPadding: "0.5rem",
-    imgPaddingTop: "0.6rem",
+    imgMarginTop: "0.6rem",
   },
 };
 
@@ -206,8 +207,7 @@ export default function SkillChip({ skill, size }) {
           <div
             className={styles.logo}
             style={{
-              paddingTop: sizes[size].imgPaddingTop,
-              paddingBottom: sizes[size].imgPadding,
+              marginTop: sizes[size].imgMarginTop,
               paddingRight: sizes[size].imgPadding,
             }}
           >
