@@ -158,7 +158,7 @@ const sizes = {
     contentLeftRightPadding: "0.5rem",
     contentPadding: "0.2rem",
     textPadding: "0.15rem",
-    imgSize: "11",
+    imgSize: "12",
     imgPadding: "0.1rem",
     imgMarginTop: "0.3rem",
   },
