@@ -241,6 +241,7 @@ export default function SkillChip({ skill, size }) {
             fontFamily: "Heebo, Helvetica, Arial",
             paddingLeft: sizes[size].textPadding,
           }}
+          className={styles.skillText}
         >
           {skill}{" "}
         </text>

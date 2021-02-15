@@ -18,3 +18,9 @@
 .logo {
   display: inline-flex;
 }
+
+@media (max-width: 400px) {
+  .chip {
+    max-width: 100%;
+  }
+} 
