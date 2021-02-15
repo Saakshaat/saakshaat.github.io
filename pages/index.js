@@ -13,7 +13,8 @@ import getProjectData from "../lib/projects";
 
 import { GeneralPageLayout } from "../components/layouts";
 import Gigs from "../components/groups/gigs";
-import Projects from "../components/groups/projects"
+import Projects from "../components/groups/projects";
+import Skills from "../components/groups/skills";
 import Typerwriter from "../components/typewriter";
 
 export async function getStaticProps() {
@@ -23,7 +24,7 @@ export async function getStaticProps() {
   return {
     props: {
       introData,
-      projectsData
+      projectsData,
     },
   };
 }
@@ -65,7 +66,9 @@ export default function Home({ introData, projectsData }) {
       </div>
 
       <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
-        <div className={`${styles.container} ${styles.introSection} ${utilStyles.fullPage}`}>
+        <div
+          className={`${styles.container} ${styles.introSection} ${utilStyles.fullPage}`}
+        >
           <div className={utilStyles.sectionHeader}>Who Am I?</div>
           <div className={styles.headerGrid}>
             <div className={`${styles.col} ${styles.introLeft}`}>
@@ -119,9 +122,19 @@ export default function Home({ introData, projectsData }) {
           </div>
         </div>
         <div />
-        <div className={`${styles.container} ${styles.projectsSection} ${utilStyles.fullPage}`}>
-        <div className={utilStyles.sectionHeader}>Projects</div>
-        <Projects projects={projectsData}/>
+        <div
+          className={`${styles.container} ${styles.projectsSection} ${utilStyles.fullPage}`}
+        >
+          <div className={utilStyles.sectionHeader}>Projects</div>
+          <Projects projects={projectsData} />
+        </div>
+        <div
+          className={`${styles.container} ${styles.skillsSection} ${utilStyles.fullPage}`}
+        >
+          <div className={`${utilStyles.sectionHeader} ${styles.skillsHeader}`}>Skills</div>
+          <div className={styles.headerGrid}>
+            <Skills />
+          </div>
         </div>
       </GeneralPageLayout>
     </div>

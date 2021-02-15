@@ -76,6 +76,23 @@
   background-color: $background-dark;
 }
 
+.skillsSection {
+  padding-left: 7rem;
+  padding-right: 7rem;
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.skillsHeader {
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+}
+
+.skillsContainer {
+  padding-top: -3rem;
+  align-self: flex-start;
+}
+
 .headerGrid {
   display: flex;
 }
@@ -101,6 +118,15 @@
 
   .typewriter {
     font-size: 1.5rem;
+  }
+  .skillsHeader {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+  .skillsSection {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
   }
 }
 

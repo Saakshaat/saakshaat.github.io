@@ -3,12 +3,12 @@
     "link": "https://projectory-5171c.web.app/",
     "image": "/images/projects/project-matching.png",
     "tags": [
-        "React",
-        "Node",
-        "Firebase",
-        "Docker",
-        "Ruby",
-        "JavaScript"
+        "REACT",
+        "RUBY",
+        "JS",
+        "FIREBASE",
+        "NODE",
+        "DOCKER"
     ],
     "brief": "Matching people to projects",
     "description": "With COVID devs started hunting open source projects, I realized the need for a space where 2 elements could intersect.\n\nThe pilot was built with the FERN stack with my friends Aryaman and Duy. With great feedback from our pilot testers, we started building the final version.\n\nThe current version is built in Rails in collab with DSC UMass, UIUC and NTU and supports Slack-like versioning for each org."
