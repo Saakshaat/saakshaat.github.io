@@ -31,7 +31,7 @@ export default function Projects({ projects }) {
                   boxShadow: `0px 0px 8px 3px rgb(0, 0, 0)`,
                 }}
                 transition={{
-                  duration: "0.25",
+                  duration: "0.2",
                 }}
               >
                 <div className={styles.collapsedText}>
