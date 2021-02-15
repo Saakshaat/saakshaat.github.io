@@ -130,8 +130,12 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   .introDescription {
     font-size: 1rem;
+  }
+  .skillsSection {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
   }
 }
