@@ -9,25 +9,23 @@ import SkillChip from "../skillChip";
 export function ProjectCardCollapsed({ name, image, tags, brief }) {
   const variants = {
     hidden: {
-      x: `4rem`,
-      transform: "transform: rotate(80deg)",
+      x: `-4rem`,
+      rotate: 20,
       opacity: 0,
       backgroundSize: "100%",
       boxShadow: "-0.5px 0.5px 5px 0.5px rgb(0, 0, 0)",
     },
     visible: {
       x: 0,
-      transform: [
-        "rotate(60deg)",
-        "rotate(40deg)",
-        "rotate(20deg)",
-        "rotate(0deg)",
-      ],
-      opacity: 1,
+      rotate: [10, 20, 10, 0],
+      opacity: ["0.2", "0.4", "0.8", "1"],
       backgroundSize: "100%",
       boxShadow: "-0.5px 0.5px 5px 0.5px rgb(0, 0, 0)",
       transition: {
         duration: "0.4",
+      },
+      staggerChildren: {
+        transition: "0",
       },
     },
   };
@@ -96,9 +94,15 @@ export function ProjectCardExpanded({
       className={styles.expandedCard}
       initial={{
         boxShadow: "none",
+        scale: 1,
+        rotate: 0,
+        // borderRadius: "50%",
       }}
       animate={{
         boxShadow: "0px 0px 100rem 100rem rgba(0, 0, 0, 0.8)",
+        // scale: [1, 2, 2, 1, 1],
+        // rotate: [0, 0, 270, 270, 0],
+        // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
       }}
       transition={{
         duration: "0",
