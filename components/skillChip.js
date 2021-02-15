@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+import { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import styles from "./skillChip.module.scss";
 
 const skills = {
@@ -181,9 +185,41 @@ const sizes = {
 };
 
 export default function SkillChip({ skill, size }) {
+  const variants = {
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+    hidden: {
+      y: "-3",
+      opacity: 0,
+    },
+  };
+
+  const [seen, setSeen] = useState(false);
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+  useEffect(() => {
+    if (inView && !seen) {
+      setSeen(true);
+      controls.start("visible");
+    }
+    if (!inView && !seen) {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+
   return (
-    <div
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={variants}
       className={styles.chip}
+      transition={{
+        duration: "0.3",
+        type: "keyframes",
+      }}
       style={{
         color: `${skills[skill].color}`,
         backgroundColor: `${skills[skill].backgroundColor}`,
@@ -205,6 +241,7 @@ export default function SkillChip({ skill, size }) {
             fontFamily: "Heebo, Helvetica, Arial",
             paddingLeft: sizes[size].textPadding,
           }}
+          className={styles.skillText}
         >
           {skill}{" "}
         </text>
@@ -224,6 +261,6 @@ export default function SkillChip({ skill, size }) {
           </div>
         }
       </div>
-    </div>
+    </motion.div>
   );
 }
