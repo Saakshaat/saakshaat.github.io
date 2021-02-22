@@ -2,6 +2,8 @@
 
 html,
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   color: $white;
   background-color: $accent-light;
   ::selection {
