@@ -4,6 +4,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   color: $white;
   background-color: $accent-light;
   ::selection {
