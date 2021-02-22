@@ -159,12 +159,14 @@ const DisplacementSphere = (props) => {
       }).start(spring.current);
     };
 
-    if (!prefersReducedMotion && isInViewport) {
+    if (typeof window !== 'undefined' && !prefersReducedMotion && isInViewport) {
       window.addEventListener('mousemove', onMouseMove);
     }
 
     return () => {
+      if(typeof window !== 'undefined') { 
       window.removeEventListener('mousemove', onMouseMove);
+      }
       tweenRef.current?.stop();
     };
   }, [isInViewport, prefersReducedMotion]);

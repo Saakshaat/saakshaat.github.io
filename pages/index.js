@@ -38,7 +38,7 @@ export default function Home({ introData, projectsData }) {
         theme={{
           rgbBackground: "248 229 229",
           themeId: "light",
-          colorWhite: "#f0f0f0",
+          colorWhite: "#f8e5e5",
         }}
       />
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
