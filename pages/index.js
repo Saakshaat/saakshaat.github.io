@@ -34,47 +34,48 @@ export default function Home({ introData, projectsData }) {
   return (
     <div>
       <DisplacementSphere
+        className={styles.introBackground}
         theme={{
           rgbBackground: "248 229 229",
           themeId: "light",
-          colorWhite: "#ffffff",
+          colorWhite: "#f0f0f0",
         }}
       />
-        <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
-          <div className={utilStyles.centered}>
-            <motion.h1
-              initial={{
-                filter: "blur(100px)",
-                opacity: 0,
-              }}
-              animate={{
-                filter: ["blur(60px)", "blur(40px)", "blur(20px)", "blur(0px)"],
-                opacity: 1,
-              }}
-              transition={{ duration: 0.5, type: "keyframes" }}
+      <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
+        <div className={utilStyles.centered}>
+          <motion.h1
+            initial={{
+              filter: "blur(100px)",
+              opacity: 0,
+            }}
+            animate={{
+              filter: ["blur(60px)", "blur(40px)", "blur(20px)", "blur(0px)"],
+              opacity: 1,
+            }}
+            transition={{ duration: 0.5, type: "keyframes" }}
+          >
+            <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
+              SAAKSHAAT SINGH
+            </h1>
+          </motion.h1>
+          <div className={styles.subtitle}>
+            SWE <hr className={utilStyles.lineAfterContent} />
+          </div>
+          <br />
+          <div className={`${styles.typewriter}`}>
+            <text
+              className={`${utilStyles.accentDark} ${utilStyles.padRightLt}`}
             >
-              <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
-                SAAKSHAAT SINGH
-              </h1>
-            </motion.h1>
-            <div className={styles.subtitle}>
-              SWE <hr className={utilStyles.lineAfterContent} />
-            </div>
-            <br />
-            <div className={`${styles.typewriter}`}>
-              <text
-                className={`${utilStyles.accentDark} ${utilStyles.padRightLt}`}
-              >
-                +
-              </text>
-              <Typerwriter
-                elements={["Leader", "Creator", "Coffee"]}
-                cursorColor={"accentDark"}
-                speed={20}
-              />
-            </div>
+              +
+            </text>
+            <Typerwriter
+              elements={["Leader", "Creator", "Coffee"]}
+              cursorColor={"accentDark"}
+              speed={20}
+            />
           </div>
         </div>
+      </div>
 
       <GeneralPageLayout home={true} title={"Saakshaat | Dev"} socials={true}>
         <div

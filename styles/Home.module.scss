@@ -9,9 +9,13 @@
   align-items: center;
 }
 
-.particlesCanvas {
+.introBackground {
   position: absolute !important;
-  height: 110vh !important;
+  max-height: 120vh;
+  max-width: 100vw;
+  height: 100vw;
+  width: 100vw;
+  overflow: hidden; 
 }
 
 .titleSection {
@@ -19,24 +23,24 @@
   background-size: cover;
   background-position: center;
   padding-left: 15rem;
-  z-index: 1;
 }
 
 .title {
   color: $black;
   opacity: 0.8;
   font-weight: 500;
-  // font-family: var(--japaneseFontStack);
   font-size: 2.5rem;
 }
 
 .subtitle,
 .typewriter {
+  position: relative;
   font-family: Heebo, Helvetica;
   font-weight: 600;
   color: $black;
   font-size: 4rem;
   line-height: 1;
+  z-index: 1;
 }
 
 .subtitle {
@@ -52,7 +56,7 @@
 }
 
 .introSection {
-  top: -10rem;
+  z-index: 2;
   background-color: $accent-light;
 }
 
@@ -135,6 +139,13 @@
       text-align: center;
       padding-bottom: 2rem;
     }
+  }
+
+  .introBackground {
+    max-height: 100vh;
+    height: 100vw;
+    width: 100vw;
+    overflow: hidden; 
   }
 
   .titleSection {
