@@ -20,7 +20,7 @@ export function ProjectCardCollapsed({ name, image, tags, brief }) {
       rotate: [10, 20, 10, 0],
       opacity: ["0.2", "0.4", "0.8", "1"],
       backgroundSize: "100%",
-      boxShadow: "-0.5px 0.5px 5px 0.5px rgb(0, 0, 0)",
+      boxShadow: "-0.5px 0.5px 5px 0.5px rgb(90, 72, 72)",
       transition: {
         duration: "0.4",
       },
@@ -56,11 +56,11 @@ export function ProjectCardCollapsed({ name, image, tags, brief }) {
       }}
       whileHover={{
         backgroundSize: "120%",
-        boxShadow: `0px 0px 8px 3px rgb(0, 0, 0)`,
+        boxShadow: `0px 0px 8px 3px rgb(63, 51, 51)`,
       }}
       whileTap={{
         backgroundSize: "120%",
-        boxShadow: `0px 0px 8px 3px rgb(0, 0, 0)`,
+        boxShadow: `0px 0px 8px 3px rgb(63, 51, 51)`,
       }}
       transition={{
         duration: "0.2",
