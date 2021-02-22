@@ -4,6 +4,9 @@ html,
 body {
   color: $white;
   background-color: $accent-light;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   ::selection {
    background-color: $brand; 
    color: $accent-dark;

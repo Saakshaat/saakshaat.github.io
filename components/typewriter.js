@@ -19,6 +19,8 @@ export default function Typerwriter({ elements, cursorColor, speed }) {
             ? utilStyles.white
             : cursorColor === "black"
             ? utilStyles.black
+            : cursorColor === 'accentDark'
+            ? utilStyles.accentDark
             : utilStyles.default
         }`}
       >

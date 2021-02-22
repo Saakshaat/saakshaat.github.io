@@ -5,12 +5,11 @@ import utilStyles from "../styles/utils.module.scss";
 
 import { motion } from "framer-motion";
 
-import Particles from "react-particles-js";
-import particlesConfig from "../lib/particlesConfig";
-
 import getIntrodutionData from "../lib/introduction";
 import getProjectData from "../lib/projects";
 
+import DisplacementSphere from "../components/DisplacementSphere";
+import DecoderText from "../components/DecoderText";
 import { GeneralPageLayout } from "../components/layouts";
 import Gigs from "../components/groups/gigs";
 import Projects from "../components/groups/projects";
@@ -32,40 +31,37 @@ export async function getStaticProps() {
 export default function Home({ introData, projectsData }) {
   return (
     <div>
+      <DisplacementSphere
+        className={styles.introBackground}
+        theme={{
+          rgbBackground: "248 229 229",
+          themeId: "light",
+          colorWhite: "#ffffff",
+        }}
+      />
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
-        <Particles
-          params={particlesConfig}
-          canvasClassName={styles.particlesCanvas}
-        />
         <div className={utilStyles.centered}>
-          <motion.h1
-            initial={{
-              filter: "blur(100px)",
-              opacity: 0,
-            }}
-            animate={{
-              filter: ["blur(60px)", "blur(40px)", "blur(20px)", "blur(0px)"],
-              opacity: 1,
-            }}
-            transition={{ duration: 0.5, type: "keyframes" }}
-          >
-            <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
-              <text className={utilStyles.highlightWhite}>Saakshaat</text>{" "}
-              <text>Singh</text>
-            </h1>
-          </motion.h1>
-
+          <DecoderText className={`${utilStyles.mainHeader} ${styles.title}`} text="SAAKSHAAT SINGH" delay={300} />
+          <div className={styles.subtitle}>
+            SWE <hr className={utilStyles.lineAfterContent} />
+          </div>
+          <br />
           <div className={`${styles.typewriter}`}>
+            <text
+              className={`${utilStyles.accentDark} ${utilStyles.padRightLt}`}
+            >
+              +
+            </text>
             <Typerwriter
-              elements={["SWE", "Leader", "Visionary"]}
-              cursorColor={"white"}
+              elements={["Leader", "Creator", "Coffee"]}
+              cursorColor={"accentDark"}
               speed={20}
             />
           </div>
         </div>
       </div>
 
-      <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
+      <GeneralPageLayout home={true} title={"Saakshaat | Dev"} socials={true}>
         <div
           id={"intro"}
           className={`${styles.container} ${styles.introSection} ${utilStyles.fullPage}`}
