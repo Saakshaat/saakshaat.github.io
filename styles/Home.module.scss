@@ -19,7 +19,7 @@
   background-size: cover;
   background-position: center;
   padding-left: 15rem;
-  // background-color: $background-dark;
+  z-index: 1;
 }
 
 .title {
@@ -52,6 +52,7 @@
 }
 
 .introSection {
+  top: -10rem;
   background-color: $accent-light;
 }
 

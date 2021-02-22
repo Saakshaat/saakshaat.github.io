@@ -11,6 +11,7 @@ import particlesConfig from "../lib/particlesConfig";
 import getIntrodutionData from "../lib/introduction";
 import getProjectData from "../lib/projects";
 
+import DisplacementSphere from "../components/DisplacementSphere";
 import { GeneralPageLayout } from "../components/layouts";
 import Gigs from "../components/groups/gigs";
 import Projects from "../components/groups/projects";
@@ -32,45 +33,48 @@ export async function getStaticProps() {
 export default function Home({ introData, projectsData }) {
   return (
     <div>
-      <Particles
-        params={particlesConfig}
-        canvasClassName={styles.particlesCanvas}
+      <DisplacementSphere
+        theme={{
+          rgbBackground: "248 229 229",
+          themeId: "light",
+          colorWhite: "#ffffff",
+        }}
       />
-      <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
-        <div className={utilStyles.centered}>
-          <motion.h1
-            initial={{
-              filter: "blur(100px)",
-              opacity: 0,
-            }}
-            animate={{
-              filter: ["blur(60px)", "blur(40px)", "blur(20px)", "blur(0px)"],
-              opacity: 1,
-            }}
-            transition={{ duration: 0.5, type: "keyframes" }}
-          >
-            <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
-              SAAKSHAAT SINGH
-            </h1>
-          </motion.h1>
-          <div className={styles.subtitle}>
-            SWE <hr className={utilStyles.lineAfterContent} />
-          </div>
-          <br />
-          <div className={`${styles.typewriter}`}>
-            <text
-              className={`${utilStyles.accentDark} ${utilStyles.padRightLt}`}
+        <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
+          <div className={utilStyles.centered}>
+            <motion.h1
+              initial={{
+                filter: "blur(100px)",
+                opacity: 0,
+              }}
+              animate={{
+                filter: ["blur(60px)", "blur(40px)", "blur(20px)", "blur(0px)"],
+                opacity: 1,
+              }}
+              transition={{ duration: 0.5, type: "keyframes" }}
             >
-              +
-            </text>
-            <Typerwriter
-              elements={["Leader", "Creator", "Coffee"]}
-              cursorColor={"accentDark"}
-              speed={20}
-            />
+              <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
+                SAAKSHAAT SINGH
+              </h1>
+            </motion.h1>
+            <div className={styles.subtitle}>
+              SWE <hr className={utilStyles.lineAfterContent} />
+            </div>
+            <br />
+            <div className={`${styles.typewriter}`}>
+              <text
+                className={`${utilStyles.accentDark} ${utilStyles.padRightLt}`}
+              >
+                +
+              </text>
+              <Typerwriter
+                elements={["Leader", "Creator", "Coffee"]}
+                cursorColor={"accentDark"}
+                speed={20}
+              />
+            </div>
           </div>
         </div>
-      </div>
 
       <GeneralPageLayout home={true} title={"Saakshaat | Dev"} socials={true}>
         <div
