@@ -32,11 +32,11 @@ export async function getStaticProps() {
 export default function Home({ introData, projectsData }) {
   return (
     <div>
+      <Particles
+        params={particlesConfig}
+        canvasClassName={styles.particlesCanvas}
+      />
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
-        <Particles
-          params={particlesConfig}
-          canvasClassName={styles.particlesCanvas}
-        />
         <div className={utilStyles.centered}>
           <motion.h1
             initial={{
@@ -50,22 +50,29 @@ export default function Home({ introData, projectsData }) {
             transition={{ duration: 0.5, type: "keyframes" }}
           >
             <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
-              <text className={utilStyles.highlightWhite}>Saakshaat</text>{" "}
-              <text>Singh</text>
+              SAAKSHAAT SINGH
             </h1>
           </motion.h1>
-
+          <div className={styles.subtitle}>
+            SWE <hr className={utilStyles.lineAfterContent} />
+          </div>
+          <br />
           <div className={`${styles.typewriter}`}>
+            <text
+              className={`${utilStyles.accentDark} ${utilStyles.padRightLt}`}
+            >
+              +
+            </text>
             <Typerwriter
-              elements={["SWE", "Leader", "Visionary"]}
-              cursorColor={"white"}
+              elements={["Leader", "Creator", "Coffee"]}
+              cursorColor={"accentDark"}
               speed={20}
             />
           </div>
         </div>
       </div>
 
-      <GeneralPageLayout home={true} title={"Saakshaat"} socials={true}>
+      <GeneralPageLayout home={true} title={"Saakshaat | Dev"} socials={true}>
         <div
           className={`${styles.container} ${styles.introSection} ${utilStyles.fullPage}`}
         >
@@ -131,7 +138,9 @@ export default function Home({ introData, projectsData }) {
         <div
           className={`${styles.container} ${styles.skillsSection} ${utilStyles.fullPage}`}
         >
-          <div className={`${utilStyles.sectionHeader} ${styles.skillsHeader}`}>Skills</div>
+          <div className={`${utilStyles.sectionHeader} ${styles.skillsHeader}`}>
+            Skills
+          </div>
           <div className={styles.headerGrid}>
             <Skills />
           </div>

@@ -6,7 +6,6 @@
   flex-wrap: wrap-reverse;
   overflow: hidden;
   font-family: Work Sans, Helvetica;
-  color: $accent-light;
 }
 
 .sectionHeader {
@@ -41,6 +40,22 @@
   padding-top: 3rem;
 }
 
+.padRightLt {
+  padding-right: 1rem;
+}
+
+.lineAfterContent {
+  color: black;
+  border: 1px solid black;
+  background-color: black;
+  height: 12px;
+  margin-left: 1.5rem;
+  width: 25vw;
+  height: 0;
+  padding-top: 0;
+  overflow: hidden;
+}
+
 .highlightWhite {
   color: $background-dark;
   background-color: $accent-light;
@@ -48,6 +63,10 @@
 
 .accentLight {
   color: $accent-light;
+}
+
+.accentDark {
+  color: $accent-dark;
 }
 
 @media (max-width: 1024px) {

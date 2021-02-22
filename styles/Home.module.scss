@@ -11,24 +11,44 @@
 
 .particlesCanvas {
   position: absolute !important;
+  height: 110vh !important;
 }
 
 .titleSection {
   // background-image: url("../public/images/background-header.gif");
   background-size: cover;
   background-position: center;
-  background-color: $background-dark;
+  padding-left: 15rem;
+  // background-color: $background-dark;
 }
 
-.title,
+.title {
+  color: $black;
+  opacity: 0.8;
+  font-weight: 500;
+  // font-family: var(--japaneseFontStack);
+  font-size: 2.5rem;
+}
+
+.subtitle,
 .typewriter {
-  text-align: center;
+  font-family: Heebo, Helvetica;
+  font-weight: 600;
+  color: $black;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.subtitle {
+  display: inline-flex;
+}
+
+.subtitleLine {
+  color: $black;
 }
 
 .typewriter {
-  color: $white;
-  line-height: 1.5;
-  font-size: 2rem;
+  display: inline-flex;
 }
 
 .introSection {
@@ -73,7 +93,7 @@
 
 .projectsSection {
   margin-top: 2rem;
-  background-color: $background-dark;
+  // background-color: $background-dark;
 }
 
 .skillsSection {
@@ -116,8 +136,18 @@
     }
   }
 
+  .titleSection {
+    padding-left: 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle,
   .typewriter {
-    font-size: 1.5rem;
+    font-size: 3.7rem;
+    line-height: 1.1;
   }
   .skillsHeader {
     padding-bottom: 2rem;
@@ -134,6 +164,16 @@
   .introDescription {
     font-size: 1rem;
   }
+
+  .titleSection {
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
   .skillsSection {
     padding-left: 0.1rem;
     padding-right: 0.1rem;
