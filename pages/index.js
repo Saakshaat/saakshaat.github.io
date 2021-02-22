@@ -5,9 +5,6 @@ import utilStyles from "../styles/utils.module.scss";
 
 import { motion } from "framer-motion";
 
-import Particles from "react-particles-js";
-import particlesConfig from "../lib/particlesConfig";
-
 import getIntrodutionData from "../lib/introduction";
 import getProjectData from "../lib/projects";
 
