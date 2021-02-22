@@ -20,12 +20,12 @@ import { value, spring } from 'popmotion';
 import vertShader from './sphereVertShader';
 import fragShader from './sphereFragShader';
 import { Transition } from 'react-transition-group';
-import usePrefersReducedMotion from "./hooks/usePrefersReducedMotion"
-import useInViewport from "./hooks/useInViewport"
-import useWindowSize from "./hooks/useWindowSize"
-import { reflow } from './utils/transition';
-import { media, rgbToThreeColor } from './utils/style';
-import { cleanScene, removeLights, cleanRenderer } from './utils/three';
+import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion"
+import useInViewport from "../hooks/useInViewport"
+import useWindowSize from "../hooks/useWindowSize"
+import { reflow } from '../utils/transition';
+import { media, rgbToThreeColor } from '../utils/style';
+import { cleanScene, removeLights, cleanRenderer } from '../utils/three';
 import './DisplacementSphere.module.scss';
 
 const DisplacementSphere = (props) => {

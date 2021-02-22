@@ -1,6 +1,8 @@
 @import "./_variables/colors.module.scss";
 
 .mainHeader {
+  display: block;
+  padding-bottom: 1rem;
   font-size: 18vh;
   flex: 1;
   flex-wrap: wrap-reverse;

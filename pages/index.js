@@ -12,6 +12,7 @@ import getIntrodutionData from "../lib/introduction";
 import getProjectData from "../lib/projects";
 
 import DisplacementSphere from "../components/DisplacementSphere";
+import DecoderText from "../components/DecoderText";
 import { GeneralPageLayout } from "../components/layouts";
 import Gigs from "../components/groups/gigs";
 import Projects from "../components/groups/projects";
@@ -38,26 +39,12 @@ export default function Home({ introData, projectsData }) {
         theme={{
           rgbBackground: "248 229 229",
           themeId: "light",
-          colorWhite: "#f8e5e5",
+          colorWhite: "#ffffff",
         }}
       />
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
         <div className={utilStyles.centered}>
-          <motion.h1
-            initial={{
-              filter: "blur(100px)",
-              opacity: 0,
-            }}
-            animate={{
-              filter: ["blur(60px)", "blur(40px)", "blur(20px)", "blur(0px)"],
-              opacity: 1,
-            }}
-            transition={{ duration: 0.5, type: "keyframes" }}
-          >
-            <h1 className={`${utilStyles.mainHeader} ${styles.title}`}>
-              SAAKSHAAT SINGH
-            </h1>
-          </motion.h1>
+          <DecoderText className={`${utilStyles.mainHeader} ${styles.title}`} text="SAAKSHAAT SINGH" delay={300} />
           <div className={styles.subtitle}>
             SWE <hr className={utilStyles.lineAfterContent} />
           </div>
