@@ -1,3 +1,10 @@
+/**
+ * Many thanks to Hamish William.
+ * Source: https://github.com/HamishMW/portfolio
+ * Also check out their website: https://hamishw.com/
+ */
+
+
 import { useRef, useEffect, memo } from 'react';
 import classNames from 'classnames';
 import usePrefersReducedMotion from '../hooks/usePrefersReducedMotion';

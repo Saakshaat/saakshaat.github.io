@@ -1,3 +1,10 @@
+/**
+ * Many thanks to Hamish William.
+ * Source: https://github.com/HamishMW/portfolio
+ * Also check out their website: https://hamishw.com/
+ */
+
+
 import { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 import {
