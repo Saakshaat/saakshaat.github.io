@@ -94,15 +94,13 @@ export function ProjectCardExpanded({
       className={styles.expandedCard}
       initial={{
         boxShadow: "none",
-        scale: 0,
       }}
       animate={{
         boxShadow: "0px 0px 100rem 100rem rgba(0, 0, 0, 0.8)",
-        scale: ["0.5", "1"],
       }}
       transition={{
-        duration: "0.1",
-        type: "keyframes",
+        duration: "0",
+        type: "spring",
       }}
     >
       <div className={styles.expandedName}>{name}</div>
