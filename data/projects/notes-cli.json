@@ -1,0 +1,12 @@
+{
+    "name": "PyNotes",
+    "link": "https://pypi.org/project/py-notes/",
+    "image": "/images/projects/py-notes.png",
+    "tags": [
+        "PYTHON",
+        "CLI",
+        "PYPI"
+    ],
+    "brief": "CLI for taking notes from your terminal",
+    "description": "PyNotes is a Python based CLI which can take notes directly from your terminal.\n\nThe application saves all data on a local cache with a limit of 25 notes. The user is able to add, search and delete notes with a wide array of command line options.\n\nPyNotes was built using Click and currently registered on PyPI and you can install it with `pip install py-notes` and get started with `notes`."
+}

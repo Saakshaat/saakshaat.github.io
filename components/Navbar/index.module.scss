@@ -1,0 +1,117 @@
+@import "../../styles/_variables/colors.module.scss";
+
+.container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: $black;
+  transition: 0.3s ease;
+}
+
+.button {
+  outline: none;
+}
+
+.button:focus,
+.button:active {
+  scale: 0.9;
+}
+
+.closedButton {
+  margin-top: 1.7rem;
+  margin-left: 1.5rem;
+  position: absolute;
+  border: none;
+  background: none;
+}
+
+.expandedButton {
+  margin-top: 0.9rem;
+  margin-left: 2rem;
+  position: absolute;
+  border: none;
+  background: none;
+  fill: $white;
+}
+
+.homeButton {
+  user-select: none;
+  outline: none;
+  margin-top: 0rem;
+  margin-right: 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 5rem;
+  color: $white;
+  transition: 0.3s ease-out;
+}
+
+.homeButton:hover {
+  color: black;
+  transition: 0.3s ease-in;
+}
+
+.expandedContainer {
+  padding-top: 1.5rem;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: $white;
+  font-size: 1.5rem;
+  font-family: Heebo, Helvetica Nueve;
+  font-weight: bold;
+  background-color: rgba($accent-dark, 0.9);
+  transition: height;
+}
+
+.linksContainer {
+  text-align: center;
+}
+
+.links {
+  padding-top: 2rem;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.listItems {
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.listItems:hover {
+  color: $black;
+  transition: 0.3s ease;
+}
+
+.listItems:active {
+  color: $dark-shade;
+  transition: 0.1s ease;
+}
+
+.socials {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  display: inline-flex;
+}
+
+@media (max-width: 800px) {
+  .homeButton {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    font-size: 4rem;
+  }
+  .linksContainer {
+    padding-top: 5rem;
+    padding-right: 1rem;
+  }
+  .socials {
+    padding-left: 1rem;
+    display: inline-block;
+  }
+}

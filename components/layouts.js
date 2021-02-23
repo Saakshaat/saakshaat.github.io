@@ -1,7 +1,40 @@
 import Head from "next/head";
+import Link from "next/link";
+
+import styles from "./layout.module.scss";
+import utilStyles from "../styles/utils.module.scss";
+
+import Footer from "./footer";
 
 const name = "Saakshaat Singh";
 export const siteTitle = "**Saakshaat** Singh";
+
+export function GeneralPageLayout({ home, children, title }) {
+  return (
+    <>
+      <Head>
+        <title>{title ? title : name}</title>
+        <meta name="og:title" content={title ? title : name} />
+      </Head>
+      <div className={styles.container}>
+        {home ? (
+          <>
+            <div>{children}</div>
+          </>
+        ) : (
+          <>
+            <div>
+              {children}
+              <Link href="/">
+                <a className={styles.backToHome}>Back to Home</a>
+              </Link>
+            </div>
+          </>
+        )}
+      </div>
+    </>
+  );
+}
 
 export function GlobalLayout({ children }) {
   return (
@@ -20,11 +53,31 @@ export function GlobalLayout({ children }) {
         />
         <meta name="og:title" content={name} />
         <meta name="twitter:card" content="summary_large_image" />
-        <title>
-            {name}
-        </title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap"
+          rel="stylesheet"
+          key="google-font-assistant"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap"
+          rel="stylesheet"
+          key="google-font-rajdhani"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap"
+          rel="stylesheet"
+          key="google-font-work-sans"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap"
+          rel="stylesheet"
+          key="google-font-heebo"
+        />
+        <title>{name}</title>
       </Head>
       {children}
+
+      <Footer />
     </div>
   );
 }

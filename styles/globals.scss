@@ -1,0 +1,31 @@
+@import "./_variables/colors.module.scss";
+
+html,
+body {
+  color: $white;
+  background-color: $accent-light;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  ::selection {
+   background-color: $brand; 
+   color: $accent-dark;
+  }
+  padding: 0;
+  margin: 0;
+  font-family: Assistant, Helvetica Neue, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  pointer-events: none;
+}

@@ -1,0 +1,11 @@
+@import "../../styles/_variables/colors.module.scss";
+
+.container {
+  flex: 2;
+  padding: 1rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: $accent-light;
+}

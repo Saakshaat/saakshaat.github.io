@@ -1,11 +1,11 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
 
 import { GlobalLayout } from "../components/layouts";
 
 function MyApp({ Component, pageProps }) {
   return (
     <GlobalLayout>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </GlobalLayout>
   );
 }

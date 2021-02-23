@@ -1,0 +1,28 @@
+@import "../styles/_variables/colors.module.scss";
+
+.container {
+  background-color: $background-dark;
+  position: static;
+  padding-bottom: 2rem;
+  flex-wrap: wrap-reverse;
+  text-align: center;
+}
+
+.title {
+  font-family: Heebo, Helvetica;
+}
+
+.socialsFooter {
+}
+
+.socialsFooter:before {
+  border-top: 1px solid black;
+}
+
+.typewriter {
+  color: $light-shade;
+}
+
+.signature {
+  font-size: 0.8rem;
+}

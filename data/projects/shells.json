@@ -1,0 +1,12 @@
+{
+    "name": "Shells",
+    "link": "https://github.com/Saakshaat/shells",
+    "image": "/images/projects/shells.jpg",
+    "tags": [
+        "C",
+        "RUST",
+        "RUBY"
+    ],
+    "brief": "My 3 shells",
+    "description": "This is my first take on systems programming. I'm building shells in 3 languages:\n\nC: cshell, Rust: rustell, Ruby: rubell.\n\nI also dwelled into writing my own grammer and parsers with Lex and Yacc.\n\nWhile the main idea is to learn how to interact with systems and get some more experience with these languages, I'm also messing around with pipes and stuff."
+}
