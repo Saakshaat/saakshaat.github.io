@@ -59,9 +59,9 @@ export function GlobalLayout({ children }) {
           key="google-font-assistant"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap"
           rel="stylesheet"
-          key="google-font-robot-slab"
+          key="google-font-rajdhani"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap"

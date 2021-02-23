@@ -4,9 +4,8 @@
  * Also check out their website: https://hamishw.com/
  */
 
-
-import { useEffect, useRef } from 'react';
-import classNames from 'classnames';
+import { useEffect, useRef } from "react";
+import classNames from "classnames";
 import {
   Vector2,
   sRGBEncoding,
@@ -21,19 +20,19 @@ import {
   SphereBufferGeometry,
   Mesh,
   Color,
-} from 'three';
+} from "three";
 
-import { value, spring } from 'popmotion';
-import vertShader from './sphereVertShader';
-import fragShader from './sphereFragShader';
-import { Transition } from 'react-transition-group';
-import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion"
-import useInViewport from "../hooks/useInViewport"
-import useWindowSize from "../hooks/useWindowSize"
-import { reflow } from '../utils/transition';
-import { media, rgbToThreeColor } from '../utils/style';
-import { cleanScene, removeLights, cleanRenderer } from '../utils/three';
-import './DisplacementSphere.module.scss';
+import { value, spring } from "popmotion";
+import vertShader from "./sphereVertShader";
+import fragShader from "./sphereFragShader";
+import { Transition } from "react-transition-group";
+import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion";
+import useInViewport from "../hooks/useInViewport";
+import useWindowSize from "../hooks/useWindowSize";
+import { reflow } from "../utils/transition";
+import { media, rgbToThreeColor } from "../utils/style";
+import { cleanScene, removeLights, cleanRenderer } from "../utils/three";
+import "./DisplacementSphere.module.scss";
 
 const DisplacementSphere = (props) => {
   const { rgbBackground, themeId, colorWhite } = props.theme;
@@ -60,24 +59,27 @@ const DisplacementSphere = (props) => {
     renderer.current = new WebGLRenderer({
       canvas: canvasRef.current,
       antialias: false,
-      powerPreference: 'high-performance',
+      powerPreference: "high-performance",
     });
     renderer.current.setSize(innerWidth, innerHeight);
     renderer.current.setPixelRatio(1);
-    renderer.current.outputEncoding = sRGBEncoding;
-
-    camera.current = new PerspectiveCamera(54, innerWidth / innerHeight, 0.1, 100);
+    renderer.current.outputEncoding = camera.current = new PerspectiveCamera(
+      54,
+      innerWidth / innerHeight,
+      0.1,
+      100
+    );
     camera.current.position.z = 52;
 
     scene.current = new Scene();
 
     material.current = new MeshPhongMaterial();
-    material.current.onBeforeCompile = shader => {
+    material.current.onBeforeCompile = (shader) => {
       uniforms.current = UniformsUtils.merge([
-        UniformsLib['ambient'],
-        UniformsLib['lights'],
+        UniformsLib["ambient"],
+        UniformsLib["lights"],
         shader.uniforms,
-        { time: { type: 'f', value: 0 } },
+        { time: { type: "f", value: 0 } },
       ]);
 
       shader.uniforms = uniforms.current;
@@ -100,7 +102,10 @@ const DisplacementSphere = (props) => {
 
   useEffect(() => {
     const dirLight = new DirectionalLight(colorWhite, 0.6);
-    const ambientLight = new AmbientLight(colorWhite, themeId === 'light' ? 0.8 : 0.1);
+    const ambientLight = new AmbientLight(
+      colorWhite,
+      themeId === "light" ? 0.8 : 0.1
+    );
 
     dirLight.position.z = 200;
     dirLight.position.x = 100;
@@ -108,7 +113,7 @@ const DisplacementSphere = (props) => {
 
     lights.current = [dirLight, ambientLight];
     scene.current.background = new Color(...rgbToThreeColor(rgbBackground));
-    lights.current.forEach(light => scene.current.add(light));
+    lights.current.forEach((light) => scene.current.add(light));
 
     return () => {
       removeLights(lights.current);
@@ -141,7 +146,7 @@ const DisplacementSphere = (props) => {
   }, [prefersReducedMotion, windowSize]);
 
   useEffect(() => {
-    const onMouseMove = event => {
+    const onMouseMove = (event) => {
       const { rotation } = sphere.current;
 
       const position = {
@@ -150,7 +155,7 @@ const DisplacementSphere = (props) => {
       };
 
       if (!sphereSpring.current) {
-        sphereSpring.current = value(rotation.toArray(), values =>
+        sphereSpring.current = value(rotation.toArray(), (values) =>
           rotation.set(values[0], values[1], sphere.current.rotation.z)
         );
       }
@@ -163,17 +168,18 @@ const DisplacementSphere = (props) => {
         velocity: sphereSpring.current.getVelocity(),
         mass: 2,
         restSpeed: 0.0001,
-      }).start(spring.current);
+      }).start(sphereSpring.current);
     };
 
-    if (typeof window !== 'undefined' && !prefersReducedMotion && isInViewport) {
-      window.addEventListener('mousemove', onMouseMove);
+    if (process.browser && !prefersReducedMotion && isInViewport) {
+      window.addEventListener("mousemove", onMouseMove);
     }
 
     return () => {
-      if(typeof window !== 'undefined') { 
-      window.removeEventListener('mousemove', onMouseMove);
+      if (process.browser) {
+        window.removeEventListener("mousemove", onMouseMove);
       }
+
       tweenRef.current?.stop();
     };
   }, [isInViewport, prefersReducedMotion]);
@@ -205,10 +211,13 @@ const DisplacementSphere = (props) => {
 
   return (
     <Transition appear in onEnter={reflow} timeout={3000}>
-      {status => (
+      {(status) => (
         <canvas
           aria-hidden
-          className={classNames('displacement-sphere', `displacement-sphere--${status}`)}
+          className={classNames(
+            "displacement-sphere",
+            `displacement-sphere--${status}`
+          )}
           ref={canvasRef}
           {...props}
         />
