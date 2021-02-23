@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 
 import styles from "../styles/Home.module.scss";
@@ -8,13 +9,16 @@ import { motion } from "framer-motion";
 import getIntrodutionData from "../lib/introduction";
 import getProjectData from "../lib/projects";
 
-import DisplacementSphere from "../components/DisplacementSphere";
-import DecoderText from "../components/DecoderText";
 import { GeneralPageLayout } from "../components/layouts";
-import Gigs from "../components/groups/gigs";
-import Projects from "../components/groups/projects";
-import Skills from "../components/groups/skills";
 import Typerwriter from "../components/typewriter";
+
+const DisplacementSphere = dynamic(() =>
+  import("../components/DisplacementSphere")
+);
+const DecoderText = dynamic(() => import("../components/DecoderText"));
+const Gigs = dynamic(() => import("../components/groups/gigs"));
+const Projects = dynamic(() => import("../components/groups/projects"));
+const Skills = dynamic(() => import("../components/groups/skills"));
 
 export async function getStaticProps() {
   const introData = await getIntrodutionData();
@@ -41,7 +45,11 @@ export default function Home({ introData, projectsData }) {
       />
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
         <div className={utilStyles.centered}>
-          <DecoderText className={`${utilStyles.mainHeader} ${styles.title}`} text="SAAKSHAAT SINGH" delay={300} />
+          <DecoderText
+            className={`${utilStyles.mainHeader} ${styles.title}`}
+            text="SAAKSHAAT SINGH"
+            delay={300}
+          />
           <div className={styles.subtitle}>
             SWE <hr className={utilStyles.lineAfterContent} />
           </div>
