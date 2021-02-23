@@ -1,0 +1,120 @@
+@import "../../styles/_variables/colors.module.scss";
+
+.container {
+  flex: 2;
+  padding: 1rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+//**CARDS**//
+.compactCard {
+  padding: 2rem;
+  border-radius: 100%;
+}
+
+.headerGrid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.thirdGrid {
+  max-width: 20%;
+}
+
+.expandedCard {
+  padding: 2rem;
+  max-width: 100%;
+  width: 50rem;
+  height: auto;
+  border-radius: 1.5rem;
+  color: $white;
+  background-color: rgba($dark-shade, 0.97);
+  box-shadow: -1px -2px 7px 0.5px $dark-shade;
+}
+
+.cardLogo {
+  text-align: center;
+}
+
+.titles {
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+.organization {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: Raleway, Helvetica, sans-serif;
+}
+
+.position {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: $accent-light;
+  font-family: Work Sans, Helvetica, sans-serif;;
+  
+}
+
+.description {
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1.5rem;
+  white-space: pre-wrap;
+  text-align: justify;
+  color: $white;
+}
+
+@media (max-width: 700px) {
+  .expandedCard {
+    width: 40rem;
+  }
+  .cardLogo {
+    align-self: center;
+    justify-self: center;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .expandedCard {
+    width: 40rem;
+    padding: 1rem;
+  }
+
+  .headerGrid {
+    display: block;
+    .col,
+    .thirdGrid {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+  }
+  .titles {
+    text-align: center;
+  }
+}
+
+
+@media (max-height: 600px) {
+    .organization {
+      font-size: 1rem;
+    }
+    .position {
+      font-size: 0.9rem;
+    }
+    .description {
+      font-size: 0.8rem;
+    }
+}

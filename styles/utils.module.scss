@@ -1,0 +1,99 @@
+@import "./_variables/colors.module.scss";
+
+.mainHeader {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 18vh;
+  flex: 1;
+  flex-wrap: wrap-reverse;
+  overflow: hidden;
+  font-family: Rajdhani, Helvetica;
+}
+
+.sectionHeader {
+  padding-top: 4rem;
+  padding-bottom:3rem;
+  font-size: 12vh;
+  z-index: 0;
+  flex: 1;
+  flex-direction: column;
+  color: $brand;
+  font-family: Heebo;
+}
+
+.subTitle {
+  color: $dark-shade;
+  font-size: 7vh;
+  font-family: Helvetica;
+}
+
+.centered {
+  padding-top: 25vh;
+}
+
+.fullPage {
+  min-height: 100vh !important;
+}
+
+.quarterPage {
+  min-height: 25vh !important;
+}
+
+.padTopMd {
+  padding-top: 3rem;
+}
+
+.padRightLt {
+  padding-right: 1rem;
+}
+
+.lineAfterContent {
+  color: black;
+  border: 1px solid black;
+  background-color: black;
+  height: 12px;
+  margin-left: 1.5rem;
+  width: 25vw;
+  height: 0;
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.highlightWhite {
+  color: $background-dark;
+  background-color: $accent-light;
+}
+
+.accentLight {
+  color: $accent-light;
+}
+
+.accentDark {
+  color: $accent-dark;
+}
+
+@media (max-width: 1024px) {
+  .mainHeader {
+    width: 100%;
+    font-size: 13vh;
+  }
+  .sectionHeader {
+    font-size: 9vh;
+  }
+  .subTitle {
+    font-size: 5vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .mainHeader {
+    width: 100%;
+    font-size: 9vh;
+  }
+  .sectionHeader {
+    font-size: 7vh;
+  }
+  .subTitle {
+    font-size: 4vh;
+  }
+}

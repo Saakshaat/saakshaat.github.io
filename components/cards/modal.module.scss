@@ -1,0 +1,13 @@
+.backdrop {
+  z-index: 1; 
+}
+
+.modal {
+  max-width: 85vw;
+  overflow-wrap: break-word;
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

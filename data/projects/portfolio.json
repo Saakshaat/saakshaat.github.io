@@ -1,0 +1,12 @@
+{
+    "name": "This Website",
+    "link": "https://saakshaat.codes/",
+    "image": "./images/projects/portfolio.png",
+    "tags": [
+        "NEXT",
+        "REACT",
+        "JS"
+    ],
+    "brief": "My portfolio",
+    "description": "This website is a third iteration and is made using Next.js, a production grade React framework with a lot of benefits such as prerendering and prefetching.\n\nAll data is dynamically pulled from JSON files at compile time, making this super fast.\n\nI've used Framer-Motion for most animations which integrates every well with Next.js."
+}
