@@ -10,6 +10,7 @@ import getIntrodutionData from "../lib/introduction";
 import getProjectData from "../lib/projects";
 
 import { GeneralPageLayout } from "../components/layouts";
+import Navbar from "../components/Navbar";
 import Typerwriter from "../components/typewriter";
 
 const DisplacementSphere = dynamic(() =>
@@ -35,6 +36,27 @@ export async function getStaticProps() {
 export default function Home({ introData, projectsData }) {
   return (
     <div>
+      <Navbar
+        current={"/"}
+        pages={[
+          {
+            title: "SAAKSHAAT",
+            id: "intro",
+          },
+          {
+            title: "PROJECTS",
+            id: "projects",
+          },
+          {
+            title: "TECH STACKS",
+            id: "skills",
+          },
+          {
+            title: "CONTACT",
+            id: "contact",
+          },
+        ]}
+      />
       <DisplacementSphere
         className={styles.introBackground}
         theme={{
@@ -69,7 +91,7 @@ export default function Home({ introData, projectsData }) {
         </div>
       </div>
 
-      <GeneralPageLayout home={true} title={"Saakshaat | Dev"} socials={true}>
+      <GeneralPageLayout home={true} title={"Saakshaat Singh"} socials={true}>
         <div
           id={"intro"}
           className={`${styles.container} ${styles.introSection} ${utilStyles.fullPage}`}
