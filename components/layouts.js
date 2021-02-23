@@ -53,6 +53,21 @@ export function GlobalLayout({ children }) {
         />
         <meta name="og:title" content={name} />
         <meta name="twitter:card" content="summary_large_image" />
+          <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-143950438-1"
+          />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'UA-143950438-1');
+              `,
+          }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap"
           rel="stylesheet"
