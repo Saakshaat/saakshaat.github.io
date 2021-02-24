@@ -137,6 +137,7 @@ export default function Home({ introData, projectsData }) {
                 साक्षात \ sa-ahk-SHA-at
               </div>
               <motion.div
+                lang={"en"}
                 className={styles.introDescription}
                 initial={{
                   boxShadow: "1px 1px 5px 0.5px rgba(0, 0, 0, 0.5)",

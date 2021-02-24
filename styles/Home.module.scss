@@ -15,7 +15,7 @@
   max-width: 100vw;
   height: 100vw;
   width: 100vw;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .titleSection {
@@ -144,7 +144,7 @@
     max-height: 100vh;
     height: 100vw;
     width: 100vw;
-    overflow: hidden; 
+    overflow: hidden;
   }
 
   .titleSection {
@@ -160,6 +160,14 @@
     font-size: 3.7rem;
     line-height: 1.1;
   }
+
+  .introDescription {
+    hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
   .skillsHeader {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
@@ -172,10 +180,6 @@
 }
 
 @media (max-width: 375px) {
-  .introDescription {
-    font-size: 1rem;
-  }
-
   .titleSection {
     padding-right: 0;
     padding-left: 1rem;
@@ -183,6 +187,10 @@
 
   .title {
     font-size: 2.2rem;
+  }
+
+  .introDescription {
+    font-size: 1.1rem;
   }
 
   .skillsSection {
