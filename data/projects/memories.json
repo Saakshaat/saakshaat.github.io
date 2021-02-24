@@ -9,5 +9,5 @@
         "FIREBASE"
     ],
     "brief": "A social network for my friends",
-    "description": "The idea was to preserve all my memories I made with my freshman year friends somewhere other than my gallery.\n\nThis was my first full stack app, where I used Express.js for backend with a React.js frontend and the API and database hosted on GCP's Firebase.\n\nUsers have individual accounts and can make posts and comments pretty much like Twitter."
+    "description": "This was my first full stack app, where I used Express.js for backend with a React.js frontend and the API and database hosted on GCP's Firebase.\n\nUsers have individual accounts and can make posts and comments pretty much like Twitter.\n\nThe idea was to preserve all the memories I made with my friends, freshman year, somewhere."
 }
