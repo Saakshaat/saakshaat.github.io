@@ -57,14 +57,26 @@ export default function Home({ introData, projectsData }) {
           },
         ]}
       />
-      <DisplacementSphere
-        className={styles.introBackground}
-        theme={{
-          rgbBackground: "248 229 229",
-          themeId: "light",
-          colorWhite: "#ffffff",
+      <motion.div
+        initial={{
+          opacity: 0,
         }}
-      />
+        animate={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 1,
+        }}
+      >
+        <DisplacementSphere
+          className={styles.introBackground}
+          theme={{
+            rgbBackground: "248 229 229",
+            themeId: "light",
+            colorWhite: "#ffffff",
+          }}
+        />
+      </motion.div>
       <div className={`${utilStyles.fullPage} ${styles.titleSection}`}>
         <div className={utilStyles.centered}>
           <DecoderText
