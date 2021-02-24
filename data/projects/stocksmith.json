@@ -1,0 +1,11 @@
+{
+    "name": "Stocksmith",
+    "link": "https://github.com/stocksmith",
+    "image": "/images/projects/stocksmith.png",
+    "tags": [
+        "PYTHON",
+        "PYPI"
+    ],
+    "brief": "Making stock analysis simpler",
+    "description": "Ah, yes my first project at UMass.\n\nStocksmith was born from my nascent interests in stocks and ML and their intersecting potential. What started as a web platform evolved to take its final form as a library.\n\nStocksmith provides packages for techincal, fundamental and sentimental analysis using ML and NLP. This was a collaborative effort between ACM ML and Google DSC at UMass."
+}
