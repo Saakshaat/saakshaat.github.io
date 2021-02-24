@@ -11,5 +11,5 @@
         "DOCKER"
     ],
     "brief": "Matching people to projects",
-    "description": "With COVID devs started hunting open source projects, I realized the need for a space where 2 elements could intersect.\n\nThe pilot was built with the FERN stack with my friends Aryaman and Duy. With great feedback from our pilot testers, we started building the final version.\n\nThe current version is built in Rails in collab with DSC UMass, UIUC and NTU and supports Slack-like versioning for each org."
+    "description": "This is an open source platform for matching teammates to projects using stable marriage. This was a product of COVID 🦠!\n\nI built the pilot with the FERN stack with my team and with great feedback from our beta-testers, we started building the final version.\n\nThe current version is built in Rails in collab with DSC UMass, UIUC and NTU and supports Slack-like versioning for each org."
 }
