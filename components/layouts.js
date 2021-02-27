@@ -45,6 +45,9 @@ export function GlobalLayout({ children }) {
           name="description"
           content="Saakshaat Singh. SWE. Chair. Baking Bacon Pancakes."
         />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <meta name="apple-mobile-web-app-status-bar" content="#c79ea9"/>
         <meta name="theme-color" content="#c79ea9"/>
         <meta
           property="og:image"

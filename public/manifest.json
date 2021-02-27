@@ -1,0 +1,25 @@
+{
+    "short_name": "Saakshaat",
+    "name": "Saakshaat Singh",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "scope": "/",
+    "start_url": "/",
+    "background_color": "#c79ea9",
+    "orientation": "portrait-primary",
+    "display": "minimal-ui",
+    "display_override": [
+        "window-control-overlay",
+        "standalone",
+        "browser"
+    ],
+    "theme_color": "#c79ea9",
+    "shortcuts": [],
+    "description": "",
+    "screenshots": []
+}
