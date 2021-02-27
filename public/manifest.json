@@ -3,9 +3,14 @@
     "name": "Saakshaat Singh | SWE | Leader",
     "icons": [
         {
-            "src": "/icon.png",
+            "src": "/icon192x192.png",
             "type": "image/png",
             "sizes": "192x192"
+        },
+        {
+            "src": "/icon512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ],
     "scope": "/",
