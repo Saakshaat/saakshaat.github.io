@@ -45,6 +45,7 @@ export function GlobalLayout({ children }) {
           name="description"
           content="Saakshaat Singh. SWE. Chair. Baking Bacon Pancakes."
         />
+        <meta name="theme-color" content="#c79ea9"/>
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
