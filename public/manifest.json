@@ -1,0 +1,30 @@
+{
+    "short_name": "Saakshaat",
+    "name": "Saakshaat Singh | SWE | Leader",
+    "icons": [
+        {
+            "src": "/icon192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/icon512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "scope": "/",
+    "start_url": "/",
+    "background_color": "#c79ea9",
+    "orientation": "portrait-primary",
+    "display": "minimal-ui",
+    "display_override": [
+        "window-control-overlay",
+        "standalone",
+        "browser"
+    ],
+    "theme_color": "#c79ea9",
+    "shortcuts": [],
+    "description": "",
+    "screenshots": []
+}

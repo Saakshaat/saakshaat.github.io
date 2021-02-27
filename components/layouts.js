@@ -45,6 +45,10 @@ export function GlobalLayout({ children }) {
           name="description"
           content="Saakshaat Singh. SWE. Chair. Baking Bacon Pancakes."
         />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <meta name="apple-mobile-web-app-status-bar" content="#f8e5e5"/>
+        <meta name="theme-color" content="#f8e5e5"/>
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
