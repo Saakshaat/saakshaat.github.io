@@ -47,8 +47,8 @@ export function GlobalLayout({ children }) {
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
-        <meta name="apple-mobile-web-app-status-bar" content="#c79ea9"/>
-        <meta name="theme-color" content="#c79ea9"/>
+        <meta name="apple-mobile-web-app-status-bar" content="#f8e5e5"/>
+        <meta name="theme-color" content="#f8e5e5"/>
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
