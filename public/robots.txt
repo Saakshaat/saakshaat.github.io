@@ -1,0 +1,6 @@
+Sitemap: https://saakshaat.me/api/posts-sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
