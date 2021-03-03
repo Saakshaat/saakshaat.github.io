@@ -43,12 +43,14 @@ export function GlobalLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Saakshaat Singh. SWE. Chair. Baking Bacon Pancakes."
+          content="Saakshaat Singh. Software Engineer. Leader. Bacon Pancake Enthusiast. Check me out here."
         />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
-        <meta name="apple-mobile-web-app-status-bar" content="#f8e5e5"/>
-        <meta name="theme-color" content="#f8e5e5"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Saakshaat Singh" />
+        <meta property="og:url" content="https://saakshaat.me" />  
+        <meta name="theme-color" content="#f8e5e5" />
+        <meta name="twitter:site" content="" />
+        <meta name="twitter:creator" content="Saakshaat Singh" />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
@@ -57,10 +59,15 @@ export function GlobalLayout({ children }) {
         />
         <meta name="og:title" content={name} />
         <meta name="twitter:card" content="summary_large_image" />
-          <script
+        <meta name="apple-mobile-web-app-status-bar" content="#f8e5e5" />
+        
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+
+        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-143950438-1"
-          />
+        />
 
         <script
           dangerouslySetInnerHTML={{
