@@ -44,7 +44,7 @@ export function GlobalLayout({ children }) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Saakshaat Singh. Software Engineer. Leader. Bumblebee Enthusiast. Check me out here."
+          content="Software Engineer. Leader. Bumblebee Enthusiast. Like building software? Like using software? Like pink? Check this out."
         />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Saakshaat Singh" />
