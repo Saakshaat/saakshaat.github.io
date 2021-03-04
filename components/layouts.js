@@ -41,6 +41,7 @@ export function GlobalLayout({ children }) {
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <meta
           name="description"
           content="Saakshaat Singh. Software Engineer. Leader. Bumblebee Enthusiast. Check me out here."
