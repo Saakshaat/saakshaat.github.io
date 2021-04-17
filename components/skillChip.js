@@ -52,7 +52,7 @@ const skills = {
     backgroundColor: "#CE412B",
     image: "/images/logos/skills/rust.png",
   },
-  TYPESCRIPT: {
+  TS: {
     color: "#007acc",
     backgroundColor: "#ffffff",
     image: "/images/logos/skills/ts.png",

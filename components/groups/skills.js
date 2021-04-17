@@ -6,12 +6,14 @@ const skills = [
   "PYTHON",
   "C",
   "RUST",
+  "LOOPBACK",
+  "JS",
+  "TS",
   "CPP",
   "NOSQL",
   "SQL",
   "RUBY",
   "JAVA",
-  "TYPESCRIPT",
   "NODE",
   "NEXT",
   "BASH",
@@ -19,7 +21,6 @@ const skills = [
   "TERRAFORM",
   "YACC",
   "REACT",
-  "JS",
   "FIREBASE",
   "AWS",
   "FASTAPI",
@@ -28,7 +29,6 @@ const skills = [
   "HCL",
   "YAML",
   "KUBERNETES",
-  "LOOPBACK",
 ];
 
 export default function Skills() {
