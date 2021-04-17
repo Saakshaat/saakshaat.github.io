@@ -28,6 +28,7 @@ const skills = [
   "HCL",
   "YAML",
   "KUBERNETES",
+  "LOOPBACK",
 ];
 
 export default function Skills() {

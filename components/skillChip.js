@@ -157,6 +157,11 @@ const skills = {
     backgroundColor: "#211F1F",
     image: "/images/logos/skills/git.png",
   },
+  LOOPBACK: {
+    color: "#FFFFFF",
+    backgroundColor: "#3F5EFF",
+    image: "/images/logos/skills/loopback.png",
+  }
 };
 
 const sizes = {
