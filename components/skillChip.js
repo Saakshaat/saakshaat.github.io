@@ -161,7 +161,7 @@ const skills = {
     color: "#FFFFFF",
     backgroundColor: "#3F5EFF",
     image: "/images/logos/skills/loopback.png",
-  }
+  },
 };
 
 const sizes = {
@@ -221,6 +221,10 @@ export default function SkillChip({ skill, size }) {
       animate={controls}
       variants={variants}
       className={styles.chip}
+      whileHover={{
+        boxShadow: `1px 1px 5px 0.5px ${skills[skill].backgroundColor}`,
+        zIndex: "1",
+      }}
       transition={{
         duration: "0.3",
         type: "keyframes",
