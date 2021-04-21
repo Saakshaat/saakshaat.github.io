@@ -46,6 +46,10 @@ export function GlobalLayout({ children }) {
           name="description"
           content="Software Engineer. Leader. Bumblebee Enthusiast. Like building software? Like using software? Like pink? Check this out."
         />
+        <meta
+          name="og:description"
+          content="Software Engineer. Leader. Bumblebee Enthusiast. Like building software? Like using software? Like pink? Check this out."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Saakshaat Singh" />
         <meta property="og:url" content="https://saakshaat.me" />
@@ -54,11 +58,8 @@ export function GlobalLayout({ children }) {
         <meta name="twitter:creator" content="Saakshaat Singh" />
         <meta
           property="og:image"
-          content={`https://banners.beyondco.de/${encodeURI(
-            siteTitle
-          )}.png?theme=dark&&packageManager=%20Making+Things+Happen&pattern=topography&style=style_1&description=${encodeURI(
-            "SWE | Leader"
-          )}&package_name=&md=1&showWatermark=0&fontSize=125px&images=cube&widths=250&heights=250`}
+          content='/images/og-cover.png'
+          href='/images/og-cover.png'
         />
         <meta name="og:title" content={name} />
         <meta name="twitter:card" content="summary_large_image" />
