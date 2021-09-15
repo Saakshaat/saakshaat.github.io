@@ -1,8 +1,8 @@
 {
-    "position": "SWE",
+    "position": "Software Architect",
     "organization": "Center for Youth Engagement",
     "logo": "/images/logos/cye.png",
     "color": "white",
     "backgroundColor": "#4285F4e7",
-    "description": "CYE is an NSF research organization helping undeserved and at-risk youth through technology.\n\nAs a backend and cloud engineer, I design and develop servers, manage AWS resources, package a lot of software and rick roll everyone."
+    "description": "CYE is an NSF research organization helping undeserved and at-risk youth through technology.\n\n I'm re/design and breaking down our monilithic systems into microservices, managing our cloud resources, packaging software and rickrolling everyone."
 }
