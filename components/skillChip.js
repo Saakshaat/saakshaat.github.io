@@ -162,6 +162,11 @@ const skills = {
     backgroundColor: "#3F5EFF",
     image: "/images/logos/skills/loopback.png",
   },
+  JENKINS: {
+    color: "#335061",
+    backgroundColor: "#F0D6B7",
+    image: "/images/logos/skills/jenkins.png",
+  },
 };
 
 const sizes = {
