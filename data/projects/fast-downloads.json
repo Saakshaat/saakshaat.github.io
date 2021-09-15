@@ -1,0 +1,10 @@
+{
+    "name": "Fast Downloads",
+    "image": "./images/projects/sharding-2.jpeg",
+    "tags": [
+        "JAVA",
+        "AWS"
+    ],
+    "brief": "Sharded p2p downloads",
+    "description": "A native application for making downloads faster and use less data through data-pooling. For N clients on our network, we shard the target into N pieces and compress each client's part of the target, compresses and decompress for Client 0.\n\nThe download time and data for Client 0 goes down by N times. The participating users receive credit in exchange for sharing their device's compute, data and storage."
+}
