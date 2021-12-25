@@ -50,6 +50,7 @@ export function GlobalLayout({ children }) {
           name="og:description"
           content="Software Engineer. Leader. Bumblebee Enthusiast. Like building software? Like using software? Like pink? Check this out."
         />
+        
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Saakshaat Singh" />
         <meta property="og:url" content="https://saakshaat.me" />
@@ -59,7 +60,7 @@ export function GlobalLayout({ children }) {
         <meta
           property="og:image"
           content='/images/og-cover.png'
-          href='/images/og-cover.png'
+          href='https://og-image.vercel.app/**Saakshaat**%20Singh.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fvercel-triangle-black.svg'
         />
         <meta name="og:title" content={name} />
         <meta name="twitter:card" content="summary_large_image" />
