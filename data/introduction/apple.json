@@ -1,0 +1,8 @@
+{
+    "position": "Site Reliability Engineer Intern",
+    "organization": "Apple",
+    "logo": "/images/logos/apple.png",
+    "color": "black",
+    "backgroundColor": "#A2AAAD",
+    "description": "I interned with the Apple Maps SRE team over summer 22. I was in the Cupertino office and spent the summer in California.\n\nMy main project here was the first single-pane of glass for Maps production. This observability platform sourced data from several differnt services about datacenters, traffic weights, CDNs, deployed services, etc and put it together in a common format where all data connected. This involved a lot of Ruby-on-Rails and Kubernetes; infact we built a Rails framework to support the project.\n\nThis was a fun summer of learning, experiencing Apple Park in all its glory and meeting Tim Cook."
+}
