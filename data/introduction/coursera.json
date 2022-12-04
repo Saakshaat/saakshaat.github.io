@@ -1,0 +1,8 @@
+{
+    "position": "Software Engineer",
+    "organization": "Coursera",
+    "logo": "/images/logos/coursera.png",
+    "color": "white",
+    "backgroundColor": "#0056D2",
+    "description": "I currently work in the infrastructure team at Coursera. This is also where I interned Spring 22.\n\nI work on some data platforms for observability and develop automation scripts to improve the developer experience."
+}
