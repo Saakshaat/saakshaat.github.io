@@ -21,6 +21,6 @@
     "react-transition-group": "^4.4.1",
     "sass": "^1.32.5",
     "sitemap": "^6.4.0",
-    "three": "^0.125.2"
+    "three": "^0.137.0"
   }
 }
